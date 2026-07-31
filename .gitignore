@@ -1,0 +1,80 @@
+# ==========================================
+# 1. PROJECT SPECIFIC (Vietnamese RAG System)
+# ==========================================
+# Local Data & Documents
+data/*.pdf
+data/*.jsonl
+!data/rag_evaluation_dataset.jsonl
+qdrant_storage/
+dump.rdb   
+
+# Evaluation & Generation Scripts (Keep Private)
+evaluation/graph_report.py
+data/analyze_dataset.py
+data/hf.py
+data/dataset_generator.py
+data/evaluation_report.csv
+notebooks/
+.codegraph/
+
+# Logs
+*.log
+eval_pipeline.log
+
+# Streamlit local config (nếu có)
+.streamlit/
+
+# ==========================================
+# 2. ENVIRONMENTS & SECRETS
+# ==========================================
+.env
+.env.local
+.venv
+venv/
+env/
+ENV/
+
+# ==========================================
+# 3. PYTHON CORE
+# ==========================================
+# Byte-compiled / optimized
+__pycache__/
+*.py[codz]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==========================================
+# 4. TESTING & TYPING
+# ==========================================
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ==========================================
+# 5. IDE, EDITOR & OS METADATA
+# ==========================================
+.vscode/
+.idea/
+.cursorignore
+.cursorindexingignore
+.DS_Store
+Thumbs.db
+
+!data/.gitkeep
