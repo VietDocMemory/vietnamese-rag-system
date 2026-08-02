@@ -1,5 +1,6 @@
 import json
 import asyncio
+import logging
 from fastapi import APIRouter, Query, Depends
 from fastapi.responses import StreamingResponse
 
@@ -9,6 +10,12 @@ from src.api.dependencies import get_retriever, get_generator
 from src.core.cache import get_cached_response, set_cached_response  # add cache
 
 router = APIRouter(tags=["Chat"])
+logger = logging.getLogger(__name__)
+STREAM_HEARTBEAT_SECONDS = 10
+
+
+def stream_event(event_type: str, **payload) -> str:
+    return json.dumps({"type": event_type, **payload}, ensure_ascii=False) + "\n"
 
 
 # query rag system
@@ -35,12 +42,28 @@ async def ask_rag(
                 return
 
             # run pipeline if no cache
+            yield stream_event("status", message="Đang tìm kiếm tài liệu liên quan...")
             try:
-                relevant_docs = await retriever.search(query, collection_name=session_id, top_k=8)
+                search_task = asyncio.create_task(
+                    retriever.search(query, collection_name=session_id, top_k=8)
+                )
+                while not search_task.done():
+                    done, _ = await asyncio.wait({search_task}, timeout=STREAM_HEARTBEAT_SECONDS)
+                    if search_task in done:
+                        break
+                    yield stream_event("status", message="Đang tìm kiếm tài liệu liên quan...")
+
+                relevant_docs = search_task.result()
+            except asyncio.CancelledError:
+                search_task.cancel()
+                raise
             except RuntimeError as e:
-                yield json.dumps({"type": "error", "message": str(e)}) + "\n"
+                yield stream_event("error", message=str(e))
                 return
             except Exception:
+                logger.error(
+                    "Error while retrieving documents for session %s.", session_id, exc_info=True
+                )
                 yield (
                     json.dumps(
                         {
@@ -78,9 +101,29 @@ async def ask_rag(
             # cache response while streaming
             full_response_text = ""
             try:
-                async for chunk in generator.generate_stream(query, relevant_docs):
+                answer_stream = generator.generate_stream(query, relevant_docs)
+                answer_iter = answer_stream.__aiter__()
+
+                while True:
+                    chunk_task = asyncio.create_task(answer_iter.__anext__())
+                    try:
+                        while not chunk_task.done():
+                            done, _ = await asyncio.wait(
+                                {chunk_task}, timeout=STREAM_HEARTBEAT_SECONDS
+                            )
+                            if chunk_task in done:
+                                break
+                            yield stream_event("status", message="Đang sinh câu trả lời...")
+
+                        chunk = chunk_task.result()
+                    except StopAsyncIteration:
+                        break
+                    except asyncio.CancelledError:
+                        chunk_task.cancel()
+                        raise
+
                     full_response_text += chunk
-                    yield json.dumps({"type": "content", "data": chunk}) + "\n"
+                    yield stream_event("content", data=chunk)
 
                 # save to redis
                 await set_cached_response(session_id, query, full_response_text, sources)
@@ -88,6 +131,7 @@ async def ask_rag(
             except (RuntimeError, ConnectionError) as e:
                 yield json.dumps({"type": "error", "message": f"\n\n*({str(e)})*"}) + "\n"
             except Exception:
+                logger.error("Error while streaming LLM response.", exc_info=True)
                 yield (
                     json.dumps(
                         {
@@ -99,6 +143,7 @@ async def ask_rag(
                 )
 
         except Exception:
+            logger.error("Unhandled chat stream error.", exc_info=True)
             yield json.dumps({"type": "error", "message": "Lỗi luồng hệ thống."}) + "\n"
 
     return StreamingResponse(stream_result(), media_type="application/x-ndjson")

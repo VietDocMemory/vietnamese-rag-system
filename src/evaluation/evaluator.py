@@ -42,12 +42,12 @@ class RAGClient:
         self.session_id = session_id
 
     def query(self, question: str) -> Tuple[List[str], str]:
-        url = f"{self.api_url}?query={question}&session_id={self.session_id}"
         full_answer = ""
         retrieved_contexts = []
 
         try:
-            with requests.get(url, stream=True, timeout=120) as r:
+            params = {"query": question, "session_id": self.session_id}
+            with requests.get(self.api_url, params=params, stream=True, timeout=(5, 600)) as r:
                 if r.status_code != 200:
                     logger.error(f"API Error: {r.status_code} for query: {question[:30]}...")
                     return [], ""

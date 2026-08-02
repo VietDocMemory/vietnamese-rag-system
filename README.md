@@ -121,6 +121,7 @@ This system is not just a RAG implementation — it is built around several crit
    REDIS_URL="redis://localhost:6379"
    OLLAMA_BASE_URL="http://localhost:11434/api/chat"
    LLM_MODEL_NAME="qwen2.5:7b-instruct"
+   RAG_API_BASE_URL="http://127.0.0.1:8000"
    GEMINI_API_KEY="your_api_key_for_evaluation"
    ```
 
@@ -135,7 +136,7 @@ The system consists of a backend API and a frontend UI.
 
 2. **Start the Streamlit UI:**
    ```bash
-   uv run streamlit run src/ui/app.py
+   uv run streamlit run src/ui/streamlit_app.py
    ```
 
 Open http://localhost:8501 to upload a PDF and start querying.
@@ -191,8 +192,3 @@ The pipeline independently assesses both the **Retriever** and the **Generator**
 - Context window limits may truncate long documents
 
 > These trade-offs were intentionally accepted to prioritize system clarity and local deployment simplicity.
-
-## Author
-
-**Vu Hoang Nam (NamSyntax)**  
-Email: [namsyntax@gmail.com](mailto:namsyntax@gmail.com)
