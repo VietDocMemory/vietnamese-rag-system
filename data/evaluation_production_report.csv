@@ -1,0 +1,9 @@
+﻿question,question_type,hit_at_k,mrr,recall_at_k,faithfulness,answer_correctness,abstention_accuracy,error_category,generated_answer
+"Theo Luật Bảo vệ môi trường, Giấy phép môi trường được định nghĩa như thế nào?",factoid,0.0,0.0,0.0,0,0,,Retrieval Failure (Context not found in Top-K),
+"Mức phạt đối với tổ chức, cá nhân không có Giấy phép môi trường khi nhập khẩu phế liệu từ nước ngoài là bao nhiêu?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Sự khác biệt cơ bản về tính chất áp dụng giữa quy chuẩn kỹ thuật môi trường và tiêu chuẩn môi trường là gì?,multi-hop,0.0,0.0,0.0,0,0,,Retrieval Failure (Context not found in Top-K),
+Thời hạn cụ thể để thực hiện việc đăng ký môi trường đối với các cơ sở sản xuất mới thành lập là bao nhiêu ngày?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Hạn ngạch phát thải khí nhà kính được tính theo đơn vị cụ thể nào?,factoid,0.0,0.0,0.0,0,0,,Retrieval Failure (Context not found in Top-K),
+Những đối tượng nào có trách nhiệm bảo vệ môi trường và họ phải thực hiện nghĩa vụ gì nếu gây ra suy thoái môi trường?,multi-hop,0.0,0.0,0.0,0,0,,Retrieval Failure (Context not found in Top-K),
+Chính sách của Nhà nước về việc khai thác tài nguyên và phát triển năng lượng được quy định như thế nào trong Điều 5?,factoid,0.0,0.0,0.0,0,0,,Retrieval Failure (Context not found in Top-K),
+Mức xử phạt cụ thể đối với hành vi nhập khẩu trái phép máy móc đã qua sử dụng để phá dỡ được quy định là bao nhiêu tiền?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,

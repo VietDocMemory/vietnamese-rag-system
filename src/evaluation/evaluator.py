@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import time
 import argparse
@@ -9,10 +10,11 @@ from tqdm import tqdm
 from dotenv import load_dotenv
 from typing import List, Dict, Any, Tuple
 
-from google import genai
-from google.genai import types
+from groq import Groq
 from pydantic import BaseModel, Field
 from sentence_transformers import CrossEncoder
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
 
 # logging setup
 logging.basicConfig(
@@ -74,7 +76,12 @@ class RAGClient:
 class SemanticEvaluator:
     def __init__(self, model_name="BAAI/bge-reranker-v2-m3", threshold=0.2):
         logger.info(f"Loading Semantic Evaluator Model: {model_name}...")
-        self.matcher = CrossEncoder(model_name, max_length=512, device="cuda")
+        self.matcher = CrossEncoder(
+            model_name,
+            max_length=512,
+            device="cpu",
+            automodel_args={"low_cpu_mem_usage": True},
+        )
         self.threshold = threshold
 
     # compute retrieval metrics
@@ -112,13 +119,13 @@ class SemanticEvaluator:
 
 # llm judge evaluator
 class LLMEvaluator:
-    def __init__(self, max_retries=5, base_delay=2.0):
+    def __init__(self, model_name: str = "llama-3.3-70b-versatile", max_retries=5, base_delay=2.0):
         load_dotenv()
-        api_key = os.getenv("GEMINI_API_KEY")
+        api_key = os.getenv("GROQ_API_KEY")
         if not api_key:
-            raise ValueError("Missing GEMINI_API_KEY in environment.")
-        self.client = genai.Client(api_key=api_key)
-        self.judge_model = "gemini-2.5-flash"
+            raise ValueError("Missing GROQ_API_KEY in environment.")
+        self.client = Groq(api_key=api_key)
+        self.judge_model = model_name
         self.max_retries = max_retries
         self.base_delay = base_delay
 
@@ -126,9 +133,12 @@ class LLMEvaluator:
     def evaluate(
         self, question: str, q_type: str, context: str, gen_answer: str, gt_answer: str
     ) -> Dict[str, Any]:
-        prompt = f"""
-        Bạn là một hệ thống đánh giá AI. Hãy chấm điểm câu trả lời của RAG system dựa trên các thông tin sau.
-        
+        system_prompt = (
+            "Bạn là một hệ thống đánh giá AI. Hãy chấm điểm câu trả lời và trả về kết quả dưới dạng JSON hợp lệ "
+            "với các trường: 'faithfulness_score' (int từ 0 đến 10), 'faithfulness_reasoning' (str), "
+            "'correctness_score' (int từ 0 đến 10), 'correctness_reasoning' (str)."
+        )
+        user_prompt = f"""
         [DỮ LIỆU ĐẦU VÀO]
         - Câu hỏi: {question}
         - Loại câu hỏi: {q_type}
@@ -147,16 +157,19 @@ class LLMEvaluator:
 
         for attempt in range(self.max_retries):
             try:
-                response = self.client.models.generate_content(
+                response = self.client.chat.completions.create(
                     model=self.judge_model,
-                    contents=prompt,
-                    config=types.GenerateContentConfig(
-                        response_mime_type="application/json",
-                        response_schema=LLMJudgeResult,
-                        temperature=0.0,
-                    ),
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": user_prompt},
+                    ],
+                    response_format={"type": "json_object"},
+                    temperature=0.0,
                 )
-                return json.loads(response.text)
+                res_content = response.choices[0].message.content
+                res_json = json.loads(res_content)
+                validated = LLMJudgeResult.model_validate(res_json)
+                return validated.model_dump()
 
             except Exception as e:
                 if attempt < self.max_retries - 1:
@@ -173,13 +186,38 @@ class LLMEvaluator:
 # main pipeline
 # bulk evaluation pipeline
 class EvaluationPipeline:
-    def __init__(self, dataset_path: str, output_path: str, api_url: str, session_id: str):
+    def __init__(
+        self,
+        dataset_path: str,
+        output_path: str,
+        api_url: str,
+        session_id: str,
+        model_name: str = "llama-3.3-70b-versatile",
+    ):
         self.dataset_path = dataset_path
         self.output_path = output_path
         self.checkpoint_path = output_path.replace(".csv", "_checkpoint.jsonl")
         self.rag_client = RAGClient(api_url, session_id)
         self.semantic_evaluator = SemanticEvaluator()
-        self.llm_evaluator = LLMEvaluator()
+        self.llm_evaluator = LLMEvaluator(model_name=model_name)
+
+    def _load_jsonl(self, file_path: str) -> List[Dict[str, Any]]:
+        records: List[Dict[str, Any]] = []
+        with open(file_path, "r", encoding="utf-8-sig") as f:
+            for line_number, raw_line in enumerate(f, start=1):
+                line = raw_line.strip()
+                if not line:
+                    continue
+                try:
+                    records.append(json.loads(line))
+                except json.JSONDecodeError as exc:
+                    logger.warning(
+                        "Skipping invalid JSONL line %s in %s: %s",
+                        line_number,
+                        file_path,
+                        exc,
+                    )
+        return records
 
     def _categorize_error(
         self, q_type: str, hit_at_k: float, faithfulness: int, correctness: int
@@ -214,15 +252,14 @@ class EvaluationPipeline:
 
     def _load_checkpoint(self) -> List[Dict]:
         if os.path.exists(self.checkpoint_path):
-            with open(self.checkpoint_path, "r", encoding="utf-8") as f:
+            with open(self.checkpoint_path, "r", encoding="utf-8-sig") as f:
                 logger.info("Checkpoint found. Resuming evaluation from last saved state...")
-                return [json.loads(line) for line in f]
+                return [json.loads(line) for line in f if line.strip()]
         return []
 
     def run(self, top_k: int = 5):
         logger.info(f"Starting Evaluation Pipeline on {self.dataset_path}")
-        with open(self.dataset_path, "r", encoding="utf-8") as f:
-            dataset = [json.loads(line) for line in f]
+        dataset = self._load_jsonl(self.dataset_path)
 
         results = self._load_checkpoint()
         processed_count = len(results)
@@ -337,6 +374,12 @@ if __name__ == "__main__":
         "--session_id", type=str, required=True, help="Session ID đã được nạp dữ liệu trên Qdrant"
     )
     parser.add_argument(
+        "--model",
+        type=str,
+        default="llama-3.3-70b-versatile",
+        help="Tên mô hình Groq dùng cho LLM Judge (mặc định: llama-3.3-70b-versatile)",
+    )
+    parser.add_argument(
         "--top_k", type=int, default=8, help="Số lượng chunk tối đa lấy về để đánh giá"
     )
 
@@ -347,5 +390,6 @@ if __name__ == "__main__":
         output_path=args.output,
         api_url=args.api_url,
         session_id=args.session_id,
+        model_name=args.model,
     )
     pipeline.run(top_k=args.top_k)

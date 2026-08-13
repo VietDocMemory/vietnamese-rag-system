@@ -74,7 +74,40 @@ if "is_ready" not in st.session_state:
 # sidebar ui
 with st.sidebar:
     st.title("🗂️ Quản lý Tài liệu")
-    st.caption(f"Phiên làm việc: `{st.session_state.session_id}`")
+    
+    # ---------------------------------------------------------
+    # Ô nhập Session ID thủ công (Sửa lại cơ chế Key & Callback)
+    # ---------------------------------------------------------
+    st.subheader("🔑 Phiên làm việc")
+    
+    # Dùng session_id trực tiếp làm value
+    session_input = st.text_input(
+        "Nhập Session ID có sẵn:", 
+        value=st.session_state.session_id,
+        key="session_input_field"
+    )
+    
+    col_btn1, col_btn2 = st.columns(2)
+    with col_btn1:
+        if st.button("📌 Dùng Session này", use_container_width=True):
+            if session_input.strip():
+                # Cập nhật trực tiếp vào session_state
+                st.session_state.session_id = session_input.strip()
+                st.session_state.is_ready = True
+                st.session_state.messages = []
+                st.rerun()
+    
+    with col_btn2:
+        if st.button("🎲 Tạo session mới", use_container_width=True):
+            new_id = str(uuid.uuid4())[:8]
+            st.session_state.session_id = new_id
+            st.session_state.is_ready = False
+            st.session_state.messages = []
+            st.rerun()
+            
+    st.caption(f"ID hiện tại: `{st.session_state.session_id}`")
+    st.markdown("---")
+    # ---------------------------------------------------------
 
     uploaded_file = st.file_uploader("Tải lên PDF để AI học", type="pdf")
 
@@ -92,7 +125,6 @@ with st.sidebar:
         st.session_state.messages = []
         st.session_state.is_ready = False
         st.rerun()
-
     # handle file upload
     if uploaded_file is not None and not st.session_state.is_ready:
         st.markdown("---")
