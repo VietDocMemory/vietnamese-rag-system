@@ -1,0 +1,51 @@
+﻿question,question_type,hit_at_k,mrr,recall_at_k,faithfulness,answer_correctness,abstention_accuracy,error_category,generated_answer
+"Theo Luật Bảo vệ môi trường, Giấy phép môi trường được định nghĩa như thế nào?",factoid,10.0,10.0,10.0,10,10,,Success,"Giấy phép môi trường được định nghĩa là văn bản do cơ quan quản lý nhà nước có thẩm quyền cấp cho tổ chức, cá nhân có hoạt động sản xuất, kinh doanh, dịch vụ được phép xả chất thải ra môi trường, quản lý chất thải, nhập khẩu phế liệu từ nước ngoài làm nguyên liệu sản xuất kèm theo yêu cầu, điều kiện về bảo vệ môi trường theo quy định của pháp luật. "
+"Mức phạt đối với tổ chức, cá nhân không có Giấy phép môi trường khi nhập khẩu phế liệu từ nước ngoài là bao nhiêu?",unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Sự khác biệt cơ bản về tính chất áp dụng giữa quy chuẩn kỹ thuật môi trường và tiêu chuẩn môi trường là gì?,multi-hop,10.0,10.0,10.0,2,4,,Generation Failure (Failed to extract or reasoned poorly),"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này.
+
+Tuy nhiên, thông qua phân tích các tài liệu, có thể thấy rằng quy chuẩn kỹ thuật môi trường và tiêu chuẩn môi trường đều liên quan đến quản lý chất lượng môi trường, nhưng chúng có mục đích và phạm vi áp dụng khác nhau:
+
+1. Quy chuẩn kỹ thuật môi trường:
+- Là quy định bắt buộc do cơ quan nhà nước có thẩm quyền ban hành.
+- Áp dụng cho mức giới hạn của thông số về chất lượng môi trường, hàm lượng chất ô nhiễm, yêu cầu kỹ thuật và quản lý.
+- Áp dụng cho nhiều đối tượng như nguyên liệu, nhiên liệu, vật liệu, thiết bị, sản phẩm, hàng hóa, chất thải.
+- Cần được rà soát, cập nhật định kỳ hoặc khi cần thiết.
+- Áp dụng cho quản lý chất thải, phế liệu nhập khẩu, nước thải, khí thải.
+
+2. Tiêu chuẩn môi trường:
+- Không có thông tin cụ thể về tiêu chuẩn môi trường trong tài liệu cung cấp.
+- Có thể hiểu tiêu chuẩn môi trường là một khái niệm chung hơn, có thể bao gồm cả quy chuẩn kỹ thuật môi trường và các quy định khác về bảo vệ môi trường.
+
+Do đó, sự khác biệt cơ bản về tính chất áp dụng giữa quy chuẩn kỹ thuật môi trường và tiêu chuẩn môi trường không được đề cập trong tài liệu, nhưng có thể nói quy chuẩn kỹ thuật môi trường là một phần của tiêu chuẩn môi trường, áp dụng cụ thể cho các đối tượng và thông số cụ thể về chất lượng môi trường."
+Thời hạn cụ thể để thực hiện việc đăng ký môi trường đối với các cơ sở sản xuất mới thành lập là bao nhiêu ngày?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về thời hạn cụ thể để thực hiện việc đăng ký môi trường đối với các cơ sở sản xuất mới thành lập."
+Hạn ngạch phát thải khí nhà kính được tính theo đơn vị cụ thể nào?,factoid,10.0,10.0,10.0,10,10,,Success,"Hạn ngạch phát thải khí nhà kính được tính theo tấn khí carbon dioxide (CO2) hoặc tấn khí carbon dioxide (CO2) tương đương, như được nêu trong Tài liệu 1."
+Những đối tượng nào có trách nhiệm bảo vệ môi trường và họ phải thực hiện nghĩa vụ gì nếu gây ra suy thoái môi trường?,multi-hop,10.0,10.0,10.0,9,8,,Success,"Theo tài liệu cung cấp, các đối tượng có trách nhiệm bảo vệ môi trường và họ phải thực hiện nghĩa vụ nếu gây ra suy thoái môi trường bao gồm:
+
+1. Cơ quan, tổ chức, cộng đồng dân cư, hộ gia đình và cá nhân:
+   - Họ được hưởng lợi từ môi trường và có nghĩa vụ đóng góp tài chính cho hoạt động bảo vệ môi trường.
+   - Nếu gây ô nhiễm, sự cố và suy thoái môi trường, họ phải chi trả, bồi thường thiệt hại, khắc phục, xử lý và chịu trách nhiệm khác theo quy định của pháp luật.
+
+2. Người đứng đầu cơ quan, tổ chức, cán bộ, công chức, viên chức, nhân sự phụ trách về bảo vệ môi trường:
+   - Họ có trách nhiệm thực hiện chức vụ, quyền hạn của mình trong việc bảo vệ môi trường.
+   - Nếu lợi dụng chức vụ, quyền hạn gây phiền hà, nhũng nhiễu cho tổ chức, cá nhân, bao che cho tổ chức, cá nhân vi phạm pháp luật về bảo vệ môi trường hoặc thiếu trách nhiệm để xảy ra ô nhiễm, sự cố môi trường, họ sẽ bị xử lý kỷ luật, xử phạt vi phạm hành chính hoặc truy cứu trách nhiệm hình sự; trường hợp gây thiệt hại thì phải bồi thường theo quy định của pháp luật.
+
+Như vậy, các đối tượng trên đều có trách nhiệm bảo vệ môi trường và nếu gây ra suy thoái môi trường, họ phải thực hiện nghĩa vụ khắc phục, bồi thường và chịu trách nhiệm theo quy định của pháp luật."
+Chính sách của Nhà nước về việc khai thác tài nguyên và phát triển năng lượng được quy định như thế nào trong Điều 5?,factoid,10.0,10.0,10.0,10,3,,Context Failure (Matched but useless/truncated),"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về việc khai thác và sử dụng tài nguyên, nhưng không đề cập cụ thể đến Điều 5 hay quy định về khai thác tài nguyên và phát triển năng lượng."
+Mức xử phạt cụ thể đối với hành vi nhập khẩu trái phép máy móc đã qua sử dụng để phá dỡ được quy định là bao nhiêu tiền?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Nội dung bảo vệ môi trường nước mặt bao gồm những hoạt động chính nào?,factoid,10.0,10.0,10.0,10,10,,Success,"Nội dung bảo vệ môi trường nước mặt bao gồm các hoạt động chính sau:
+
+a) Thống kê, đánh giá, giảm thiểu và xử lý nước thải xả vào môi trường nước mặt;
+
+b) Quan trắc, đánh giá chất lượng nước, trầm tích, môi trường thủy sinh của nguồn nước mặt và công khai thông tin phục vụ quản lý, khai thác và sử dụng nước mặt;
+
+c) Điều tra, đánh giá khả năng chịu tải của môi trường nước mặt; công bố các khu vực môi trường nước mặt không còn khả năng chịu tải;
+
+d) Xử lý ô nhiễm, cải tạo, phục hồi và cải thiện môi trường nước mặt bị ô nhiễm;
+
+e) Quan trắc, đánh giá chất lượng môi trường nước mặt, trầm tích sông liên quốc gia và chia sẻ thông tin phù hợp với quy định của pháp luật về bảo vệ môi trường, pháp luật và thông lệ quốc tế."
+"Trong trường hợp môi trường nước mặt được công bố là không còn khả năng chịu tải, một dự án đầu tư mới xả nước thải trực tiếp vẫn có thể được cấp giấy phép môi trường nếu đáp ứng điều kiện gì?",multi-hop,10.0,10.0,10.0,10,8,,Success,"Trong trường hợp môi trường nước mặt được công bố là không còn khả năng chịu tải, một dự án đầu tư mới xả nước thải trực tiếp vẫn có thể được cấp giấy phép môi trường nếu dự án đầu tư có phương án xử lý nước thải đạt quy chuẩn kỹ thuật môi trường về chất lượng nước mặt trước khi thải vào môi trường tiếp nhận hoặc có phương án tuần hoàn, tái sử dụng để không làm phát sinh thêm nước thải."
+"Cơ quan nào có trách nhiệm xây dựng kế hoạch quản lý chất lượng môi trường nước mặt đối với sông, hồ liên tỉnh và kế hoạch này phải phù hợp với quy hoạch nào?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Cơ quan có trách nhiệm xây dựng kế hoạch quản lý chất lượng môi trường nước mặt đối với sông, hồ liên tỉnh là Bộ Tài nguyên và Môi trường. Kế hoạch này phải phù hợp với Quy hoạch bảo vệ môi trường quốc gia."
+Mức xử phạt hành chính cụ thể đối với hành vi không công khai thông tin các nguồn thải vào môi trường nước mặt của Ủy ban nhân dân cấp tỉnh là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Kế hoạch quản lý chất lượng môi trường nước mặt được lập theo thời kỳ bao nhiêu năm?,factoid,10.0,10.0,10.0,10,10,,Success,"Kế hoạch quản lý chất lượng môi trường nước mặt được lập theo thời kỳ 05 năm, như được đề cập trong Tài liệu 1."
+Mức xử phạt hành chính cụ thể đối với hành vi làm rò rỉ hóa chất độc hại vào nguồn nước dưới đất được quy định như thế nào?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về trách nhiệm khắc phục và bồi thường nhưng không đề cập cụ thể đến mức xử phạt hành chính cho hành vi làm rò rỉ hóa chất độc hại vào nguồn nước dưới đất."
+Thời hạn của Kế hoạch quốc gia về quản lý chất lượng môi trường không khí được quy định là bao nhiêu năm?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo thông tin trong <context>, thời hạn của Kế hoạch quốc gia về quản lý chất lượng môi trường không khí là 05 năm."

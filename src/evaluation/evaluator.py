@@ -5,12 +5,12 @@ import argparse
 import logging
 import requests
 import pandas as pd
+import torch
 from tqdm import tqdm
 from dotenv import load_dotenv
 from typing import List, Dict, Any, Tuple
 
-from google import genai
-from google.genai import types
+from openai import OpenAI
 from pydantic import BaseModel, Field
 from sentence_transformers import CrossEncoder
 
@@ -26,10 +26,14 @@ logger = logging.getLogger("RAGEval")
 # schema
 class LLMJudgeResult(BaseModel):
     faithfulness_score: int = Field(
+        ge=0,
+        le=10,
         description="Điểm từ 0 đến 10 đánh giá việc mô hình bám sát Context."
     )
     faithfulness_reasoning: str = Field(description="Lý do ngắn gọn cho điểm faithfulness.")
     correctness_score: int = Field(
+        ge=0,
+        le=10,
         description="Điểm từ 0 đến 10 đánh giá độ chính xác của câu trả lời so với Ground Truth."
     )
     correctness_reasoning: str = Field(description="Lý do ngắn gọn cho điểm correctness.")
@@ -74,7 +78,9 @@ class RAGClient:
 class SemanticEvaluator:
     def __init__(self, model_name="BAAI/bge-reranker-v2-m3", threshold=0.2):
         logger.info(f"Loading Semantic Evaluator Model: {model_name}...")
-        self.matcher = CrossEncoder(model_name, max_length=512, device="cuda")
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        logger.info(f"Semantic evaluator device: {device}")
+        self.matcher = CrossEncoder(model_name, max_length=512, device=device)
         self.threshold = threshold
 
     # compute retrieval metrics
@@ -114,11 +120,11 @@ class SemanticEvaluator:
 class LLMEvaluator:
     def __init__(self, max_retries=5, base_delay=2.0):
         load_dotenv()
-        api_key = os.getenv("GEMINI_API_KEY")
+        api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
-            raise ValueError("Missing GEMINI_API_KEY in environment.")
-        self.client = genai.Client(api_key=api_key)
-        self.judge_model = "gemini-2.5-flash"
+            raise ValueError("Missing OPENAI_API_KEY in environment.")
+        self.client = OpenAI(api_key=api_key, max_retries=0)
+        self.judge_model = os.getenv("OPENAI_MODEL", "gpt-5.4-mini")
         self.max_retries = max_retries
         self.base_delay = base_delay
 
@@ -147,16 +153,20 @@ class LLMEvaluator:
 
         for attempt in range(self.max_retries):
             try:
-                response = self.client.models.generate_content(
+                response = self.client.responses.parse(
                     model=self.judge_model,
-                    contents=prompt,
-                    config=types.GenerateContentConfig(
-                        response_mime_type="application/json",
-                        response_schema=LLMJudgeResult,
-                        temperature=0.0,
-                    ),
+                    input=[
+                        {
+                            "role": "system",
+                            "content": "Bạn là giám khảo độc lập cho hệ thống RAG tiếng Việt. Chỉ đánh giá theo tiêu chí được cung cấp.",
+                        },
+                        {"role": "user", "content": prompt},
+                    ],
+                    text_format=LLMJudgeResult,
                 )
-                return json.loads(response.text)
+                if response.output_parsed is None:
+                    raise ValueError("OpenAI response did not contain a parsed evaluation result.")
+                return response.output_parsed.model_dump()
 
             except Exception as e:
                 if attempt < self.max_retries - 1:
