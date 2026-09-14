@@ -522,88 +522,230 @@ Trong bao nhiêu ngày kể từ khi có kết quả giám định thì Bộ Tà
 
 Cụ thể, theo Tài liệu 3 và Tài liệu 5, tổ chức, cá nhân có hoạt động nhập khẩu phế liệu từ nước ngoài làm nguyên liệu sản xuất cần thực hiện ký quỹ bảo vệ môi trường tại một trong ba cơ quan, tổ chức trên theo quy định của pháp luật."
 "Theo quy định, mức lãi suất cụ thể áp dụng cho việc ký quỹ bảo vệ môi trường là bao nhiêu phần trăm?",unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu chỉ đề cập đến việc Chính phủ quy định chi tiết về mức ký quỹ, hình thức ký quỹ, nguyên tắc áp dụng lãi suất ký quỹ, hoàn trả ký quỹ bảo vệ môi trường, nhưng không cung cấp cụ thể về mức lãi suất."
-Căn cứ để xác định hạn ngạch phát thải khí nhà kính bao gồm những yếu tố nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Thời điểm cụ thể bắt đầu triển khai vận hành thị trường các-bon trong nước được quy định là ngày nào?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
-"Theo Điều 142, kinh tế tuần hoàn được định nghĩa là gì?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Theo quy định tại Điều 142, mức phạt cụ thể đối với cơ sở kinh doanh không thiết lập hệ thống quản lý để giảm chất thải là bao nhiêu?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-Công nghiệp môi trường được định nghĩa như thế nào trong hệ thống ngành kinh tế Việt Nam?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức xử phạt hành chính cụ thể đối với việc giả mạo Nhãn sinh thái Việt Nam cho sản phẩm không thân thiện môi trường là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-Vốn tự nhiên bao gồm những loại tài nguyên và dịch vụ nào theo quy định?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức xử phạt cụ thể đối với các cơ quan không thực hiện ưu tiên mua sắm xanh khi sử dụng ngân sách nhà nước là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-Chủ dự án đầu tư có trách nhiệm bảo đảm kinh phí cho các hoạt động bảo vệ môi trường nào và việc quản lý kinh phí đó được quy định ra sao?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Hạn mức huy động vốn tối đa từ việc phát hành trái phiếu xanh của một doanh nghiệp được quy định cụ thể là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-Thẩm quyền quyết định thành lập Quỹ Bảo vệ môi trường Việt Nam thuộc về ai?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức vốn hoạt động cụ thể bằng tiền mặt của Quỹ Bảo vệ môi trường cấp tỉnh là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-Cơ quan nào chịu trách nhiệm làm đầu mối tổng hợp các hoạt động hội nhập và hợp tác quốc tế về bảo vệ môi trường?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Văn bản quy định mức phạt tiền cụ thể là bao nhiêu đối với hành vi vi phạm các điều ước quốc tế về môi trường?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-Trách nhiệm của tổ chức chính trị - xã hội trong việc bảo vệ môi trường được quy định như thế nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Đại diện cộng đồng dân cư có quyền yêu cầu thông tin từ những bên nào và chủ dự án có nghĩa vụ gì đối với các yêu cầu này?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Bộ trưởng Bộ Công an có trách nhiệm gì trong việc tổ chức kiểm tra, thanh tra về bảo vệ môi trường?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Quy định về mức tiền xử phạt cụ thể đối với hộ gia đình vi phạm quy định bảo vệ môi trường được nêu như thế nào?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
-Nội dung tranh chấp về môi trường bao gồm những trường hợp cụ thể nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Trong trường hợp cán bộ phụ trách bảo vệ môi trường lợi dụng chức vụ để bao che cho một tổ chức vi phạm pháp luật dẫn đến sự cố môi trường, người này sẽ phải chịu những hình thức xử lý nào?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Theo quy định tại Điều 165, cơ quan nào có trách nhiệm báo cáo Quốc hội hằng năm về công tác bảo vệ môi trường?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Thời hạn cụ thể để Bộ Tài nguyên và Môi trường thực hiện việc cấp đổi hoặc cấp lại giấy phép môi trường là bao nhiêu ngày?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-Trách nhiệm của cơ quan trong việc quản lý ngân sách và hợp tác quốc tế về bảo vệ môi trường được quy định như thế nào?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức phạt tiền cụ thể đối với hành vi làm mất giấy chứng nhận về môi trường là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-Bộ Quốc phòng có trách nhiệm gì trong việc ứng phó sự cố môi trường?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Quy trình thẩm định báo cáo đánh giá tác động môi trường của Ủy ban nhân dân cấp tỉnh gồm bao nhiêu bước và thời gian thực hiện cụ thể là bao lâu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-Cơ quan nào có trách nhiệm thực hiện các nhiệm vụ bảo vệ môi trường khác do Ủy ban nhân dân cấp huyện giao?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức tiền phạt cụ thể mà Ủy ban nhân dân cấp xã được phép áp dụng khi xử lý vi phạm pháp luật về bảo vệ môi trường là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-Cơ quan nào có thẩm quyền quy định trách nhiệm bảo vệ môi trường của chính quyền địa phương tại đơn vị hành chính - kinh tế đặc biệt?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Trong công tác quản lý nguồn thải và chất thải, chính quyền địa phương có những trách nhiệm cụ thể nào và phải chịu trách nhiệm trước cơ quan nào nếu để xảy ra ô nhiễm?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Cơ quan nào có thẩm quyền quy định phí thẩm định báo cáo đánh giá tác động môi trường đối với hoạt động thẩm định do cơ quan trung ương thực hiện?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Thời hạn tối đa để cơ quan nhà nước có thẩm quyền hoàn thành việc giải quyết hồ sơ môi trường được tiếp nhận trước ngày 01/01/2022 là bao nhiêu ngày?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-"Theo Luật Doanh nghiệp, cổ đông sáng lập được định nghĩa như thế nào?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức phí cụ thể để thực hiện việc truy cập thông tin về đăng ký doanh nghiệp trên Cổng thông tin quốc gia là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-Hệ thống thông tin quốc gia về đăng ký doanh nghiệp bao gồm những thành phần cụ thể nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức phí cụ thể khi thực hiện thẩm định giá bởi một tổ chức chuyên nghiệp để xác định giá trị cổ phần là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-"Theo văn bản, những đối tượng nào được xác định là người quản lý doanh nghiệp?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Vốn điều lệ của công ty cổ phần phải được góp đủ trong thời hạn bao nhiêu ngày kể từ ngày cấp Giấy chứng nhận đăng ký doanh nghiệp?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
-"Trong trường hợp Nhà nước trưng mua hoặc trưng dụng tài sản của doanh nghiệp, việc thanh toán và bồi thường được quy định như thế nào?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức phạt tiền cụ thể là bao nhiêu đối với doanh nghiệp có hành vi cản trở người lao động tham gia hoạt động trong tổ chức chính trị - xã hội?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-Doanh nghiệp xã hội cần đáp ứng tiêu chí gì về việc sử dụng lợi nhuận sau thuế hằng năm để tái đầu tư?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức xử phạt hành chính cụ thể là bao nhiêu nếu doanh nghiệp xã hội không thông báo với cơ quan có thẩm quyền khi chấm dứt thực hiện mục tiêu xã hội?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-Doanh nghiệp phải làm gì khi chỉ còn lại một người đại diện theo pháp luật cư trú tại Việt Nam và người này muốn xuất cảnh khỏi Việt Nam?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức phạt tiền cụ thể đối với doanh nghiệp xã hội không thông báo việc chấm dứt thực hiện mục tiêu xã hội cho cơ quan có thẩm quyền là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-"Trong trường hợp công ty trách nhiệm hữu hạn có hai thành viên mà thành viên là cá nhân làm người đại diện theo pháp luật bị chết, ai sẽ thay thế và thời hạn là bao lâu?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức xử phạt hành chính cụ thể đối với người đại diện theo pháp luật khi không thực hiện trách nhiệm trung thành với lợi ích của doanh nghiệp là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-Nội dung văn bản cử người đại diện theo ủy quyền phải bao gồm những thông tin cá nhân nào của người đại diện?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Theo quy định tại văn bản, những đối tượng cụ thể nào được liệt kê tại khoản 2 Điều 17 của Luật này mà người đại diện theo ủy quyền không được phép thuộc về?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-"Theo quy định tại Điều 16, các hành vi nào liên quan đến vốn điều lệ và tài sản góp vốn bị nghiêm cấm?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Trong trường hợp người đại diện theo ủy quyền vi phạm trách nhiệm, ai là người phải chịu trách nhiệm trước bên thứ ba và các hạn chế của chủ sở hữu đối với người đại diện có hiệu lực với bên thứ ba không?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Trong trường hợp Cơ quan đăng ký kinh doanh có yêu cầu, đối tượng nào phải nộp Phiếu lý lịch tư pháp?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức tiền phạt cụ thể là bao nhiêu đối với trường hợp cơ quan nhà nước sử dụng tài sản nhà nước góp vốn vào doanh nghiệp để thu lợi riêng?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
-Nếu doanh nghiệp không được cấp Giấy chứng nhận đăng ký doanh nghiệp thì trách nhiệm đối với các hợp đồng đã ký trước khi đăng ký thuộc về ai?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức phạt cụ thể đối với hành vi bổ sung vào ngân sách hoạt động của cơ quan trái quy định pháp luật là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-"Theo quy định tại Điều 24, trong trường hợp nào Điều lệ công ty bị thu hồi hiệu lực pháp luật?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-"Đối với loại hình công ty trách nhiệm hữu hạn một thành viên, những ai có thẩm quyền ký tên vào Điều lệ khi đăng ký doanh nghiệp và khi thực hiện sửa đổi, bổ sung Điều lệ?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Người thành lập doanh nghiệp có thể thực hiện đăng ký doanh nghiệp thông qua những phương thức nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức phí cụ thể để được cấp tài khoản đăng ký kinh doanh trên Hệ thống thông tin quốc gia là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
-"Khi thực hiện đăng ký thay đổi nội dung Giấy chứng nhận đăng ký doanh nghiệp theo quyết định của Tòa án, người đề nghị phải gửi đề nghị trong bao lâu và cơ quan chức năng xử lý trong thời gian nào?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức lệ phí cụ thể bằng tiền mà doanh nghiệp phải nộp khi thực hiện thủ tục cấp lại Giấy chứng nhận đăng ký doanh nghiệp do bị mất là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-Cơ quan đăng ký kinh doanh phải cấp Giấy chứng nhận đăng ký doanh nghiệp mới trong thời hạn bao lâu kể từ ngày nhận được đề nghị đăng ký thay đổi theo bản án của Tòa án?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Mức lệ phí cụ thể mà doanh nghiệp phải nộp khi thực hiện thông báo thay đổi ngành, nghề kinh doanh là bao nhiêu?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-"Trong thời hạn bao nhiêu ngày kể từ ngày bản án của Tòa án có hiệu lực pháp luật, tổ chức đề nghị thay đổi nội dung đăng ký doanh nghiệp phải gửi thông báo đến Cơ quan đăng ký kinh doanh?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức xử phạt vi phạm hành chính cụ thể là bao nhiêu nếu công ty cổ phần không thông báo thay đổi cổ đông là nhà đầu tư nước ngoài trong thời hạn 10 ngày?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-"Trong trường hợp thay đổi nội dung đăng ký doanh nghiệp theo bản án của Tòa án, thời hạn để cá nhân gửi thông báo đến Cơ quan đăng ký kinh doanh là bao lâu?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức phí cụ thể mà doanh nghiệp phải nộp khi thực hiện công bố nội dung đăng ký doanh nghiệp trên Cổng thông tin quốc gia được quy định là bao nhiêu tiền?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-"Trong quá trình hoạt động, nếu tài sản góp vốn được định giá cao hơn giá trị thực tế, những đối tượng nào phải liên đới chịu trách nhiệm về số chênh lệch và thiệt hại do cố ý định giá cao?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức phí cụ thể để thực hiện thủ tục định giá tài sản góp vốn thông qua tổ chức thẩm định giá là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-Tên bằng tiếng nước ngoài của doanh nghiệp phải tuân thủ quy định gì về hệ chữ cái và cách trình bày so với tên tiếng Việt tại trụ sở chính?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức phí lệ phí cụ thể mà doanh nghiệp phải nộp khi đăng ký tên doanh nghiệp tại Cơ quan đăng ký kinh doanh là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
-"Chi nhánh của doanh nghiệp được định nghĩa như thế nào và yêu cầu về ngành, nghề kinh doanh của chi nhánh ra sao?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Trong trường hợp tên riêng doanh nghiệp chỉ khác biệt bởi từ 'tân' hoặc các cụm từ như 'miền Bắc', 'miền Nam' so với doanh nghiệp đã đăng ký, quy định về tên gây nhầm lẫn có áp dụng cho công ty con không?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Để thay đổi loại tài sản góp vốn so với cam kết ban đầu, thành viên công ty trách nhiệm hữu hạn hai thành viên trở lên cần điều kiện gì và phải hoàn thành việc góp vốn trong thời gian bao lâu?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức xử phạt tiền cụ thể là bao nhiêu đối với doanh nghiệp không thực hiện đăng ký thay đổi nội dung Giấy chứng nhận đăng ký hoạt động chi nhánh trong thời hạn 10 ngày?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-Thành viên chưa góp đủ số vốn đã cam kết có những quyền gì và trách nhiệm tài chính như thế nào đối với các nghĩa vụ của công ty?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức lệ phí cụ thể mà thành viên phải nộp cho công ty để được cấp lại giấy chứng nhận phần vốn góp khi bị mất là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
-Sổ đăng ký thành viên của công ty được lưu giữ tại địa điểm nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Theo Điều 50, thành viên Hội đồng thành viên phải hoàn thành việc góp vốn đã cam kết trong thời hạn cụ thể là bao nhiêu ngày kể từ ngày cấp Giấy chứng nhận đăng ký doanh nghiệp?",unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
-"Để một thành viên có thể chuyển nhượng phần vốn góp cho người không phải là thành viên công ty, họ cần thực hiện các bước chào bán cho các thành viên còn lại như thế nào và sau thời gian bao lâu mới được bán cho người ngoài?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Khi thành viên yêu cầu công ty mua lại phần vốn góp, công ty phải thực hiện việc mua lại theo mức giá nào?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Trường hợp thành viên công ty là cá nhân bị Tòa án tuyên bố mất tích thì quyền và nghĩa vụ của họ được thực hiện như thế nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức phí cụ thể mà người thừa kế phải nộp để chính thức trở thành thành viên công ty sau khi thành viên cũ qua đời là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Căn cứ để xác định hạn ngạch phát thải khí nhà kính bao gồm những yếu tố nào?,factoid,10.0,10.0,10.0,10,10,,Success,"Căn cứ để xác định hạn ngạch phát thải khí nhà kính bao gồm ba yếu tố chính:
+
+1. Chiến lược quốc gia về biến đổi khí hậu và chiến lược, quy hoạch phát triển khác có liên quan;
+2. Kết quả kiểm kê khí nhà kính cấp quốc gia, lĩnh vực và cơ sở thuộc danh mục quy định tại khoản 3 Điều 91 của Luật này;
+3. Lộ trình, phương thức giảm nhẹ phát thải khí nhà kính phù hợp với điều kiện của đất nước và cam kết quốc tế."
+Thời điểm cụ thể bắt đầu triển khai vận hành thị trường các-bon trong nước được quy định là ngày nào?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+"Theo Điều 142, kinh tế tuần hoàn được định nghĩa là gì?",factoid,10.0,10.0,10.0,10,0,,Context Failure (Matched but useless/truncated),"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Điều 142 không được đề cập trong các tài liệu được cung cấp."
+"Theo quy định tại Điều 142, mức phạt cụ thể đối với cơ sở kinh doanh không thiết lập hệ thống quản lý để giảm chất thải là bao nhiêu?",unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về trách nhiệm của các cơ sở kinh doanh trong việc thiết lập hệ thống quản lý và giảm chất thải, nhưng không đề cập đến mức phạt cụ thể."
+Công nghiệp môi trường được định nghĩa như thế nào trong hệ thống ngành kinh tế Việt Nam?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, công nghiệp môi trường được định nghĩa như sau:
+
+""Công nghiệp môi trường là ngành kinh tế trong hệ thống ngành kinh tế Việt Nam cung cấp công nghệ, thiết bị và sản phẩm phục vụ yêu cầu về bảo vệ môi trường.""
+
+Điều này cho thấy công nghiệp môi trường đóng vai trò cung cấp các giải pháp kỹ thuật và vật chất nhằm bảo vệ môi trường trong hệ thống ngành kinh tế của Việt Nam."
+Mức xử phạt hành chính cụ thể đối với việc giả mạo Nhãn sinh thái Việt Nam cho sản phẩm không thân thiện môi trường là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Vốn tự nhiên bao gồm những loại tài nguyên và dịch vụ nào theo quy định?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo quy định trong tài liệu, vốn tự nhiên bao gồm các nguồn tài nguyên thiên nhiên và dịch vụ hệ sinh thái tự nhiên, cụ thể như sau:
+
+- Đất
+- Nước
+- Rừng
+- Nguồn lợi thủy sản
+- Khoáng sản
+- Nhiên liệu hóa thạch
+- Các nguồn năng lượng tự nhiên
+
+Ngoài ra, vốn tự nhiên cũng bao gồm các dịch vụ hệ sinh thái tự nhiên."
+Mức xử phạt cụ thể đối với các cơ quan không thực hiện ưu tiên mua sắm xanh khi sử dụng ngân sách nhà nước là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Chủ dự án đầu tư có trách nhiệm bảo đảm kinh phí cho các hoạt động bảo vệ môi trường nào và việc quản lý kinh phí đó được quy định ra sao?,multi-hop,10.0,10.0,10.0,10,10,,Success,"Chủ dự án đầu tư có trách nhiệm bảo đảm kinh phí cho các hoạt động bảo vệ môi trường sau đây:
+
+a) Đầu tư đổi mới công nghệ xử lý chất thải theo quy định của pháp luật;
+b) Đầu tư xây dựng, vận hành công trình bảo vệ môi trường theo quy định của pháp luật;
+c) Thực hiện chương trình quan trắc, giám sát môi trường (nếu có);
+d) Thực hiện kế hoạch phòng ngừa, ứng phó sự cố môi trường (nếu có);
+e) Các hoạt động bảo vệ môi trường khác theo quy định của pháp luật.
+
+Việc quản lý kinh phí cho hoạt động bảo vệ môi trường được quy định như sau:
+
+- Kinh phí cho các hoạt động bảo vệ môi trường nêu trên phải được thống kê, hạch toán và công khai trên hệ thống kế toán của cơ sở.
+- Kinh phí này phải được báo cáo theo quy định của pháp luật."
+Hạn mức huy động vốn tối đa từ việc phát hành trái phiếu xanh của một doanh nghiệp được quy định cụ thể là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu chỉ mô tả về đặc điểm của trái phiếu xanh và đối tượng phát hành, nhưng không đề cập đến hạn mức huy động vốn tối đa."
+Thẩm quyền quyết định thành lập Quỹ Bảo vệ môi trường Việt Nam thuộc về ai?,factoid,10.0,10.0,10.0,10,10,,Success,"Thẩm quyền quyết định thành lập Quỹ Bảo vệ môi trường Việt Nam thuộc về Thủ tướng Chính phủ, như được đề cập trong Tài liệu 1."
+Mức vốn hoạt động cụ thể bằng tiền mặt của Quỹ Bảo vệ môi trường cấp tỉnh là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu chỉ đề cập đến việc quy định nguồn vốn hoạt động của Quỹ Bảo vệ môi trường Việt Nam và quỹ bảo vệ môi trường cấp tỉnh, nhưng không cung cấp mức cụ thể bằng tiền mặt của quỹ cấp tỉnh."
+Cơ quan nào chịu trách nhiệm làm đầu mối tổng hợp các hoạt động hội nhập và hợp tác quốc tế về bảo vệ môi trường?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo thông tin trong <context>, Bộ Tài nguyên và Môi trường là cơ quan đầu mối tổng hợp các hoạt động hội nhập và hợp tác quốc tế về bảo vệ môi trường."
+Văn bản quy định mức phạt tiền cụ thể là bao nhiêu đối với hành vi vi phạm các điều ước quốc tế về môi trường?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Trách nhiệm của tổ chức chính trị - xã hội trong việc bảo vệ môi trường được quy định như thế nào?,factoid,10.0,10.0,10.0,10,10,,Success,"Trách nhiệm của tổ chức chính trị - xã hội trong việc bảo vệ môi trường được quy định như sau:
+
+a) Tuân thủ pháp luật về bảo vệ môi trường: Tổ chức chính trị - xã hội phải tuân thủ các quy định của pháp luật về bảo vệ môi trường.
+
+b) Tham gia các hoạt động bảo vệ môi trường: Tổ chức này cũng có trách nhiệm tham gia vào các hoạt động nhằm bảo vệ môi trường, góp phần vào việc thực hiện các mục tiêu bảo vệ môi trường của cộng đồng."
+Đại diện cộng đồng dân cư có quyền yêu cầu thông tin từ những bên nào và chủ dự án có nghĩa vụ gì đối với các yêu cầu này?,multi-hop,10.0,10.0,10.0,8,6,,Partial Success (Incomplete Context),"Dựa trên tài liệu cung cấp, đại diện cộng đồng dân cư có quyền yêu cầu chủ dự án đầu tư, cơ sở cung cấp thông tin về bảo vệ môi trường thông qua đối thoại trực tiếp hoặc bằng văn bản. Về phía chủ dự án, họ có nghĩa vụ thực hiện yêu cầu của đại diện cộng đồng dân cư phù hợp với quy định của pháp luật."
+"Bộ trưởng Bộ Công an có trách nhiệm gì trong việc tổ chức kiểm tra, thanh tra về bảo vệ môi trường?",factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, Bộ trưởng Bộ Công an có trách nhiệm tổ chức kiểm tra, thanh tra về bảo vệ môi trường đối với dự án đầu tư, cơ sở thuộc bí mật nhà nước về an ninh. Đồng thời, Bộ trưởng cũng chỉ đạo lực lượng Cảnh sát phòng, chống tội phạm về môi trường kiểm tra việc thực hiện pháp luật về bảo vệ môi trường."
+Quy định về mức tiền xử phạt cụ thể đối với hộ gia đình vi phạm quy định bảo vệ môi trường được nêu như thế nào?,unanswerable,10.0,5.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về trách nhiệm của các tổ chức, cá nhân trong việc bảo vệ môi trường và xử lý vi phạm, nhưng không đề cập cụ thể đến mức tiền xử phạt đối với hộ gia đình vi phạm quy định bảo vệ môi trường."
+Nội dung tranh chấp về môi trường bao gồm những trường hợp cụ thể nào?,factoid,10.0,10.0,10.0,10,10,,Success,"Nội dung tranh chấp về môi trường bao gồm ba trường hợp cụ thể như sau:
+
+a) Tranh chấp về quyền, trách nhiệm bảo vệ môi trường trong khai thác, sử dụng thành phần môi trường;
+
+b) Tranh chấp về xác định nguyên nhân gây ô nhiễm, suy thoái, sự cố môi trường;
+
+c) Tranh chấp về trách nhiệm xử lý, khắc phục hậu quả, bồi thường thiệt hại về môi trường."
+"Trong trường hợp cán bộ phụ trách bảo vệ môi trường lợi dụng chức vụ để bao che cho một tổ chức vi phạm pháp luật dẫn đến sự cố môi trường, người này sẽ phải chịu những hình thức xử lý nào?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Trong trường hợp cán bộ phụ trách bảo vệ môi trường lợi dụng chức vụ để bao che cho một tổ chức vi phạm pháp luật dẫn đến sự cố môi trường, người này sẽ phải chịu những hình thức xử lý sau:
+
+1. Xử lý kỷ luật: Tùy theo tính chất, mức độ vi phạm, người này sẽ bị xử lý kỷ luật theo quy định của pháp luật về kỷ luật trong cơ quan, tổ chức.
+
+2. Xử phạt vi phạm hành chính: Người này có thể bị xử phạt vi phạm hành chính theo quy định của pháp luật về xử phạt vi phạm hành chính.
+
+3. Truy cứu trách nhiệm hình sự: Nếu vi phạm gây ra hậu quả nghiêm trọng, người này có thể bị truy cứu trách nhiệm hình sự theo quy định của pháp luật hình sự.
+
+4. Bồi thường thiệt hại: Người này phải bồi thường thiệt hại do hành vi bao che gây ra theo quy định của pháp luật.
+
+Những hình thức xử lý trên sẽ được áp dụng tùy thuộc vào tính chất, mức độ vi phạm và hậu quả gây ra bởi hành vi bao che của người này."
+"Theo quy định tại Điều 165, cơ quan nào có trách nhiệm báo cáo Quốc hội hằng năm về công tác bảo vệ môi trường?",factoid,10.0,10.0,10.0,10,10,,Success,"Theo quy định tại Điều 165 trong <context>, Chính phủ có trách nhiệm báo cáo Quốc hội hằng năm về công tác bảo vệ môi trường."
+Thời hạn cụ thể để Bộ Tài nguyên và Môi trường thực hiện việc cấp đổi hoặc cấp lại giấy phép môi trường là bao nhiêu ngày?,unanswerable,10.0,5.0,10.0,8,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về thời hạn cụ thể để Bộ Tài nguyên và Môi trường thực hiện việc cấp đổi hoặc cấp lại giấy phép môi trường. Thông tin về thời hạn cấp giấy phép môi trường chỉ được đề cập cho một số cơ quan khác như Bộ Quốc phòng, Bộ Công an, Ủy ban nhân dân cấp tỉnh và Ủy ban nhân dân cấp huyện."
+Trách nhiệm của cơ quan trong việc quản lý ngân sách và hợp tác quốc tế về bảo vệ môi trường được quy định như thế nào?,multi-hop,10.0,10.0,10.0,6,8,,Success,"Trách nhiệm của cơ quan trong việc quản lý ngân sách và hợp tác quốc tế về bảo vệ môi trường được quy định như sau:
+
+1. Về quản lý ngân sách:
+- Tổng hợp để đề xuất phân bổ dự toán ngân sách nhà nước cho hoạt động bảo vệ môi trường (Tài liệu 1).
+- Hướng dẫn việc thống kê, theo dõi và công bố nguồn chi cho bảo vệ môi trường (Tài liệu 1).
+- Trình Chính phủ việc tham gia tổ chức quốc tế, ký kết điều ước quốc tế, thỏa thuận quốc tế về môi trường (Tài liệu 1).
+
+2. Về hợp tác quốc tế:
+- Bộ Tài nguyên và Môi trường là cơ quan đầu mối tổng hợp các hoạt động hội nhập và hợp tác quốc tế về bảo vệ môi trường (Tài liệu 2).
+- Thực hiện hội nhập và hợp tác quốc tế về bảo vệ môi trường trong các lĩnh vực thuộc phạm vi quản lý (Tài liệu 2).
+- Tham gia triển khai thực hiện cam kết quốc tế về biến đổi khí hậu và bảo vệ tầng ô-dôn theo quy định của điều ước quốc tế (Tài liệu 7).
+
+Như vậy, các cơ quan, đặc biệt là Bộ Tài nguyên và Môi trường, có trách nhiệm tổng hợp, đề xuất, trình Chính phủ và thực hiện các hoạt động liên quan đến quản lý ngân sách và hợp tác quốc tế về bảo vệ môi trường."
+Mức phạt tiền cụ thể đối với hành vi làm mất giấy chứng nhận về môi trường là bao nhiêu?,unanswerable,10.0,5.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Bộ Quốc phòng có trách nhiệm gì trong việc ứng phó sự cố môi trường?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, Bộ Quốc phòng có trách nhiệm tổ chức thực hiện pháp luật bảo vệ môi trường trong lĩnh vực quốc phòng. Cụ thể, Bộ Quốc phòng cần xây dựng và tổ chức lực lượng, phương tiện tham gia ứng phó, khắc phục sự cố môi trường. Ngoài ra, Bộ Quốc phòng cũng tham gia quan trắc môi trường xuyên biên giới và nước biển xa bờ theo quy định của pháp luật."
+Quy trình thẩm định báo cáo đánh giá tác động môi trường của Ủy ban nhân dân cấp tỉnh gồm bao nhiêu bước và thời gian thực hiện cụ thể là bao lâu?,unanswerable,10.0,10.0,10.0,3,2,0.0,Generation Failure (Hallucination on Unanswerable),"Dựa trên tài liệu hiện tại, quy trình thẩm định báo cáo đánh giá tác động môi trường của Ủy ban nhân dân cấp tỉnh bao gồm 2 bước chính:
+
+1. Ủy ban nhân dân cấp tỉnh nhận được báo cáo đánh giá tác động môi trường đã được chỉnh sửa, bổ sung (nếu có) từ cơ quan thẩm định.
+2. Trong thời hạn 20 ngày kể từ ngày nhận được báo cáo, người đứng đầu cơ quan thẩm định phải ra quyết định phê duyệt kết quả thẩm định báo cáo đánh giá tác động môi trường.
+
+Vì vậy, quy trình thẩm định báo cáo đánh giá tác động môi trường của Ủy ban nhân dân cấp tỉnh gồm 2 bước và thời gian thực hiện cụ thể là 20 ngày."
+Cơ quan nào có trách nhiệm thực hiện các nhiệm vụ bảo vệ môi trường khác do Ủy ban nhân dân cấp huyện giao?,multi-hop,10.0,10.0,10.0,2,1,,Generation Failure (Failed to extract or reasoned poorly),"Theo thông tin trong <context>, cơ quan có trách nhiệm thực hiện các nhiệm vụ bảo vệ môi trường khác do Ủy ban nhân dân cấp huyện giao là Ban quản lý khu kinh tế. Cụ thể, trong Tài liệu 3 có đề cập: ""d) Thực hiện nhiệm vụ bảo vệ môi trường khác do Ủy ban nhân dân cấp tỉnh ủy quyền theo quy định của pháp luật; đ) Thực hiện nhiệm vụ bảo vệ môi trường khác do Ủy ban nhân dân cấp tỉnh ủy quyền theo quy định của pháp luật; đ) Thực hiện nhiệm vụ bảo vệ môi trường khác do Ủy ban nhân dân cấp tỉnh ủy quyền theo quy định của pháp luật."" Tuy nhiên, trong <context> cũng nêu rõ rằng nhiệm vụ này do Ủy ban nhân dân cấp huyện giao, nên Ban quản lý khu kinh tế là cơ quan chịu trách nhiệm."
+Mức tiền phạt cụ thể mà Ủy ban nhân dân cấp xã được phép áp dụng khi xử lý vi phạm pháp luật về bảo vệ môi trường là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức tiền phạt cụ thể mà Ủy ban nhân dân cấp xã được phép áp dụng khi xử lý vi phạm pháp luật về bảo vệ môi trường. Tài liệu chỉ đề cập đến việc Ủy ban nhân dân cấp xã có trách nhiệm xử lý vi phạm theo quy định của pháp luật, nhưng không nêu rõ mức phạt cụ thể."
+Cơ quan nào có thẩm quyền quy định trách nhiệm bảo vệ môi trường của chính quyền địa phương tại đơn vị hành chính - kinh tế đặc biệt?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo thông tin trong <context>, trách nhiệm bảo vệ môi trường của chính quyền địa phương tại đơn vị hành chính - kinh tế đặc biệt do Quốc hội quy định khi thành lập đơn vị hành chính - kinh tế đặc biệt đó, trừ trường hợp pháp luật về đơn vị hành chính - kinh tế đặc biệt đã quy định."
+"Trong công tác quản lý nguồn thải và chất thải, chính quyền địa phương có những trách nhiệm cụ thể nào và phải chịu trách nhiệm trước cơ quan nào nếu để xảy ra ô nhiễm?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Trong công tác quản lý nguồn thải và chất thải, chính quyền địa phương có một số trách nhiệm cụ thể như sau:
+
+1. Chỉ đạo, hướng dẫn, kiểm tra và tổ chức thực hiện kiểm soát nguồn ô nhiễm.
+2. Tiếp nhận đăng ký môi trường.
+3. Phòng ngừa, ứng phó sự cố môi trường trên địa bàn theo quy định của pháp luật.
+4. Tổ chức quản lý các nguồn thải trên địa bàn theo phân công, phân cấp.
+5. Tổ chức theo dõi, giám sát, cảnh báo, quản lý chất lượng môi trường và quản lý chất thải trên địa bàn theo thẩm quyền hoặc theo phân cấp của Ủy ban nhân dân cấp huyện.
+6. Cải tạo, phục hồi môi trường.
+7. Bảo tồn thiên nhiên và đa dạng sinh học.
+
+Nếu để xảy ra ô nhiễm môi trường trên địa bàn, chính quyền địa phương sẽ chịu trách nhiệm trước Ủy ban nhân dân cấp huyện."
+Cơ quan nào có thẩm quyền quy định phí thẩm định báo cáo đánh giá tác động môi trường đối với hoạt động thẩm định do cơ quan trung ương thực hiện?,factoid,10.0,10.0,10.0,8,3,,Context Failure (Matched but useless/truncated),"Theo tài liệu cung cấp, Bộ trưởng Bộ Tài chính có thẩm quyền quy định chế độ thu, nộp, quản lý và sử dụng phí thẩm định cấp, cấp lại, điều chỉnh giấy phép môi trường thuộc thẩm quyền cấp giấy phép môi trường của cơ quan nhà nước ở trung ương. Tuy nhiên, tài liệu không specifically đề cập đến phí thẩm định báo cáo đánh giá tác động môi trường đối với hoạt động thẩm định do cơ quan trung ương thực hiện. Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này chính xác."
+Thời hạn tối đa để cơ quan nhà nước có thẩm quyền hoàn thành việc giải quyết hồ sơ môi trường được tiếp nhận trước ngày 01/01/2022 là bao nhiêu ngày?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu chỉ đề cập đến thời hạn giải quyết hồ sơ môi trường đối với các cơ quan nhà nước có thẩm quyền, nhưng không có thông tin về thời hạn tối đa để cơ quan nhà nước có thẩm quyền hoàn thành việc giải quyết hồ sơ môi trường được tiếp nhận trước ngày 01/01/2022."
+"Theo Luật Doanh nghiệp, cổ đông sáng lập được định nghĩa như thế nào?",factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu được cung cấp, cổ đông sáng lập được định nghĩa như sau:
+
+Cổ đông sáng lập là những người sở hữu ít nhất một cổ phần phổ thông và đã ký tên trong danh sách cổ đông sáng lập công ty cổ phần."
+Mức phí cụ thể để thực hiện việc truy cập thông tin về đăng ký doanh nghiệp trên Cổng thông tin quốc gia là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Hệ thống thông tin quốc gia về đăng ký doanh nghiệp bao gồm những thành phần cụ thể nào?,factoid,10.0,10.0,10.0,10,10,,Success,"Hệ thống thông tin quốc gia về đăng ký doanh nghiệp bao gồm ba thành phần cụ thể: Cổng thông tin quốc gia về đăng ký doanh nghiệp, Cơ sở dữ liệu quốc gia về đăng ký doanh nghiệp, và cơ sở dữ liệu liên quan. Ngoài ra, hệ thống này còn bao gồm hạ tầng kỹ thuật hệ thống."
+Mức phí cụ thể khi thực hiện thẩm định giá bởi một tổ chức chuyên nghiệp để xác định giá trị cổ phần là bao nhiêu?,unanswerable,10.0,5.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu không đề cập đến mức phí cụ thể khi thực hiện thẩm định giá bởi một tổ chức chuyên nghiệp để xác định giá trị cổ phần."
+"Theo văn bản, những đối tượng nào được xác định là người quản lý doanh nghiệp?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Theo văn bản, người quản lý doanh nghiệp được xác định bao gồm:
+
+- Chủ doanh nghiệp tư nhân
+- Thành viên hợp danh
+- Chủ tịch Hội đồng thành viên
+- Thành viên Hội đồng thành viên
+- Chủ tịch công ty
+- Chủ tịch Hội đồng quản trị
+- Thành viên Hội đồng quản trị
+- Giám đốc hoặc Tổng giám đốc
+- Cá nhân giữ chức danh quản lý khác theo quy định tại Điều lệ công ty."
+Vốn điều lệ của công ty cổ phần phải được góp đủ trong thời hạn bao nhiêu ngày kể từ ngày cấp Giấy chứng nhận đăng ký doanh nghiệp?,unanswerable,10.0,10.0,10.0,2,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu chỉ đề cập đến thời hạn góp vốn điều lệ cho công ty trong một số trường hợp cụ thể, nhưng không có thông tin về thời hạn cụ thể cho công ty cổ phần."
+"Trong trường hợp Nhà nước trưng mua hoặc trưng dụng tài sản của doanh nghiệp, việc thanh toán và bồi thường được quy định như thế nào?",factoid,10.0,10.0,10.0,10,10,,Success,"Trong trường hợp Nhà nước trưng mua hoặc trưng dụng tài sản của doanh nghiệp, việc thanh toán và bồi thường được thực hiện theo quy định của pháp luật về trưng mua, trưng dụng tài sản. Theo tài liệu cung cấp, việc thanh toán, bồi thường phải bảo đảm lợi ích của doanh nghiệp và không phân biệt đối xử giữa các loại hình doanh nghiệp."
+Mức phạt tiền cụ thể là bao nhiêu đối với doanh nghiệp có hành vi cản trở người lao động tham gia hoạt động trong tổ chức chính trị - xã hội?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Doanh nghiệp xã hội cần đáp ứng tiêu chí gì về việc sử dụng lợi nhuận sau thuế hằng năm để tái đầu tư?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, doanh nghiệp xã hội cần sử dụng ít nhất 51% tổng lợi nhuận sau thuế hằng năm của doanh nghiệp để tái đầu tư nhằm thực hiện mục tiêu đã đăng ký. Thông tin này được đề cập trong Tài liệu 1."
+Mức xử phạt hành chính cụ thể là bao nhiêu nếu doanh nghiệp xã hội không thông báo với cơ quan có thẩm quyền khi chấm dứt thực hiện mục tiêu xã hội?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức xử phạt hành chính cụ thể nếu doanh nghiệp xã hội không thông báo với cơ quan có thẩm quyền khi chấm dứt thực hiện mục tiêu xã hội."
+Doanh nghiệp phải làm gì khi chỉ còn lại một người đại diện theo pháp luật cư trú tại Việt Nam và người này muốn xuất cảnh khỏi Việt Nam?,factoid,10.0,10.0,10.0,4,9,,Success,"Khi chỉ còn lại một người đại diện theo pháp luật cư trú tại Việt Nam và người này muốn xuất cảnh khỏi Việt Nam, doanh nghiệp phải thực hiện các bước sau:
+
+1. Người đại diện theo pháp luật phải ủy quyền bằng văn bản cho một cá nhân khác cư trú tại Việt Nam để thực hiện quyền và nghĩa vụ của người đại diện theo pháp luật. Văn bản ủy quyền này phải được lập thành văn bản và có chữ ký của người đại diện theo pháp luật.
+
+2. Người đại diện theo pháp luật vẫn phải chịu trách nhiệm về việc thực hiện quyền và nghĩa vụ đã ủy quyền, kể cả khi đã ủy quyền cho người khác.
+
+3. Việc ủy quyền phải được thực hiện trước khi người đại diện theo pháp luật xuất cảnh khỏi Việt Nam. Trường hợp người đại diện theo pháp luật xuất cảnh trên 30 ngày, việc ủy quyền cũng cần được thực hiện theo quy định tại quy chế quản lý nội bộ của công ty.
+
+4. Việc ủy quyền phải được thông báo kịp thời bằng văn bản đến cơ quan đại diện chủ sở hữu, nếu có.
+
+5. Người được ủy quyền phải đảm bảo thực hiện quyền và nghĩa vụ của người đại diện theo pháp luật một cách trung thực, cẩn trọng, tốt nhất nhằm bảo đảm lợi ích hợp pháp của doanh nghiệp.
+
+6. Doanh nghiệp cần tuân thủ các quy định về trách nhiệm của người đại diện theo pháp luật, như thực hiện quyền và nghĩa vụ được giao một cách trung thực, cẩn trọng, tốt nhất nhằm bảo đảm lợi ích hợp pháp của doanh nghiệp.
+
+7. Doanh nghiệp cũng cần tuân thủ các quy định về việc tôn trọng và không cản trở, gây khó khăn cho việc thành lập tổ chức chính trị, tổ chức chính trị - xã hội và tổ chức đại diện người lao động tại cơ sở trong doanh nghiệp."
+Mức phạt tiền cụ thể đối với doanh nghiệp xã hội không thông báo việc chấm dứt thực hiện mục tiêu xã hội cho cơ quan có thẩm quyền là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+"Trong trường hợp công ty trách nhiệm hữu hạn có hai thành viên mà thành viên là cá nhân làm người đại diện theo pháp luật bị chết, ai sẽ thay thế và thời hạn là bao lâu?",multi-hop,10.0,10.0,10.0,8,7,,Partial Success (Incomplete Context),"Trong trường hợp công ty trách nhiệm hữu hạn có hai thành viên, nếu thành viên là cá nhân làm người đại diện theo pháp luật chết, thành viên còn lại sẽ đương nhiên làm người đại diện theo pháp luật của công ty cho đến khi có quyết định mới của Hội đồng thành viên về người đại diện theo pháp luật của công ty. Thời hạn không được đề cập cụ thể trong tài liệu, nhưng theo thông tin được cung cấp, người đại diện mới sẽ được Hội đồng thành viên quyết định bổ nhiệm khi có nhu cầu."
+Mức xử phạt hành chính cụ thể đối với người đại diện theo pháp luật khi không thực hiện trách nhiệm trung thành với lợi ích của doanh nghiệp là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Nội dung văn bản cử người đại diện theo ủy quyền phải bao gồm những thông tin cá nhân nào của người đại diện?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, văn bản cử người đại diện theo ủy quyền phải bao gồm những thông tin cá nhân sau:
+
+- Họ và tên
+- Địa chỉ liên lạc
+- Quốc tịch
+- Số giấy tờ pháp lý
+
+Đây là các thông tin được đề cập trong phần c) của Tài liệu 1."
+"Theo quy định tại văn bản, những đối tượng cụ thể nào được liệt kê tại khoản 2 Điều 17 của Luật này mà người đại diện theo ủy quyền không được phép thuộc về?",unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Theo thông tin được cung cấp trong <context>, người đại diện theo ủy quyền không được thuộc đối tượng quy định tại khoản 2 Điều 17 của Luật này. Tuy nhiên, thông tin cụ thể về những đối tượng nào được liệt kê tại khoản 2 Điều 17 của Luật này không được đề cập trong các tài liệu được cung cấp. Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+"Theo quy định tại Điều 16, các hành vi nào liên quan đến vốn điều lệ và tài sản góp vốn bị nghiêm cấm?",factoid,10.0,10.0,10.0,10,10,,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này.
+
+Tuy nhiên, thông tin trong tài liệu đề cập đến một số hành vi liên quan đến vốn điều lệ và tài sản góp vốn bị nghiêm cấm, nhưng điều này được nêu trong Điều 17, không phải Điều 16 như câu hỏi đề cập. Dưới đây là các hành vi bị nghiêm cấm:
+
+1. Kê khai khống vốn điều lệ, không góp đủ số vốn điều lệ như đã đăng ký.
+2. Cố ý định giá tài sản góp vốn không đúng giá trị.
+3. Kinh doanh các ngành, nghề cấm đầu tư kinh doanh; kinh doanh ngành, nghề chưa được tiếp cận thị trường đối với nhà đầu tư nước ngoài; kinh doanh ngành, nghề đầu tư kinh doanh có điều kiện khi chưa đủ điều kiện kinh doanh theo quy định của pháp luật hoặc không bảo đảm duy trì đủ điều kiện đầu tư kinh doanh trong quá trình hoạt động.
+4. Lừa đảo, rửa tiền, tài trợ khủng bố."
+"Trong trường hợp người đại diện theo ủy quyền vi phạm trách nhiệm, ai là người phải chịu trách nhiệm trước bên thứ ba và các hạn chế của chủ sở hữu đối với người đại diện có hiệu lực với bên thứ ba không?",multi-hop,10.0,10.0,10.0,10,6,,Partial Success (Incomplete Context),"Trong trường hợp người đại diện theo ủy quyền vi phạm trách nhiệm, theo tài liệu cung cấp, chủ sở hữu, thành viên, cổ đông cử đại diện chịu trách nhiệm trước bên thứ ba đối với trách nhiệm phát sinh liên quan đến quyền và nghĩa vụ được thực hiện thông qua người đại diện theo ủy quyền.
+
+Tuy nhiên, tài liệu không đề cập đến các hạn chế cụ thể của chủ sở hữu đối với người đại diện có hiệu lực với bên thứ ba. Do đó, dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi về các hạn chế của chủ sở hữu đối với người đại diện có hiệu lực với bên thứ ba."
+"Trong trường hợp Cơ quan đăng ký kinh doanh có yêu cầu, đối tượng nào phải nộp Phiếu lý lịch tư pháp?",factoid,10.0,10.0,10.0,10,10,,Success,"Theo thông tin trong <context>, đối tượng phải nộp Phiếu lý lịch tư pháp là người đăng ký thành lập doanh nghiệp khi Cơ quan đăng ký kinh doanh có yêu cầu."
+Mức tiền phạt cụ thể là bao nhiêu đối với trường hợp cơ quan nhà nước sử dụng tài sản nhà nước góp vốn vào doanh nghiệp để thu lợi riêng?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Nếu doanh nghiệp không được cấp Giấy chứng nhận đăng ký doanh nghiệp thì trách nhiệm đối với các hợp đồng đã ký trước khi đăng ký thuộc về ai?,multi-hop,10.0,10.0,10.0,10,9,,Success,"Theo thông tin trong <context>, nếu doanh nghiệp không được cấp Giấy chứng nhận đăng ký doanh nghiệp, người ký kết hợp đồng theo quy định tại khoản 1 Điều này sẽ chịu trách nhiệm thực hiện hợp đồng. Cụ thể, tài liệu 1 nêu rõ: ""Trường hợp doanh nghiệp không được cấp Giấy chứng nhận đăng ký doanh nghiệp, người ký kết hợp đồng theo quy định tại khoản 1 Điều này chịu trách nhiệm thực hiện hợp đồng""."
+Mức phạt cụ thể đối với hành vi bổ sung vào ngân sách hoạt động của cơ quan trái quy định pháp luật là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức phạt cụ thể đối với hành vi bổ sung vào ngân sách hoạt động của cơ quan trái quy định pháp luật. Tài liệu chỉ nêu rõ đây là một vi phạm nhưng không đưa ra mức xử phạt cụ thể."
+"Theo quy định tại Điều 24, trong trường hợp nào Điều lệ công ty bị thu hồi hiệu lực pháp luật?",unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+"Đối với loại hình công ty trách nhiệm hữu hạn một thành viên, những ai có thẩm quyền ký tên vào Điều lệ khi đăng ký doanh nghiệp và khi thực hiện sửa đổi, bổ sung Điều lệ?",multi-hop,10.0,10.0,10.0,7,4,,Generation Failure (Failed to extract or reasoned poorly),"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tuy nhiên, thông tin về việc ký tên vào Điều lệ công ty có thể được tìm thấy trong các tài liệu khác, ví dụ như Tài liệu 1 đề cập đến việc ký tên của Chủ sở hữu, người đại diện theo pháp luật của chủ sở hữu hoặc người đại diện theo pháp luật đối với công ty trách nhiệm hữu hạn một thành viên khi thực hiện sửa đổi, bổ sung Điều lệ công ty. Tuy nhiên, Tài liệu 1 không đề cập đến việc ký tên vào Điều lệ khi đăng ký doanh nghiệp."
+Người thành lập doanh nghiệp có thể thực hiện đăng ký doanh nghiệp thông qua những phương thức nào?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, người thành lập doanh nghiệp hoặc người được ủy quyền có thể thực hiện đăng ký doanh nghiệp thông qua những phương thức sau:
+
+1. Đăng ký doanh nghiệp trực tiếp tại Cơ quan đăng ký kinh doanh.
+2. Đăng ký doanh nghiệp qua dịch vụ bưu chính.
+3. Đăng ký doanh nghiệp qua mạng thông tin điện tử.
+
+Những phương thức này được nêu rõ trong Tài liệu 1."
+Mức phí cụ thể để được cấp tài khoản đăng ký kinh doanh trên Hệ thống thông tin quốc gia là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức phí cụ thể để được cấp tài khoản đăng ký kinh doanh trên Hệ thống thông tin quốc gia."
+"Khi thực hiện đăng ký thay đổi nội dung Giấy chứng nhận đăng ký doanh nghiệp theo quyết định của Tòa án, người đề nghị phải gửi đề nghị trong bao lâu và cơ quan chức năng xử lý trong thời gian nào?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, người đề nghị đăng ký thay đổi nội dung Giấy chứng nhận đăng ký doanh nghiệp gửi đề nghị đăng ký thay đổi đến Cơ quan đăng ký kinh doanh có thẩm quyền trong thời hạn 15 ngày kể từ ngày bản án, quyết định của Tòa án có hiệu lực pháp luật.
+
+Cơ quan đăng ký kinh doanh sẽ xử lý trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ. Trong thời hạn này, Cơ quan đăng ký kinh doanh sẽ xem xét tính hợp lệ của hồ sơ và cấp Giấy chứng nhận đăng ký doanh nghiệp mới. Nếu hồ sơ chưa hợp lệ, Cơ quan đăng ký kinh doanh sẽ thông báo bằng văn bản nội dung cần sửa đổi, bổ sung cho doanh nghiệp. Trường hợp từ chối cấp Giấy chứng nhận đăng ký doanh nghiệp mới, Cơ quan đăng ký kinh doanh sẽ thông báo bằng văn bản cho doanh nghiệp và nêu rõ lý do."
+Mức lệ phí cụ thể bằng tiền mà doanh nghiệp phải nộp khi thực hiện thủ tục cấp lại Giấy chứng nhận đăng ký doanh nghiệp do bị mất là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Cơ quan đăng ký kinh doanh phải cấp Giấy chứng nhận đăng ký doanh nghiệp mới trong thời hạn bao lâu kể từ ngày nhận được đề nghị đăng ký thay đổi theo bản án của Tòa án?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, Cơ quan đăng ký kinh doanh có trách nhiệm cấp Giấy chứng nhận đăng ký doanh nghiệp mới trong thời hạn 03 ngày làm việc kể từ ngày nhận được đề nghị đăng ký quy định tại điểm a khoản này, dựa trên nội dung bản án, quyết định của Tòa án đã có hiệu lực pháp luật hoặc phán quyết của Trọng tài có hiệu lực."
+"Mức lệ phí cụ thể mà doanh nghiệp phải nộp khi thực hiện thông báo thay đổi ngành, nghề kinh doanh là bao nhiêu?",unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức lệ phí cụ thể mà doanh nghiệp phải nộp khi thực hiện thông báo thay đổi ngành, nghề kinh doanh."
+"Trong thời hạn bao nhiêu ngày kể từ ngày bản án của Tòa án có hiệu lực pháp luật, tổ chức đề nghị thay đổi nội dung đăng ký doanh nghiệp phải gửi thông báo đến Cơ quan đăng ký kinh doanh?",factoid,10.0,10.0,10.0,10,10,,Success,"Trong thời hạn 10 ngày kể từ ngày bản án, quyết định của Tòa án có hiệu lực pháp luật, tổ chức đề nghị thay đổi nội dung đăng ký doanh nghiệp phải gửi thông báo thay đổi nội dung đăng ký đến Cơ quan đăng ký kinh doanh có thẩm quyền."
+Mức xử phạt vi phạm hành chính cụ thể là bao nhiêu nếu công ty cổ phần không thông báo thay đổi cổ đông là nhà đầu tư nước ngoài trong thời hạn 10 ngày?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+"Trong trường hợp thay đổi nội dung đăng ký doanh nghiệp theo bản án của Tòa án, thời hạn để cá nhân gửi thông báo đến Cơ quan đăng ký kinh doanh là bao lâu?",factoid,10.0,10.0,10.0,10,10,,Success,"Theo thông tin trong tài liệu, thời hạn để tổ chức, cá nhân gửi thông báo thay đổi nội dung đăng ký doanh nghiệp đến Cơ quan đăng ký kinh doanh có thẩm quyền là 10 ngày kể từ ngày bản án, quyết định của Tòa án có hiệu lực pháp luật hoặc phán quyết của Trọng tài có hiệu lực."
+Mức phí cụ thể mà doanh nghiệp phải nộp khi thực hiện công bố nội dung đăng ký doanh nghiệp trên Cổng thông tin quốc gia được quy định là bao nhiêu tiền?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức phí cụ thể mà doanh nghiệp phải nộp khi thực hiện công bố nội dung đăng ký doanh nghiệp trên Cổng thông tin quốc gia."
+"Trong quá trình hoạt động, nếu tài sản góp vốn được định giá cao hơn giá trị thực tế, những đối tượng nào phải liên đới chịu trách nhiệm về số chênh lệch và thiệt hại do cố ý định giá cao?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Theo thông tin trong <context>, trong trường hợp tài sản góp vốn được định giá cao hơn giá trị thực tế của tài sản tại thời điểm góp vốn, người góp vốn, chủ sở hữu, thành viên Hội đồng thành viên đối với công ty trách nhiệm hữu hạn và công ty hợp danh, thành viên Hội đồng quản trị đối với công ty cổ phần cùng liên đới góp thêm bằng số chênh lệch giữa giá trị được định giá và giá trị thực tế của tài sản góp vốn tại thời điểm kết thúc định giá; đồng thời liên đới chịu trách nhiệm đối với thiệt hại do việc cố ý định giá tài sản góp vốn cao hơn giá trị thực tế."
+Mức phí cụ thể để thực hiện thủ tục định giá tài sản góp vốn thông qua tổ chức thẩm định giá là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức phí cụ thể để thực hiện thủ tục định giá tài sản góp vốn thông qua tổ chức thẩm định giá."
+Tên bằng tiếng nước ngoài của doanh nghiệp phải tuân thủ quy định gì về hệ chữ cái và cách trình bày so với tên tiếng Việt tại trụ sở chính?,multi-hop,10.0,10.0,10.0,9,9,,Success,"Tên bằng tiếng nước ngoài của doanh nghiệp phải được dịch từ tên tiếng Việt sang một trong những tiếng nước ngoài hệ chữ La-tinh. Khi trình bày tại trụ sở chính, tên bằng tiếng nước ngoài của doanh nghiệp được in hoặc viết với khổ chữ nhỏ hơn tên tiếng Việt của doanh nghiệp."
+Mức phí lệ phí cụ thể mà doanh nghiệp phải nộp khi đăng ký tên doanh nghiệp tại Cơ quan đăng ký kinh doanh là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+"Chi nhánh của doanh nghiệp được định nghĩa như thế nào và yêu cầu về ngành, nghề kinh doanh của chi nhánh ra sao?",factoid,10.0,10.0,10.0,10,10,,Success,"Chi nhánh của doanh nghiệp được định nghĩa là đơn vị phụ thuộc của doanh nghiệp, có nhiệm vụ thực hiện toàn bộ hoặc một phần chức năng của doanh nghiệp, bao gồm cả chức năng đại diện theo ủy quyền. Ngành, nghề kinh doanh của chi nhánh phải đúng với ngành, nghề kinh doanh của doanh nghiệp.
+
+Theo tài liệu cung cấp, không có thông tin cụ thể về các yêu cầu cụ thể về ngành, nghề kinh doanh của chi nhánh khác ngoài việc phải đúng với ngành, nghề kinh doanh của doanh nghiệp."
+"Trong trường hợp tên riêng doanh nghiệp chỉ khác biệt bởi từ 'tân' hoặc các cụm từ như 'miền Bắc', 'miền Nam' so với doanh nghiệp đã đăng ký, quy định về tên gây nhầm lẫn có áp dụng cho công ty con không?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, quy định về tên gây nhầm lẫn không áp dụng cho công ty con của công ty đã đăng ký. Cụ thể, điểm g) trong Tài liệu 1 nêu rõ rằng các trường hợp quy định tại các điểm d, đ, e, g và h khoản 2 Điều này không áp dụng đối với công ty con của công ty đã đăng ký."
+"Để thay đổi loại tài sản góp vốn so với cam kết ban đầu, thành viên công ty trách nhiệm hữu hạn hai thành viên trở lên cần điều kiện gì và phải hoàn thành việc góp vốn trong thời gian bao lâu?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Để thay đổi loại tài sản góp vốn so với cam kết ban đầu, thành viên công ty trách nhiệm hữu hạn hai thành viên trở lên cần sự tán thành của trên 50% số thành viên còn lại. Thời gian góp vốn phải được hoàn thành trong thời hạn 90 ngày kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp, không kể thời gian vận chuyển, nhập khẩu tài sản góp vốn, thực hiện thủ tục hành chính để chuyển quyền sở hữu tài sản."
+Mức xử phạt tiền cụ thể là bao nhiêu đối với doanh nghiệp không thực hiện đăng ký thay đổi nội dung Giấy chứng nhận đăng ký hoạt động chi nhánh trong thời hạn 10 ngày?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Thành viên chưa góp đủ số vốn đã cam kết có những quyền gì và trách nhiệm tài chính như thế nào đối với các nghĩa vụ của công ty?,multi-hop,10.0,10.0,10.0,10,10,,Success,"Dựa vào tài liệu cung cấp, thành viên chưa góp đủ số vốn đã cam kết có những quyền và trách nhiệm tài chính như sau:
+
+Quyền:
+- Thành viên chưa góp đủ phần vốn góp đã cam kết có các quyền tương ứng với phần vốn góp đã góp (Theo Tài liệu 2).
+
+Trách nhiệm tài chính:
+- Thành viên chưa góp vốn hoặc chưa góp đủ số vốn đã cam kết phải chịu trách nhiệm tương ứng với tỷ lệ phần vốn góp đã cam kết đối với các nghĩa vụ tài chính của công ty phát sinh trong thời gian trước ngày công ty đăng ký thay đổi vốn điều lệ và tỷ lệ phần vốn góp của thành viên (Theo Tài liệu 1).
+
+Như vậy, thành viên chưa góp đủ số vốn đã cam kết sẽ có trách nhiệm tài chính đối với các nghĩa vụ của công ty trong phạm vi tỷ lệ phần vốn góp đã cam kết, đồng thời họ cũng có quyền tương ứng với phần vốn góp đã góp."
+Mức lệ phí cụ thể mà thành viên phải nộp cho công ty để được cấp lại giấy chứng nhận phần vốn góp khi bị mất là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức lệ phí cụ thể mà thành viên phải nộp cho công ty để được cấp lại giấy chứng nhận phần vốn góp khi bị mất. Tài liệu chỉ đề cập đến việc công ty cấp lại giấy chứng nhận phần vốn góp theo trình tự, thủ tục quy định tại Điều lệ công ty, nhưng không nêu rõ về lệ phí."
+Sổ đăng ký thành viên của công ty được lưu giữ tại địa điểm nào?,factoid,10.0,10.0,10.0,10,10,,Success,Sổ đăng ký thành viên của công ty được lưu giữ tại trụ sở chính của công ty.
+"Theo Điều 50, thành viên Hội đồng thành viên phải hoàn thành việc góp vốn đã cam kết trong thời hạn cụ thể là bao nhiêu ngày kể từ ngày cấp Giấy chứng nhận đăng ký doanh nghiệp?",unanswerable,10.0,10.0,10.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),"Theo tài liệu cung cấp, thành viên Hội đồng thành viên phải góp đủ, đúng hạn số vốn đã cam kết trong thời hạn 90 ngày kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp, không kể thời gian vận chuyển, nhập khẩu tài sản góp vốn, thực hiện thủ tục hành chính để chuyển quyền sở hữu tài sản. Thông tin này có thể được tìm thấy trong Tài liệu 2."
+"Để một thành viên có thể chuyển nhượng phần vốn góp cho người không phải là thành viên công ty, họ cần thực hiện các bước chào bán cho các thành viên còn lại như thế nào và sau thời gian bao lâu mới được bán cho người ngoài?",multi-hop,10.0,10.0,10.0,9,10,,Success,"Để một thành viên có thể chuyển nhượng phần vốn góp cho người không phải là thành viên công ty, họ cần thực hiện các bước chào bán cho các thành viên còn lại theo quy định sau:
+
+1. Chào bán phần vốn góp đó cho các thành viên còn lại theo tỷ lệ tương ứng với phần vốn góp của họ trong công ty với cùng điều kiện chào bán (Theo Điều 52 của Luật doanh nghiệp).
+
+2. Thời gian chào bán cho các thành viên còn lại là 30 ngày kể từ ngày chào bán (Theo Tài liệu 1).
+
+Nếu các thành viên còn lại không mua hoặc không mua hết trong thời hạn 30 ngày, phần vốn góp có thể được chuyển nhượng cho người không phải là thành viên công ty."
+"Khi thành viên yêu cầu công ty mua lại phần vốn góp, công ty phải thực hiện việc mua lại theo mức giá nào?",factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, công ty phải mua lại phần vốn góp của thành viên theo giá thị trường hoặc giá được xác định theo nguyên tắc quy định tại Điều lệ công ty, trừ trường hợp hai bên thỏa thuận được về giá."
+Trường hợp thành viên công ty là cá nhân bị Tòa án tuyên bố mất tích thì quyền và nghĩa vụ của họ được thực hiện như thế nào?,factoid,10.0,10.0,10.0,10,10,,Success,"Trường hợp thành viên công ty là cá nhân bị Tòa án tuyên bố mất tích, quyền và nghĩa vụ của thành viên đó được thực hiện thông qua người quản lý tài sản của thành viên đó theo quy định của pháp luật về dân sự."
+Mức phí cụ thể mà người thừa kế phải nộp để chính thức trở thành thành viên công ty sau khi thành viên cũ qua đời là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức phí cụ thể mà người thừa kế phải nộp để chính thức trở thành thành viên công ty sau khi thành viên cũ qua đời."
 Ai là người có thẩm quyền ký nghị quyết của Hội đồng thành viên và người này có thể đồng thời giữ chức vụ Giám đốc công ty hay không?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Điều kiện cụ thể về trình độ chuyên môn để một cá nhân được bầu làm Kiểm soát viên trong công ty trách nhiệm hữu hạn hai thành viên trở lên là gì?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 "Trong trường hợp Chủ tịch Hội đồng thành viên không triệu tập họp theo yêu cầu, thành viên hoặc nhóm thành viên có quyền tự triệu tập họp sau thời hạn bao nhiêu ngày?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
@@ -617,7 +759,7 @@ Nếu thành viên Hội đồng thành viên phát hiện sai sót trong báo c
 Chủ tịch Hội đồng thành viên phải thông báo kết quả kiểm phiếu cho các thành viên trong thời hạn bao lâu?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Khi nào một nghị quyết của Hội đồng thành viên được coi là hợp pháp ngay cả khi trình tự thông qua không đúng quy định?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Số lượng thành viên của Ban kiểm soát được quy định tối đa là bao nhiêu người?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Theo Điều 66, mức tiền lương cụ thể của Chủ tịch Hội đồng thành viên được quy định là bao nhiêu triệu đồng mỗi tháng?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Theo Điều 66, mức tiền lương cụ thể của Chủ tịch Hội đồng thành viên được quy định là bao nhiêu triệu đồng mỗi tháng?",unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 "Để thực hiện việc giảm vốn điều lệ theo hình thức hoàn trả một phần vốn góp cho thành viên, công ty cần đáp ứng những điều kiện gì về thời gian hoạt động và khả năng tài chính?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Mức xử phạt hành chính cụ thể là bao nhiêu nếu công ty không thông báo việc tăng vốn điều lệ cho Cơ quan đăng ký kinh doanh trong thời hạn 10 ngày?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Thông báo về doanh nghiệp mà người quản lý làm chủ hoặc có cổ phần phải được thực hiện trong thời hạn bao lâu kể từ ngày phát sinh?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
@@ -627,25 +769,25 @@ Tư cách pháp nhân của công ty trách nhiệm hữu hạn một thành vi�
 Trong thời hạn bao nhiêu ngày công ty phải đăng ký thay đổi nội dung đăng ký doanh nghiệp kể từ khi chủ sở hữu chuyển nhượng một phần vốn điều lệ cho người khác?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Chủ sở hữu công ty có các nghĩa vụ gì liên quan đến việc quản lý tài sản cá nhân và điều kiện để được rút lợi nhuận từ công ty?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Hội đồng thành viên của công ty trách nhiệm hữu hạn một thành viên do tổ chức làm chủ sở hữu có tối đa bao nhiêu thành viên?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Quy trình bầu Chủ tịch Hội đồng thành viên theo nguyên tắc đa số được thực hiện cụ thể qua bao nhiêu vòng bỏ phiếu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Quy trình bầu Chủ tịch Hội đồng thành viên theo nguyên tắc đa số được thực hiện cụ thể qua bao nhiêu vòng bỏ phiếu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 "Để một nghị quyết về việc tổ chức lại công ty được thông qua, cần đáp ứng những điều kiện gì về tỷ lệ tán thành và thành phần tham dự họp Hội đồng thành viên?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Mức lương tối đa của Giám đốc hoặc Tổng giám đốc công ty được quy định là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 "Trong công ty trách nhiệm hữu hạn một thành viên do tổ chức làm chủ sở hữu, hợp đồng với người có liên quan của Chủ tịch công ty phải được ai chấp thuận và thời hạn ra quyết định là bao lâu?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Mức phạt tiền cụ thể là bao nhiêu đối với Giám đốc không thông báo kịp thời cho chủ sở hữu công ty về doanh nghiệp mà mình làm chủ?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Nếu một công ty trách nhiệm hữu hạn một thành viên thực hiện tăng vốn điều lệ bằng cách huy động vốn từ người khác và muốn chuyển đổi sang loại hình công ty cổ phần thì việc tổ chức quản lý được quy định như thế nào?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Hồ sơ riêng dùng để lưu giữ các giao dịch giữa công ty trách nhiệm hữu hạn một thành viên với chủ sở hữu là cá nhân phải bao gồm những loại chứng từ và danh mục giấy tờ cụ thể nào?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Hồ sơ riêng dùng để lưu giữ các giao dịch giữa công ty trách nhiệm hữu hạn một thành viên với chủ sở hữu là cá nhân phải bao gồm những loại chứng từ và danh mục giấy tờ cụ thể nào?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Doanh nghiệp nhà nước được tổ chức quản lý dưới những hình thức nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 "Theo Điều 88, mức vốn pháp định tối thiểu để thành lập doanh nghiệp do Nhà nước nắm giữ trên 50% vốn điều lệ là bao nhiêu?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Thành viên Hội đồng thành viên (không phải Chủ tịch) có được phép đồng thời giữ chức danh Tổng giám đốc tại một doanh nghiệp thành viên của công ty đó không?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Trong trường hợp thành viên Hội đồng thành viên có đơn xin từ chức, cơ quan đại diện chủ sở hữu phải ra văn bản chấp thuận trong thời hạn bao nhiêu ngày kể từ ngày nhận đơn?",unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+"Trong trường hợp thành viên Hội đồng thành viên có đơn xin từ chức, cơ quan đại diện chủ sở hữu phải ra văn bản chấp thuận trong thời hạn bao nhiêu ngày kể từ ngày nhận đơn?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 "Trong thời hạn bao nhiêu ngày kể từ ngày có quyết định miễn nhiệm Chủ tịch Hội đồng thành viên, cơ quan đại diện chủ sở hữu phải quyết định bổ nhiệm người thay thế?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức lương và chế độ phụ cấp cụ thể của Chủ tịch Hội đồng thành viên khi thực hiện nhiệm vụ giám sát kết quả hoạt động của công ty được quy định như thế nào?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Mức lương và chế độ phụ cấp cụ thể của Chủ tịch Hội đồng thành viên khi thực hiện nhiệm vụ giám sát kết quả hoạt động của công ty được quy định như thế nào?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Hội đồng thành viên có thể tổ chức họp bất thường trong tình huống nào và theo yêu cầu của những đối tượng nào?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Quy trình cụ thể để bầu Chủ tịch Hội đồng thành viên được thực hiện theo các bước nào?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Quy trình cụ thể để bầu Chủ tịch Hội đồng thành viên được thực hiện theo các bước nào?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 Điều kiện về số lượng thành viên tham dự để một cuộc họp Hội đồng thành viên được coi là hợp lệ là gì?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 "Trong trường hợp biên bản họp Hội đồng thành viên bị sai lệch thông tin, mức phạt tiền cụ thể đối với thư ký cuộc họp là bao nhiêu?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 "Để được bổ nhiệm làm Chủ tịch công ty quá 02 nhiệm kỳ, một cá nhân cần thỏa mãn điều kiện gì về thâm niên công tác?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Biên bản họp Hội đồng thành viên phải được gửi cho các thành viên trong thời hạn bao nhiêu ngày kể từ ngày kết thúc cuộc họp?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Biên bản họp Hội đồng thành viên phải được gửi cho các thành viên trong thời hạn bao nhiêu ngày kể từ ngày kết thúc cuộc họp?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 Ai có thẩm quyền bổ nhiệm Giám đốc hoặc Tổng giám đốc và người này không được có quan hệ gia đình với những đối tượng nào trong công ty?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Trong trường hợp Chủ tịch công ty vắng mặt tại Việt Nam 45 ngày thì mức xử phạt vi phạm hành chính là bao nhiêu nếu không thực hiện ủy quyền?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Một cá nhân có thể đồng thời được bổ nhiệm làm Kiểm soát viên của tối đa bao nhiêu doanh nghiệp nhà nước?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
@@ -653,29 +795,29 @@ Quy trình và thủ tục chi tiết để nộp đơn xin nghỉ việc của 
 "Cơ quan nào có thẩm quyền quyết định và chi trả tiền lương, thù lao cũng như các lợi ích khác cho Kiểm soát viên?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 "Theo Điều 104, Ban kiểm soát có quyền trực tiếp đình chỉ các dự án đầu tư lớn nếu phát hiện sai phạm trong quá trình giám sát không?",unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 Ban kiểm soát họp với tần suất như thế nào để rà soát và đánh giá kết quả kiểm soát?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Thời hạn tối đa mà cơ quan đại diện chủ sở hữu phải thực hiện việc chi trả lương cho Kiểm soát viên là bao nhiêu ngày?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Thời hạn tối đa mà cơ quan đại diện chủ sở hữu phải thực hiện việc chi trả lương cho Kiểm soát viên là bao nhiêu ngày?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Trưởng Ban kiểm soát bị cách chức trong những trường hợp cụ thể nào liên quan đến việc thực hiện nghĩa vụ và thời gian?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Theo quy định tại Điều 109, công ty phải thực hiện công bố thông tin định kỳ về báo cáo tài chính hằng quý vào thời điểm cụ thể nào?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Theo quy định tại Điều 109, công ty phải thực hiện công bố thông tin định kỳ về báo cáo tài chính hằng quý vào thời điểm cụ thể nào?",unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 Trong thời hạn bao nhiêu ngày kể từ ngày kết thúc năm tài chính thì báo cáo tài chính hằng năm đã được kiểm toán phải được báo cáo?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức xử phạt hành chính cụ thể đối với người đại diện theo pháp luật khi công bố thông tin không chính xác là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Mức xử phạt hành chính cụ thể đối với người đại diện theo pháp luật khi công bố thông tin không chính xác là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Cổ phần đã bán của công ty cổ phần được định nghĩa như thế nào theo quy định tại văn bản?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Trình tự các bước cụ thể để Đại hội đồng cổ đông tiến hành bỏ phiếu thông qua việc giảm vốn điều lệ được quy định như thế nào?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
-Mức phạt cụ thể bằng tiền đối với cổ đông không thanh toán đủ số cổ phần đã đăng ký mua là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Mức phạt cụ thể bằng tiền đối với cổ đông không thanh toán đủ số cổ phần đã đăng ký mua là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 "Theo quy định, cổ phần phổ thông có thể chuyển đổi thành cổ phần ưu đãi hay không?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Cổ đông phổ thông có quyền gì đối với việc mua cổ phần mới của công ty?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Cổ đông sở hữu bao nhiêu phần trăm cổ phần ưu đãi thì có quyền yêu cầu triệu tập họp Đại hội đồng cổ đông?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Cổ đông sở hữu bao nhiêu phần trăm cổ phần ưu đãi thì có quyền yêu cầu triệu tập họp Đại hội đồng cổ đông?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 "Để yêu cầu triệu tập họp Đại hội đồng cổ đông, nhóm cổ đông sở hữu 5% cổ phần phổ thông cần thực hiện yêu cầu bằng hình thức nào và phải đính kèm thêm những tài liệu gì?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Cổ đông sở hữu bao nhiêu phần trăm cổ phần phổ thông thì có quyền trực tiếp bãi nhiệm thành viên Hội đồng quản trị mà không cần thông qua Đại hội đồng cổ đông?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 "Theo quy định, những đối tượng nào được phép nắm giữ cổ phần ưu đãi biểu quyết?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Trường hợp cổ đông không thanh toán đủ và đúng hạn số cổ phần đã cam kết mua thì mức phạt tiền cụ thể là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 "Trong vòng 03 năm kể từ ngày cấp Giấy chứng nhận đăng ký doanh nghiệp, cổ đông sáng lập chỉ được chuyển nhượng cổ phần phổ thông cho người không phải là cổ đông sáng lập khi nào?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức xử phạt hành chính cụ thể đối với người đại diện theo pháp luật khi có sai sót trong nội dung cổ phiếu là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Mức xử phạt hành chính cụ thể đối với người đại diện theo pháp luật khi có sai sót trong nội dung cổ phiếu là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 Công ty cổ phần phải thực hiện đăng ký thay đổi vốn điều lệ trong thời hạn bao lâu kể từ ngày hoàn thành đợt bán cổ phần?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Sổ đăng ký cổ đông của công ty cổ phần phải được cơ quan công chứng nào xác nhận trước khi lưu giữ tại trụ sở chính?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Sổ đăng ký cổ đông của công ty cổ phần phải được cơ quan công chứng nào xác nhận trước khi lưu giữ tại trụ sở chính?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 "Trong công ty cổ phần không phải là công ty đại chúng, thông báo chào bán cổ phần cho cổ đông hiện hữu phải được gửi chậm nhất là bao lâu trước ngày kết thúc thời hạn đăng ký mua?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Trình tự và thủ tục để Đại hội đồng cổ đông chấp thuận điều kiện bán cổ phần thuận lợi hơn cho người ngoài khi cổ đông hiện hữu không mua hết được quy định như thế nào?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 "Theo quy định, một cá nhân nhận cổ phần thông qua việc tặng cho thì cần điều kiện gì để chính thức trở thành cổ đông của công ty?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức phí môi giới tối đa khi bán cổ phần cho người môi giới được quy định là bao nhiêu phần trăm?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Mức phí môi giới tối đa khi bán cổ phần cho người môi giới được quy định là bao nhiêu phần trăm?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Ai có thẩm quyền quyết định việc chào bán trái phiếu chuyển đổi riêng lẻ và công ty cần đáp ứng điều kiện gì về thanh toán nợ trước khi chào bán?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Mức xử phạt hành chính cụ thể là bao nhiêu nếu công ty cổ phần không công bố thông tin kết quả đợt chào bán trái phiếu trong thời hạn 10 ngày?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Cổ phần và trái phiếu của công ty cổ phần có thể được thanh toán bằng những loại tài sản nào theo quy định tại Điều 131?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
@@ -683,7 +825,7 @@ Cổ phần và trái phiếu của công ty cổ phần có thể được than
 "Trong thời hạn bao nhiêu ngày kể từ ngày quyết định mua lại cổ phần được thông qua, công ty phải thông báo quyết định đó đến tất cả cổ đông?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Trường hợp công ty không thông báo cho chủ nợ khi tổng giá trị tài sản giảm hơn 10% sau khi mua lại cổ phần thì sẽ bị xử phạt hành chính như thế nào?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 Cổ tức phải được thanh toán đầy đủ trong thời hạn bao lâu kể từ ngày kết thúc họp Đại hội đồng cổ đông thường niên?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức phạt tiền cụ thể đối với thành viên Hội đồng quản trị khi không hoàn trả được số tiền cổ tức chi trả trái quy định là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Mức phạt tiền cụ thể đối với thành viên Hội đồng quản trị khi không hoàn trả được số tiền cổ tức chi trả trái quy định là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Nếu một công ty cổ phần có 15 cổ đông và muốn tổ chức quản lý theo mô hình không có Ban kiểm soát thì Hội đồng quản trị cần đáp ứng những điều kiện gì?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 "Trong cuộc họp Đại hội đồng cổ đông, cổ đông sở hữu bao nhiêu cổ phần ưu đãi cổ tức thì được quyền biểu quyết theo quy định tại văn bản?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Đại hội đồng cổ đông thường niên phải được tổ chức trong thời hạn bao lâu kể từ ngày kết thúc năm tài chính?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
@@ -697,27 +839,27 @@ Cổ đông hoặc người được ủy quyền đến muộn sau khi cuộc h
 "Khi chủ tọa tạm dừng họp trái quy định và Đại hội đồng cổ đông bầu người thay thế để thông qua nghị quyết về việc tổ chức lại công ty, thì nghị quyết này cần đạt tỷ lệ phiếu tán thành tối thiểu là bao nhiêu để được thông qua?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Mức xử phạt hành chính cụ thể đối với hành vi chủ tọa hoãn họp Đại hội đồng cổ đông trái quy định pháp luật là bao nhiêu tiền?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Nghị quyết Đại hội đồng cổ đông phải được thông báo đến cổ đông trong thời hạn bao lâu kể từ ngày được thông qua?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức phạt tiền cụ thể đối với Chủ tịch Hội đồng quản trị nếu không ký tên vào phiếu lấy ý kiến cổ đông là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Mức phạt tiền cụ thể đối với Chủ tịch Hội đồng quản trị nếu không ký tên vào phiếu lấy ý kiến cổ đông là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 "Trong trường hợp cổ đông gửi phiếu lấy ý kiến qua thư điện tử, những điều kiện nào khiến phiếu đó bị coi là không hợp lệ?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Mức xử phạt tiền cụ thể đối với thành viên Hội đồng quản trị khi thực hiện kiểm phiếu không trung thực gây thiệt hại cho công ty là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Biên bản họp Đại hội đồng cổ đông bắt buộc phải được lập bằng ngôn ngữ nào và có thể lập thêm bằng ngôn ngữ nào khác không?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức xử phạt cụ thể đối với người kiểm phiếu nếu có hành vi làm sai lệch kết quả kiểm phiếu dẫn đến thiệt hại cho công ty là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Mức xử phạt cụ thể đối với người kiểm phiếu nếu có hành vi làm sai lệch kết quả kiểm phiếu dẫn đến thiệt hại cho công ty là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 Thời hạn để cổ đông yêu cầu Tòa án hoặc Trọng tài xem xét hủy bỏ nghị quyết Đại hội đồng cổ đông là bao lâu?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 "Nếu biên bản họp Đại hội đồng cổ đông có sự khác biệt giữa bản tiếng Việt và tiếng nước ngoài, đồng thời thư ký từ chối ký thì xử lý như thế nào để biên bản có hiệu lực và áp dụng theo bản nào?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Hội đồng quản trị có thể thông qua các quyết định bằng những hình thức nào và quyền biểu quyết của các thành viên được quy định như thế nào?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Hội đồng quản trị có quyền quyết định mức thù lao cho Giám đốc dựa trên tiêu chí hiệu quả kinh doanh cụ thể nào?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Hội đồng quản trị có quyền quyết định mức thù lao cho Giám đốc dựa trên tiêu chí hiệu quả kinh doanh cụ thể nào?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 "Trong trường hợp Hội đồng quản trị thông qua nghị quyết trái pháp luật gây thiệt hại, trách nhiệm của các thành viên được phân định như thế nào và cổ đông có quyền gì?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức thù lao cụ thể hàng tháng mà một thành viên độc lập Hội đồng quản trị được nhận là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Mức thù lao cụ thể hàng tháng mà một thành viên độc lập Hội đồng quản trị được nhận là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 Chủ tịch Hội đồng quản trị của công ty đại chúng có được đồng thời giữ chức vụ Giám đốc hay không?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 "Trong trường hợp thành viên độc lập Hội đồng quản trị không còn đáp ứng đủ tiêu chuẩn và đã thông báo, Hội đồng quản trị phải tổ chức bầu bổ sung thành viên thay thế trong thời gian bao lâu?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 "Trong trường hợp Chủ tịch Hội đồng quản trị bị Tòa án cấm đảm nhiệm chức vụ và không có người được ủy quyền, việc chọn người thay thế được thực hiện theo quy trình nào?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Quy định về mức lương và các khoản phụ cấp cụ thể của thư ký công ty được nêu như thế nào trong văn bản?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Quy định về mức lương và các khoản phụ cấp cụ thể của thư ký công ty được nêu như thế nào trong văn bản?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 "Trong trường hợp cuộc họp Hội đồng quản trị lần thứ nhất không đủ số lượng thành viên tham gia theo quy định, việc triệu tập lần thứ hai được thực hiện như thế nào và cần bao nhiêu thành viên để tiến hành?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Kiểm soát viên có quyền gì khi tham dự các cuộc họp của Hội đồng quản trị theo quy định?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Trong trường hợp biên bản họp Hội đồng quản trị có sự khác nhau về nội dung giữa bản tiếng Việt và bản tiếng nước ngoài thì nội dung nào được ưu tiên áp dụng?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức thù lao cụ thể hàng tháng dành cho Chủ tịch Ủy ban kiểm toán được quy định là bao nhiêu trong văn bản?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Mức thù lao cụ thể hàng tháng dành cho Chủ tịch Ủy ban kiểm toán được quy định là bao nhiêu trong văn bản?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 Ai có thẩm quyền bổ nhiệm Giám đốc hoặc Tổng giám đốc công ty?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Văn bản quy định cụ thể mức thù lao tối đa mà Hội đồng quản trị được phép chi trả cho công ty kiểm toán độc lập là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Văn bản quy định cụ thể mức thù lao tối đa mà Hội đồng quản trị được phép chi trả cho công ty kiểm toán độc lập là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 "Trong trường hợp một thành viên Hội đồng quản trị trở thành chủ sở hữu của một doanh nghiệp mới, người này phải thực hiện nghĩa vụ gì đối với công ty và trong thời gian bao lâu?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Tổng mức thù lao và tiền thưởng của Hội đồng quản trị do cơ quan nào quyết định và tại thời điểm nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Danh sách người có liên quan và lợi ích có liên quan của công ty phải được lưu giữ tại địa điểm nào theo quy định?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
@@ -725,13 +867,13 @@ Danh sách người có liên quan và lợi ích có liên quan của công ty 
 "Hội đồng quản trị có thẩm quyền chấp thuận các hợp đồng, giao dịch với người có liên quan trong trường hợp nào về giới hạn giá trị tài sản?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 "Khi cổ đông thực hiện khởi kiện nhân danh công ty đối với hành vi lạm dụng chức vụ để tư lợi của người quản lý, chi phí khởi kiện được quy định chi trả như thế nào?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Trưởng Ban kiểm soát do ai bầu và việc bầu được thực hiện theo nguyên tắc nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Danh sách chi tiết các đối tượng cụ thể được quy định tại khoản 2 Điều 17 của Luật này bao gồm những ai?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Danh sách chi tiết các đối tượng cụ thể được quy định tại khoản 2 Điều 17 của Luật này bao gồm những ai?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 "Sau khi kết thúc việc kiểm tra theo yêu cầu của cổ đông, Ban kiểm soát phải báo cáo kết quả trong thời hạn bao lâu và báo cáo cho những đối tượng nào?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Theo quy định tại Điều 172, các tiêu chuẩn chuyên môn cụ thể để lựa chọn đơn vị tư vấn độc lập cho Ban kiểm soát là gì?",unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+"Theo quy định tại Điều 172, các tiêu chuẩn chuyên môn cụ thể để lựa chọn đơn vị tư vấn độc lập cho Ban kiểm soát là gì?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Đại hội đồng cổ đông bãi nhiệm Kiểm soát viên trong những trường hợp nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Mức thù lao cố định hàng tháng của một Kiểm soát viên được quy định cụ thể là bao nhiêu tiền?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Mức thù lao cố định hàng tháng của một Kiểm soát viên được quy định cụ thể là bao nhiêu tiền?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 Cổ đông cần sở hữu cổ phần trong bao lâu để có quyền trực tiếp xem xét các báo cáo của công ty tại trụ sở chính?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Theo quy định tại văn bản, mức phạt tiền cụ thể là bao nhiêu đối với thành viên hợp danh không góp đủ vốn đúng hạn?",unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+"Theo quy định tại văn bản, mức phạt tiền cụ thể là bao nhiêu đối với thành viên hợp danh không góp đủ vốn đúng hạn?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Giấy chứng nhận phần vốn góp của thành viên công ty hợp danh phải bao gồm những nội dung chủ yếu nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Thành viên hợp danh có được quyền tự ý làm chủ doanh nghiệp tư nhân và chuyển nhượng phần vốn góp của mình không?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Khi thành viên hợp danh ứng trước tiền của mình để kinh doanh cho công ty thì có quyền yêu cầu gì?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
@@ -739,7 +881,7 @@ Thành viên hợp danh phải nộp báo cáo tình hình kinh doanh định k�
 Biên bản họp Hội đồng thành viên trong công ty hợp danh phải bao gồm những nội dung chủ yếu nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Hội đồng thành viên có quyền hạn gì đối với các tài khoản ngân hàng của công ty hợp danh?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Một thành viên hợp danh muốn tự nguyện rút vốn khỏi công ty cần thực hiện những thủ tục gì về mặt thời gian và họ phải chịu trách nhiệm về các khoản nợ cũ của công ty trong bao lâu?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Theo quy định tại Điều 185, những hành vi cụ thể nào được coi là vi phạm Điều 180 dẫn đến việc thành viên hợp danh bị khai trừ?",unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+"Theo quy định tại Điều 185, những hành vi cụ thể nào được coi là vi phạm Điều 180 dẫn đến việc thành viên hợp danh bị khai trừ?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Doanh nghiệp tư nhân có được phép phát hành các loại chứng khoán để huy động vốn không?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Mức phạt cụ thể đối với chủ doanh nghiệp tư nhân khi không ghi chép việc tăng vốn vào sổ kế toán là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 "Trong trường hợp chủ doanh nghiệp tư nhân chết, doanh nghiệp sẽ được xử lý như thế nào nếu các người thừa kế không thể đi đến thỏa thuận chung?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
@@ -753,7 +895,7 @@ Công ty mẹ phải nộp báo cáo tổng hợp kết quả kinh doanh hằng 
 Thời hạn gửi hợp đồng hợp nhất đến các chủ nợ và thông báo cho người lao động là bao lâu kể từ ngày thông qua?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Mức xử phạt hành chính cụ thể đối với công ty bị sáp nhập nếu không chuyển giao toàn bộ tài sản cho công ty nhận sáp nhập là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Hợp đồng sáp nhập phải được gửi đến các chủ nợ của công ty trong thời hạn bao nhiêu ngày kể từ ngày thông qua?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-Hồ sơ đăng ký chuyển đổi công ty trách nhiệm hữu hạn thành công ty cổ phần bao gồm những loại giấy tờ cụ thể nào theo quy định tại văn bản?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Hồ sơ đăng ký chuyển đổi công ty trách nhiệm hữu hạn thành công ty cổ phần bao gồm những loại giấy tờ cụ thể nào theo quy định tại văn bản?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 "Khi chuyển đổi công ty cổ phần thành công ty trách nhiệm hữu hạn một thành viên, việc chuyển nhượng cổ phần được thực hiện theo các phương pháp giá nào và trách nhiệm đối với các khoản nợ của công ty mới được quy định ra sao?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Danh mục các loại giấy tờ cụ thể cần nộp trong hồ sơ chuyển đổi doanh nghiệp tư nhân thành công ty cổ phần bao gồm những gì?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Hồ sơ đăng ký chuyển đổi doanh nghiệp tư nhân thành công ty trách nhiệm hữu hạn bao gồm những loại giấy tờ cụ thể nào để Cơ quan đăng ký kinh doanh xem xét?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
@@ -763,7 +905,7 @@ Mức xử phạt hành chính đối với doanh nghiệp không niêm yết c�
 Thứ tự ưu tiên thanh toán các khoản nợ của doanh nghiệp khi giải thể được quy định như thế nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 "Trong trường hợp giải thể do bị thu hồi Giấy chứng nhận đăng ký doanh nghiệp, mức xử phạt hành chính đối với doanh nghiệp không triệu tập họp đúng thời hạn 10 ngày là bao nhiêu?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
 Người đại diện theo pháp luật của doanh nghiệp phải gửi hồ sơ giải thể cho Cơ quan đăng ký kinh doanh trong thời hạn bao lâu?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
-"Trong trường hợp doanh nghiệp bị thu hồi Giấy chứng nhận đăng ký doanh nghiệp, trình tự các bước để thanh lý tài sản và trả nợ được quy định cụ thể như thế nào?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Trong trường hợp doanh nghiệp bị thu hồi Giấy chứng nhận đăng ký doanh nghiệp, trình tự các bước để thanh lý tài sản và trả nợ được quy định cụ thể như thế nào?",unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 "Khi chi nhánh của doanh nghiệp chấm dứt hoạt động, doanh nghiệp đó có những trách nhiệm gì liên quan đến nợ và người lao động của chi nhánh?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
 Mức xử phạt hành chính cụ thể bằng tiền đối với doanh nghiệp không gửi báo cáo sau 06 tháng kể từ ngày hết hạn là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
 "Cụm từ ""doanh nghiệp nhà nước"" trong Luật Ngân sách nhà nước số 83/2015/QH13 được thay thế bằng cụm từ nào theo quy định tại văn bản này?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
