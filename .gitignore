@@ -2,7 +2,7 @@
 # 1. PROJECT SPECIFIC (Vietnamese RAG System)
 # ==========================================
 # Local Data & Documents
-data/*.pdf
+# data/*.pdf
 # data/*.jsonl
 !data/rag_evaluation_dataset.jsonl
 qdrant_storage/
