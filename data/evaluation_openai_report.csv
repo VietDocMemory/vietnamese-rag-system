@@ -49,3 +49,722 @@ Mức xử phạt hành chính cụ thể đối với hành vi không công kha
 Kế hoạch quản lý chất lượng môi trường nước mặt được lập theo thời kỳ bao nhiêu năm?,factoid,10.0,10.0,10.0,10,10,,Success,"Kế hoạch quản lý chất lượng môi trường nước mặt được lập theo thời kỳ 05 năm, như được đề cập trong Tài liệu 1."
 Mức xử phạt hành chính cụ thể đối với hành vi làm rò rỉ hóa chất độc hại vào nguồn nước dưới đất được quy định như thế nào?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về trách nhiệm khắc phục và bồi thường nhưng không đề cập cụ thể đến mức xử phạt hành chính cho hành vi làm rò rỉ hóa chất độc hại vào nguồn nước dưới đất."
 Thời hạn của Kế hoạch quốc gia về quản lý chất lượng môi trường không khí được quy định là bao nhiêu năm?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo thông tin trong <context>, thời hạn của Kế hoạch quốc gia về quản lý chất lượng môi trường không khí là 05 năm."
+"Trong việc thực hiện Kế hoạch quốc gia về quản lý chất lượng môi trường không khí, trách nhiệm của Bộ Tài nguyên và Môi trường và Thủ tướng Chính phủ được phân định như thế nào?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Trong việc thực hiện Kế hoạch quốc gia về quản lý chất lượng môi trường không khí:
+
+- Bộ Tài nguyên và Môi trường có trách nhiệm xây dựng kế hoạch này và trình Thủ tướng Chính phủ ban hành.
+
+- Thủ tướng Chính phủ có trách nhiệm ban hành Kế hoạch quốc gia về quản lý chất lượng môi trường không khí và chỉ đạo thực hiện."
+"Theo quy định tại Điều 16, khu vực ô nhiễm môi trường đất được phân loại dựa trên những tiêu chí nào?",factoid,10.0,10.0,10.0,10,10,,Success,"Dựa vào tài liệu cung cấp, khu vực ô nhiễm môi trường đất được phân loại theo những tiêu chí sau:
+
+- Tiêu chí nguồn gây ô nhiễm
+- Khả năng lan truyền
+- Đối tượng chịu tác động
+
+Tài liệu chỉ đề cập đến những tiêu chí này mà không có thông tin về các tiêu chí khác có thể có trong quy định tại Điều 16."
+Mức kinh phí cụ thể mà Nhà nước chi trả để phục hồi môi trường đất bị ô nhiễm do lịch sử để lại là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức kinh phí cụ thể mà Nhà nước chi trả để phục hồi môi trường đất bị ô nhiễm do lịch sử để lại. Tài liệu chỉ đề cập đến việc Nhà nước xử lý, cải tạo và phục hồi môi trường đất ở khu vực ô nhiễm môi trường đất do lịch sử để lại hoặc không xác định được tổ chức, cá nhân gây ô nhiễm, nhưng không cung cấp thông tin về số tiền cụ thể."
+"Theo Điều 20, di sản thiên nhiên bao gồm những loại hình nào?",factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, di sản thiên nhiên bao gồm các loại hình sau:
+
+a) Vườn quốc gia, khu dự trữ thiên nhiên, khu bảo tồn loài - sinh cảnh, khu bảo vệ cảnh quan được xác lập theo quy định của pháp luật về đa dạng sinh học, lâm nghiệp và thủy sản; danh lam thắng cảnh được công nhận là di sản văn hóa được xác lập theo quy định của pháp luật về di sản văn hóa;
+
+b) Di sản thiên nhiên được tổ chức quốc tế công nhận;
+
+c) Di sản thiên nhiên khác được xác lập, công nhận theo quy định của Luật này."
+Mức xử phạt hành chính cụ thể đối với tổ chức gây ô nhiễm môi trường đất được quy định như thế nào trong Điều 19?,unanswerable,10.0,5.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp không đề cập đến Điều 19 hay quy định cụ thể về mức xử phạt hành chính đối với tổ chức gây ô nhiễm môi trường đất."
+Chiến lược bảo vệ môi trường quốc gia được xây dựng cho giai đoạn bao nhiêu năm và kịch bản biến đổi khí hậu là căn cứ để lập loại quy hoạch nào?,multi-hop,10.0,10.0,10.0,10,10,,Success,"Chiến lược bảo vệ môi trường quốc gia được xây dựng cho giai đoạn 10 năm, tầm nhìn 30 năm. Kịch bản biến đổi khí hậu là căn cứ để lập Quy hoạch bảo vệ môi trường quốc gia."
+Mức chi trả bằng tiền cụ thể cho hộ gia đình tham gia bảo vệ môi trường di sản thiên nhiên từ dịch vụ hệ sinh thái được quy định là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về trách nhiệm bảo vệ di sản thiên nhiên và quyền lợi từ chi trả dịch vụ hệ sinh thái tự nhiên, nhưng không đề cập đến mức chi trả cụ thể cho hộ gia đình tham gia bảo vệ môi trường di sản thiên nhiên từ dịch vụ hệ sinh thái."
+"Đối với chiến lược khai thác và sử dụng tài nguyên cấp quốc gia, việc đánh giá môi trường chiến lược phải được thực hiện vào thời điểm nào và kết quả được thể hiện như thế nào trong hồ sơ trình phê duyệt?",multi-hop,10.0,10.0,10.0,10,2,,Context Failure (Matched but useless/truncated),"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về quy trình đánh giá môi trường chiến lược chung, nhưng không đề cập cụ thể về thời điểm thực hiện đánh giá hoặc cách thể hiện kết quả cho chiến lược khai thác và sử dụng tài nguyên cấp quốc gia."
+Mức phí cụ thể mà cơ quan xây dựng quy hoạch phải nộp cho Bộ Tài nguyên và Môi trường để lấy ý kiến bằng văn bản về nội dung đánh giá môi trường chiến lược là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+"Dựa trên tiêu chí về môi trường, dự án đầu tư được phân chia thành bao nhiêu nhóm?",factoid,10.0,10.0,10.0,10,10,,Success,"Dựa trên tiêu chí về môi trường quy định trong tài liệu, dự án đầu tư được phân chia thành 4 nhóm: nhóm I, nhóm II, nhóm III và nhóm IV."
+Trình tự và thủ tục chi tiết để Bộ trưởng Bộ Tài nguyên và Môi trường lấy ý kiến tham vấn các bên liên quan trong đánh giá môi trường chiến lược được quy định như thế nào?,unanswerable,10.0,10.0,10.0,6,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tuy nhiên, có thể thấy rằng Bộ trưởng Bộ Tài nguyên và Môi trường có trách nhiệm quy định chi tiết về tham vấn trong đánh giá tác động môi trường, bao gồm tham vấn cộng đồng dân cư và các cơ quan, tổ chức liên quan. Thông tin cụ thể về trình tự và thủ tục chi tiết chưa được đề cập trong các tài liệu được cung cấp."
+Dự án đầu tư nhóm IV được định nghĩa như thế nào theo quy định?,factoid,10.0,10.0,10.0,10,10,,Success,"Dự án đầu tư nhóm IV được định nghĩa là dự án không có nguy cơ tác động xấu đến môi trường, bao gồm các dự án không thuộc quy định tại các khoản 3, 4 và 5 Điều này."
+Cơ quan nào có thẩm quyền phê duyệt báo cáo đánh giá sơ bộ tác động môi trường cho dự án nhóm I?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Đối tượng nào thuộc dự án đầu tư nhóm I và nhóm II nhưng không phải thực hiện đánh giá tác động môi trường?,factoid,10.0,10.0,10.0,10,2,,Context Failure (Matched but useless/truncated),"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Quy trình chi tiết để Bộ Tài nguyên và Môi trường thẩm định báo cáo đánh giá tác động môi trường gồm bao nhiêu bước?,unanswerable,10.0,3.333333333333333,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về thời hạn và các bước liên quan đến việc thẩm định báo cáo đánh giá tác động môi trường, nhưng không nêu rõ quy trình chi tiết gồm bao nhiêu bước."
+Hồ sơ đề nghị thẩm định báo cáo đánh giá tác động môi trường bao gồm những tài liệu gì?,factoid,10.0,10.0,10.0,10,10,,Success,"Hồ sơ đề nghị thẩm định báo cáo đánh giá tác động môi trường bao gồm các tài liệu sau:
+
+a) Văn bản đề nghị thẩm định báo cáo đánh giá tác động môi trường;
+b) Báo cáo đánh giá tác động môi trường;
+c) Báo cáo nghiên cứu khả thi hoặc tài liệu tương đương với báo cáo nghiên cứu khả thi của dự án đầu tư."
+"Trong trường hợp dự án đầu tư thuộc danh mục bí mật nhà nước, chủ đầu tư cần thực hiện tham vấn ý kiến chuyên gia trong bao nhiêu ngày?",unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Chuyên gia có bằng thạc sĩ cần có bao nhiêu năm kinh nghiệm công tác để trở thành thành viên hội đồng thẩm định báo cáo đánh giá tác động môi trường?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo thông tin trong <context>, chuyên gia có bằng thạc sĩ hoặc văn bằng trình độ tương đương cần có ít nhất 03 năm kinh nghiệm công tác để trở thành thành viên hội đồng thẩm định báo cáo đánh giá tác động môi trường."
+"Trong trường hợp dự án đầu tư có xả nước thải vào công trình thủy lợi, hội đồng thẩm định phải có thành phần bắt buộc nào và hệ quả pháp lý khi cơ quan quản lý công trình đó không trả lời văn bản đúng hạn là gì?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Trong trường hợp dự án đầu tư có xả nước thải vào công trình thủy lợi, hội đồng thẩm định phải có thành phần bắt buộc là đại diện của cơ quan nhà nước quản lý công trình thủy lợi đó.
+
+Hệ quả pháp lý khi cơ quan quản lý công trình thủy lợi không trả lời văn bản đúng hạn là được coi là đồng thuận với nội dung báo cáo đánh giá tác động môi trường, theo quy định trong Tài liệu 1."
+Thời hạn thẩm định báo cáo đánh giá tác động môi trường đối với dự án đầu tư nhóm I được quy định là bao nhiêu ngày?,factoid,10.0,10.0,10.0,10,8,,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu chỉ đề cập đến thời hạn 20 ngày cho một quá trình cụ thể liên quan đến báo cáo đánh giá tác động môi trường, nhưng không nêu rõ thời hạn thẩm định báo cáo đánh giá tác động môi trường đối với dự án đầu tư nhóm I."
+"Khi có yêu cầu chỉnh sửa báo cáo đánh giá tác động môi trường, cơ quan thẩm định phải thực hiện thủ tục gì và thời gian này có được tính vào thời hạn thẩm định không?",multi-hop,10.0,10.0,10.0,6,9,,Success,"Khi có yêu cầu chỉnh sửa, bổ sung báo cáo đánh giá tác động môi trường, cơ quan thẩm định có trách nhiệm thông báo bằng văn bản cho chủ dự án đầu tư để thực hiện. Theo tài liệu cung cấp, thời gian chủ dự án đầu tư chỉnh sửa, bổ sung báo cáo đánh giá tác động môi trường theo yêu cầu của cơ quan thẩm định không tính vào thời hạn thẩm định.
+
+Tuy nhiên, cần lưu ý rằng thời gian này vẫn nằm trong tổng thời gian thẩm định, nhưng không được tính vào phần thời hạn chính. Thời gian cụ thể để hoàn thành việc chỉnh sửa, bổ sung báo cáo này không được nêu trong tài liệu, nhưng thông thường sẽ được xác định trong văn bản thông báo của cơ quan thẩm định."
+"Đối với dự án đầu tư nằm trên địa bàn từ 02 đơn vị hành chính cấp tỉnh trở lên, cơ quan nào có thẩm quyền thẩm định báo cáo đánh giá tác động môi trường và thời hạn ra quyết định phê duyệt là bao lâu kể từ khi nhận được báo cáo đã chỉnh sửa?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Dựa trên tài liệu hiện tại, Bộ Tài nguyên và Môi trường có thẩm quyền thẩm định báo cáo đánh giá tác động môi trường đối với các dự án đầu tư nằm trên địa bàn từ 02 đơn vị hành chính cấp tỉnh trở lên. Thời hạn ra quyết định phê duyệt kết quả thẩm định báo cáo đánh giá tác động môi trường là 20 ngày kể từ ngày nhận được báo cáo đánh giá tác động môi trường đã được chỉnh sửa, bổ sung theo yêu cầu (nếu có) của cơ quan thẩm định."
+Quy trình thanh toán và mức phí cụ thể khi thuê tư vấn nước ngoài thẩm định báo cáo đánh giá tác động môi trường theo quyết định của Thủ tướng Chính phủ được quy định như thế nào?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về quy trình thanh toán và mức phí cụ thể khi thuê tư vấn nước ngoài thẩm định báo cáo đánh giá tác động môi trường theo quyết định của Thủ tướng Chính phủ. Tài liệu chỉ đề cập đến việc Thủ tướng Chính phủ quyết định việc tổ chức thẩm định báo cáo đánh giá tác động môi trường của dự án đầu tư vượt quá khả năng thẩm định trong nước, cần thuê tư vấn nước ngoài thẩm định, và kết quả thẩm định này là cơ sở để cơ quan nhà nước có thẩm quyền phê duyệt."
+"Đối với dự án không thuộc bí mật nhà nước do Bộ Tài nguyên và Môi trường thẩm định, các cơ quan hành chính địa phương nào sẽ nhận được quyết định phê duyệt kết quả thẩm định báo cáo đánh giá tác động môi trường?",multi-hop,10.0,10.0,10.0,10,1,,Context Failure (Matched but useless/truncated),"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Hồ sơ thẩm định báo cáo đánh giá tác động môi trường đối với dự án đầu tư thuộc bí mật nhà nước về an ninh bao gồm những loại tài liệu cụ thể nào?,unanswerable,10.0,10.0,10.0,4,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tuy nhiên, có thể suy luận rằng hồ sơ thẩm định bao gồm các tài liệu như trong Tài liệu 1, nhưng cụ thể đối với dự án thuộc bí mật nhà nước về an ninh, Bộ Công an sẽ là cơ quan tổ chức thẩm định theo Tài liệu 2."
+"Khi có sự thay đổi chủ dự án đầu tư và dự án này có thay đổi về công nghệ sản xuất làm tăng tác động xấu đến môi trường trước khi vận hành, chủ dự án mới cần thực hiện những trách nhiệm gì?",multi-hop,10.0,10.0,10.0,5,9,,Success,"Dựa trên tài liệu hiện tại, chủ dự án đầu tư mới cần thực hiện các trách nhiệm sau:
+
+1. Tiếp tục thực hiện quyết định phê duyệt kết quả thẩm định báo cáo đánh giá tác động môi trường theo quy định.
+
+2. Thực hiện đánh giá tác động môi trường đối với dự án đầu tư, do có thay đổi về công nghệ sản xuất làm tăng tác động xấu đến môi trường.
+
+3. Thông báo cho cơ quan thẩm định báo cáo đánh giá tác động môi trường và cơ quan chuyên môn về bảo vệ môi trường cấp tỉnh.
+
+4. Thực hiện các nội dung theo quy định của pháp luật về kế hoạch, biện pháp, trang thiết bị phòng ngừa, ứng phó sự cố môi trường.
+
+5. Áp dụng kỹ thuật hiện có tốt nhất theo lộ trình do Chính phủ quy định.
+
+6. Xây dựng, huấn luyện lực lượng tại chỗ cho ứng phó sự cố môi trường.
+
+7. Có công trình, trang thiết bị, phương tiện ứng phó sự cố môi trường theo quy định của pháp luật.
+
+8. Thực hiện phục hồi môi trường sau sự cố môi trường nếu có xảy ra."
+Hồ sơ đề nghị cấp giấy phép môi trường bao gồm những loại giấy tờ và tài liệu pháp lý cụ thể nào?,unanswerable,10.0,5.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về các tài liệu cần thiết trong hồ sơ đề nghị thẩm định báo cáo đánh giá tác động môi trường, nhưng không đề cập cụ thể đến hồ sơ đề nghị cấp giấy phép môi trường."
+Cơ quan nào có thẩm quyền cấp giấy phép môi trường cho cơ sở có nhập khẩu phế liệu từ nước ngoài và dự án này cần có những phương án xử lý cụ thể gì?,multi-hop,10.0,10.0,10.0,7,4,,Generation Failure (Failed to extract or reasoned poorly),"Cơ quan có thẩm quyền cấp giấy phép môi trường cho cơ sở có nhập khẩu phế liệu từ nước ngoài là cơ quan quản lý nhà nước có thẩm quyền. Dự án này cần có những phương án xử lý cụ thể như sau:
+
+1. Có kho, bãi lưu giữ phế liệu đáp ứng quy định.
+2. Hệ thống thiết bị tái chế.
+3. Phương án xử lý tạp chất.
+4. Phương án tái xuất.
+
+Những phương án này cần được nêu rõ trong hồ sơ đề xuất cấp giấy phép môi trường và được cơ quan quản lý nhà nước xem xét, phê duyệt."
+Mức phí cụ thể để thực hiện thủ tục cấp giấy phép môi trường cho các dự án đầu tư nhóm I là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức phí cụ thể để thực hiện thủ tục cấp giấy phép môi trường cho các dự án đầu tư nhóm I."
+"Trong trường hợp Quy hoạch bảo vệ môi trường quốc gia chưa được cơ quan nhà nước có thẩm quyền ban hành, việc cấp giấy phép môi trường dựa trên những căn cứ nào?",factoid,10.0,10.0,10.0,9,3,,Context Failure (Matched but useless/truncated),"Trong trường hợp Quy hoạch bảo vệ môi trường quốc gia chưa được cơ quan nhà nước có thẩm quyền ban hành, việc cấp giấy phép môi trường được thực hiện căn cứ vào các điểm a, b, d và đ khoản này, theo tài liệu cung cấp."
+Mức phí cụ thể mà chủ dự án đầu tư phải nộp để được Ủy ban nhân dân cấp huyện cấp giấy phép môi trường là bao nhiêu?,unanswerable,10.0,1.4285714285714284,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+"Đối với dự án đầu tư thực hiện theo nhiều giai đoạn và có nhiều hạng mục phát sinh chất thải, việc cấp và tích hợp giấy phép môi trường được thực hiện như thế nào?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Đối với dự án đầu tư thực hiện theo nhiều giai đoạn và có nhiều hạng mục phát sinh chất thải, việc cấp và tích hợp giấy phép môi trường được thực hiện như sau:
+
+1. Giấy phép môi trường có thể được cấp cho từng giai đoạn, công trình, hạng mục công trình phát sinh chất thải. Điều này cho phép quản lý môi trường một cách linh hoạt và hiệu quả theo từng giai đoạn của dự án.
+
+2. Giấy phép môi trường được cấp sau sẽ tích hợp nội dung của giấy phép môi trường đã được cấp trước và vẫn còn hiệu lực. Điều này đảm bảo tính liên tục và đồng bộ trong việc quản lý chất thải và bảo vệ môi trường của dự án.
+
+Như vậy, việc cấp và tích hợp giấy phép môi trường cho dự án đầu tư thực hiện theo nhiều giai đoạn và có nhiều hạng mục phát sinh chất thải được thực hiện một cách linh hoạt và hiệu quả, đảm bảo tuân thủ các yêu cầu về bảo vệ môi trường theo từng giai đoạn của dự án."
+Nếu chủ dự án thay đổi địa chỉ trụ sở chính nhưng không thay đổi tên dự án thì thủ tục cấp đổi giấy phép môi trường được quy định cụ thể như thế nào?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về việc tiếp tục thực hiện giấy phép môi trường khi có thay đổi tên dự án hoặc chủ dự án, nhưng không đề cập cụ thể đến trường hợp thay đổi địa chỉ trụ sở chính mà không thay đổi tên dự án."
+Thời hạn cấp giấy phép môi trường đối với hồ sơ thuộc thẩm quyền của Ủy ban nhân dân cấp tỉnh là bao lâu?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, thời hạn cấp giấy phép môi trường đối với hồ sơ thuộc thẩm quyền của Ủy ban nhân dân cấp tỉnh là không quá 30 ngày."
+"Trong trường hợp một dự án có hoạt động xả nước thải vào công trình thủy lợi, quy trình lấy ý kiến và thành phần hội đồng thẩm định được quy định phối hợp như thế nào?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Trong trường hợp dự án đầu tư có hoạt động xả nước thải vào công trình thủy lợi, quy trình lấy ý kiến và thành phần hội đồng thẩm định được quy định như sau:
+
+1. Hội đồng thẩm định phải có đại diện từ cơ quan nhà nước quản lý công trình thủy lợi liên quan. Cơ quan này có trách nhiệm cử thành viên tham gia hội đồng thẩm định.
+
+2. Trước khi phê duyệt kết quả thẩm định, cơ quan thẩm định phải lấy ý kiến bằng văn bản từ cơ quan nhà nước quản lý công trình thủy lợi. 
+
+3. Cơ quan nhà nước quản lý công trình thủy lợi phải có ý kiến bằng văn bản về việc phê duyệt kết quả thẩm định trong thời hạn được quy định. Trường hợp hết thời hạn mà không có văn bản trả lời, được coi là đồng thuận với nội dung báo cáo đánh giá tác động môi trường.
+
+4. Nếu dự án đầu tư có hoạt động xả nước thải vào công trình thủy lợi, cơ quan cấp giấy phép môi trường cũng phải lấy ý kiến bằng văn bản và đạt được sự đồng thuận của cơ quan nhà nước quản lý công trình thủy lợi trước khi cấp giấy phép môi trường.
+
+Như vậy, quy trình này đảm bảo sự phối hợp giữa các cơ quan liên quan để đảm bảo an toàn cho công trình thủy lợi khi có hoạt động xả nước thải."
+Giấy phép môi trường bị thu hồi trong những trường hợp cụ thể nào?,factoid,10.0,10.0,10.0,10,10,,Success,"Giấy phép môi trường bị thu hồi trong các trường hợp sau:
+
+a) Giấy phép cấp không đúng thẩm quyền;
+b) Giấy phép có nội dung trái quy định của pháp luật."
+Mức phí cụ thể (số tiền) mà chủ dự án phải nộp khi thực hiện thẩm định cấp lại giấy phép môi trường là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức phí cụ thể mà chủ dự án phải nộp khi thực hiện thẩm định cấp lại giấy phép môi trường."
+"Trong trường hợp dự án đầu tư có nhập khẩu phế liệu từ nước ngoài làm nguyên liệu sản xuất, chủ dự án phải gửi báo cáo kết quả vận hành thử nghiệm vào thời điểm nào?",factoid,10.0,10.0,10.0,10,10,,Success,"Trong trường hợp dự án đầu tư có nhập khẩu phế liệu từ nước ngoài làm nguyên liệu sản xuất, chủ dự án đầu tư phải gửi báo cáo kết quả vận hành thử nghiệm đến cơ quan có thẩm quyền cấp giấy phép môi trường của dự án trước khi kết thúc vận hành thử nghiệm 45 ngày."
+Mức phí cụ thể mà chủ dự án đầu tư phải nộp khi thực hiện thẩm định cấp lại giấy phép môi trường được quy định là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức phí cụ thể mà chủ dự án đầu tư phải nộp khi thực hiện thẩm định cấp lại giấy phép môi trường. Tài liệu chỉ đề cập đến việc Bộ trưởng Bộ Tài chính quy định chế độ thu, nộp, quản lý và sử dụng phí thẩm định, nhưng không nêu rõ mức phí cụ thể."
+Ủy ban nhân dân cấp xã tiếp nhận hồ sơ đăng ký môi trường thông qua những hình thức nào?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, Ủy ban nhân dân cấp xã tiếp nhận hồ sơ đăng ký môi trường thông qua các hình thức sau:
+
+1. Tiếp nhận trực tiếp.
+2. Qua đường bưu điện.
+3. Nhận bản điện tử thông qua hệ thống dịch vụ công trực tuyến.
+
+Các thông tin này được đề cập trong <context> dưới dạng [Chunk 137] của Tài liệu 1."
+Thời hạn cụ thể để cơ quan có thẩm quyền hoàn thành việc thẩm định và cấp lại giấy phép môi trường theo đề nghị của chủ dự án là bao nhiêu ngày?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về thời hạn cụ thể để cơ quan có thẩm quyền hoàn thành việc thẩm định và cấp lại giấy phép môi trường theo đề nghị của chủ dự án."
+"Đối với dự án đầu tư không thuộc đối tượng phải đánh giá tác động môi trường, thời điểm thực hiện đăng ký môi trường được quy định như thế nào?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Dựa vào thông tin trong tài liệu, đối với dự án đầu tư không thuộc đối tượng phải thực hiện đánh giá tác động môi trường, thời điểm thực hiện đăng ký môi trường được quy định như sau:
+
+- Dự án đầu tư này phải đăng ký môi trường trước khi cơ quan có thẩm quyền cấp giấy phép xây dựng đối với trường hợp phải có giấy phép xây dựng theo quy định của pháp luật về xây dựng.
+- Hoặc trước khi xả chất thải ra môi trường đối với trường hợp không phải có giấy phép xây dựng theo quy định của pháp luật về xây dựng."
+Mức xử phạt vi phạm hành chính đối với hành vi không cập nhật dữ liệu đăng ký môi trường của Ủy ban nhân dân cấp xã là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về trách nhiệm của Ủy ban nhân dân cấp xã trong việc cập nhật dữ liệu đăng ký môi trường, nhưng không đề cập đến mức xử phạt cụ thể cho hành vi không cập nhật."
+"Hạ tầng bảo vệ môi trường của khu sản xuất, kinh doanh, dịch vụ tập trung phải bao gồm những thành phần nào theo quy định?",factoid,10.0,10.0,10.0,10,10,,Success,"Theo quy định trong tài liệu, hạ tầng bảo vệ môi trường của khu sản xuất, kinh doanh, dịch vụ tập trung phải bao gồm các thành phần sau:
+
+a) Hệ thống thu gom, thoát nước mưa;
+b) Hệ thống thu gom, thoát nước và xử lý nước thải tập trung bảo đảm nước thải sau xử lý đáp ứng yêu cầu về bảo vệ môi trường;
+c) Công trình, thiết bị phòng ngừa, ứng phó sự cố môi trường đối với nước thải theo quy định của pháp luật;
+d) Hệ thống quan trắc nước thải tự động, liên tục đối với hệ thống xử lý nước thải tập trung theo quy định của Luật này;
+e) Diện tích cây xanh bảo đảm tỷ lệ theo quy định của pháp luật về xây dựng."
+Văn bản quy định cụ thể thời hạn nộp báo cáo tình hình thực hiện công tác bảo vệ môi trường của Ban quản lý khu kinh tế là vào ngày nào?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Các cụm công nghiệp đang hoạt động phải hoàn thành công trình hạ tầng bảo vệ môi trường trong thời hạn bao lâu kể từ ngày Luật này có hiệu lực?,factoid,10.0,10.0,10.0,9,10,,Success,"Theo tài liệu cung cấp, các cụm công nghiệp đang hoạt động phải hoàn thành công trình hạ tầng bảo vệ môi trường trong thời hạn 24 tháng kể từ ngày Luật này có hiệu lực thi hành. Thông tin này có thể tìm thấy trong Tài liệu 1 và Tài liệu 7."
+Mức xử phạt hành chính cụ thể đối với chủ đầu tư hạ tầng cụm công nghiệp khi không bố trí ít nhất một nhân sự phụ trách bảo vệ môi trường là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức xử phạt hành chính cụ thể đối với chủ đầu tư hạ tầng cụm công nghiệp khi không bố trí ít nhất một nhân sự phụ trách bảo vệ môi trường."
+Cơ sở đang xả nước thải sau xử lý vào hệ thống thoát nước mưa phải chấm dứt việc này trong thời hạn bao lâu kể từ khi Luật có hiệu lực?,factoid,10.0,10.0,10.0,10,10,,Success,"Cơ sở đang xả nước thải sau xử lý vào hệ thống thu gom, thoát nước mưa phải chấm dứt việc này trong thời hạn 24 tháng kể từ ngày Luật này có hiệu lực thi hành."
+"Khi một cụm công nghiệp không có chủ đầu tư xây dựng hạ tầng, trách nhiệm đầu tư công trình bảo vệ môi trường và báo cáo tình trạng hệ thống xử lý nước thải thuộc về cơ quan nào?",multi-hop,10.0,10.0,10.0,2,2,,Generation Failure (Failed to extract or reasoned poorly),"Trong trường hợp cụm công nghiệp không có chủ đầu tư xây dựng và kinh doanh hạ tầng, trách nhiệm đầu tư xây dựng, quản lý và vận hành công trình hạ tầng bảo vệ môi trường cụm công nghiệp sẽ thuộc về Ủy ban nhân dân cấp tỉnh. Cụ thể, tài liệu nêu rõ:
+
+- ""a) Đầu tư xây dựng, quản lý và vận hành công trình hạ tầng bảo vệ môi trường cụm công nghiệp trong trường hợp không có chủ đầu tư xây dựng và kinh doanh hạ tầng cụm công nghiệp;""
+
+- ""b) Lập danh mục các cụm công nghiệp không có hệ thống thu gom, thoát nước và xử lý nước thải tập trung trên địa bàn và báo cáo Ủy ban nhân dân cấp tỉnh;""
+
+Do đó, Ủy ban nhân dân cấp tỉnh sẽ chịu trách nhiệm đầu tư công trình bảo vệ môi trường và báo cáo tình trạng hệ thống xử lý nước thải cho các cụm công nghiệp không có chủ đầu tư xây dựng hạ tầng."
+"Tổ chức, cá nhân sản xuất, nhập khẩu sản phẩm có giá trị tái chế có những lựa chọn nào để thực hiện trách nhiệm tái chế và nghĩa vụ báo cáo tương ứng là gì?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Dựa trên tài liệu hiện tại, tổ chức, cá nhân sản xuất, nhập khẩu sản phẩm có giá trị tái chế có hai lựa chọn để thực hiện trách nhiệm tái chế:
+
+1. Tổ chức tái chế sản phẩm, bao bì.
+2. Đóng góp tài chính vào Quỹ Bảo vệ môi trường Việt Nam để hỗ trợ tái chế sản phẩm, bao bì.
+
+Về nghĩa vụ báo cáo, theo tài liệu, tổ chức, cá nhân quy định tại khoản 1 Điều này phải đăng ký kế hoạch tái chế và báo cáo kết quả tái chế hằng năm đến Bộ Tài nguyên và Môi trường, trừ trường hợp quy định tại điểm b khoản 2 Điều này."
+Mức đóng góp tài chính cụ thể bằng tiền mặt là bao nhiêu đối với mỗi đơn vị sản phẩm bao bì nhựa được quy định tại Điều 54?,unanswerable,10.0,5.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về việc tổ chức, cá nhân phải đóng góp tài chính, nhưng không đề cập đến mức cụ thể bằng tiền mặt đối với mỗi đơn vị sản phẩm bao bì nhựa."
+"Các hộ gia đình sản xuất trong làng nghề thuộc ngành, nghề không khuyến khích phát triển có những trách nhiệm gì về bảo vệ môi trường?",multi-hop,10.0,10.0,10.0,9,8,,Success,"Các hộ gia đình sản xuất trong làng nghề thuộc ngành, nghề không khuyến khích phát triển có trách nhiệm thực hiện các biện pháp bảo vệ môi trường theo quy định của pháp luật. Cụ thể, họ cần thực hiện các biện pháp giảm thiểu tiếng ồn, độ rung, ánh sáng, bụi, bức xạ nhiệt, khí thải, nước thải và xử lý ô nhiễm tại chỗ. Ngoài ra, họ cũng phải thu gom, phân loại, lưu giữ, xử lý chất thải rắn theo quy định của pháp luật."
+"Theo quy định tại Điều 55, mức đóng góp tài chính cụ thể bằng tiền mặt là bao nhiêu đối với mỗi kg bao bì chứa chất độc hại nhập khẩu?",unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu chỉ đề cập đến việc tổ chức, cá nhân phải đóng góp tài chính vào Quỹ Bảo vệ môi trường Việt Nam theo khối lượng hoặc đơn vị sản phẩm, bao bì, nhưng không cung cấp mức cụ thể bằng tiền mặt đối với mỗi kg bao bì chứa chất độc hại nhập khẩu."
+Ủy ban nhân dân cấp tỉnh có trách nhiệm gì đối với các cơ sở gây ô nhiễm môi trường nghiêm trọng và kéo dài tại làng nghề?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, Ủy ban nhân dân cấp tỉnh có trách nhiệm chỉ đạo xây dựng hệ thống thu gom, xử lý nước thải; khu tập kết, xử lý chất thải rắn thông thường, chất thải nguy hại cho làng nghề. Đồng thời, Ủy ban nhân dân cấp tỉnh cũng có trách nhiệm có kế hoạch di dời cơ sở gây ô nhiễm môi trường nghiêm trọng, kéo dài ra khỏi khu dân cư, làng nghề.
+
+Cụ thể, điểm đ) trong Tài liệu 1 nêu rõ: ""Ủy ban nhân dân cấp tỉnh có kế hoạch di dời cơ sở gây ô nhiễm môi trường nghiêm trọng, gây ô nhiễm môi trường kéo dài ra khỏi khu dân cư, làng nghề."""
+"Mức xử phạt cụ thể đối với hành vi lấn chiếm công viên, vườn hoa trong khu dân cư tập trung được quy định như thế nào?",unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về việc bảo vệ và tôn tạo công viên, vườn hoa, nhưng không đề cập đến mức xử phạt cụ thể đối với hành vi lấn chiếm."
+Cơ quan nào có thẩm quyền ban hành tiêu chí về bảo vệ môi trường trong xây dựng và phát triển nông thôn?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, cơ quan có thẩm quyền ban hành tiêu chí về bảo vệ môi trường trong xây dựng và phát triển nông thôn là Thủ tướng Chính phủ."
+Thời hạn cụ thể để Ủy ban nhân dân cấp xã phải hoàn thành việc thống kê các loại chất thải phát sinh trên địa bàn nông thôn là bao lâu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về thời hạn cụ thể để Ủy ban nhân dân cấp xã phải hoàn thành việc thống kê các loại chất thải phát sinh trên địa bàn nông thôn."
+"Trong quá trình thẩm định thiết kế xây dựng, cơ quan cấp giấy phép xây dựng phải lấy ý kiến của cơ quan nào về công trình, thiết bị xử lý nước thải tại chỗ?",factoid,10.0,10.0,10.0,10,10,,Success,"Trong quá trình thẩm định thiết kế xây dựng, cơ quan cấp giấy phép xây dựng phải lấy ý kiến của cơ quan chuyên môn về bảo vệ môi trường về công trình, thiết bị xử lý nước thải tại chỗ. Thông tin này được đề cập trong Tài liệu 1."
+Mức xử phạt hành chính cụ thể đối với hộ gia đình để vật nuôi gây mất vệ sinh trong khu dân cư được quy định là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức xử phạt hành chính cụ thể đối với hộ gia đình để vật nuôi gây mất vệ sinh trong khu dân cư."
+"Việc quản lý bùn nạo vét từ kênh mương và xác vật nuôi chết do dịch bệnh được quy định như thế nào, và cơ quan nào có trách nhiệm chỉ đạo quản lý bùn này?",multi-hop,10.0,10.0,10.0,9,8,,Success,"Việc quản lý bùn nạo vét từ kênh, mương và xác vật nuôi chết do dịch bệnh được quy định như sau:
+
+1. Bùn nạo vét từ kênh, mương, công trình thủy lợi phải được thu gom, tái sử dụng, tái chế và quản lý theo quy định của pháp luật (Theo Tài liệu 1 và Tài liệu 6).
+
+2. Xác vật nuôi bị chết do dịch bệnh phải được thu gom, xử lý theo quy định của pháp luật về quản lý chất thải nguy hại và vệ sinh phòng bệnh (Theo Tài liệu 1).
+
+Về cơ quan có trách nhiệm chỉ đạo quản lý bùn nạo vét từ kênh, mương, Bộ Nông nghiệp và Phát triển nông thôn có trách nhiệm chỉ đạo, tổ chức quản lý bùn nạo vét từ kênh, mương và công trình thủy lợi đáp ứng yêu cầu về bảo vệ môi trường (Theo Tài liệu 1).
+
+Tuy nhiên, không có thông tin cụ thể về cơ quan nào có trách nhiệm chỉ đạo quản lý xác vật nuôi chết do dịch bệnh trong tài liệu được cung cấp."
+Mức xử phạt hành chính cụ thể đối với hành vi đốt ngoài trời phụ phẩm từ cây trồng gây ô nhiễm môi trường là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Loại công nghệ nào được ưu tiên lựa chọn trong xử lý chất thải y tế lây nhiễm?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo thông tin trong <context>, ưu tiên lựa chọn công nghệ không đốt, thân thiện môi trường và đáp ứng yêu cầu về bảo vệ môi trường trong xử lý chất thải y tế lây nhiễm."
+Khoảng cách tối thiểu tính bằng mét từ khu mai táng đến khu dân cư được quy định cụ thể là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu chỉ đề cập đến yêu cầu về vị trí, khoảng cách của khu mai táng, hỏa táng với khu dân cư nhưng không nêu rõ khoảng cách tối thiểu cụ thể."
+"Trong hoạt động xây dựng, Nhà nước khuyến khích sử dụng những loại vật liệu nào?",factoid,10.0,10.0,10.0,10,10,,Success,"Trong hoạt động xây dựng, Nhà nước khuyến khích sử dụng những loại vật liệu không nung và vật liệu thân thiện môi trường, theo thông tin được cung cấp trong <context>."
+"Khi thực hiện phá dỡ công trình, hộ gia đình tại đô thị phải nộp phí thu gom chất thải cho cơ sở xử lý là bao nhiêu tiền một mét khối?",unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về việc quản lý chất thải rắn sinh hoạt của hộ gia đình, cá nhân tại đô thị, nhưng không đề cập đến mức phí cụ thể cho việc thu gom chất thải từ hoạt động phá dỡ công trình."
+"Theo quy định về bảo vệ môi trường trong hoạt động giao thông vận tải, việc vận chuyển nguyên vật liệu và hàng hóa có nguy cơ gây ô nhiễm cần tuân thủ những yêu cầu kỹ thuật gì?",multi-hop,10.0,10.0,10.0,8,9,,Success,"Theo quy định về bảo vệ môi trường trong hoạt động giao thông vận tải, việc vận chuyển nguyên vật liệu và hàng hóa có nguy cơ gây ô nhiễm cần tuân thủ một số yêu cầu kỹ thuật như sau:
+
+1. **Thiết bị và phương tiện chuyên dụng**: Việc vận chuyển hàng hóa, vật liệu có nguy cơ gây ô nhiễm, sự cố môi trường phải được thực hiện bằng thiết bị, phương tiện chuyên dụng, đảm bảo không rò rỉ, phát tán ra môi trường (Tài liệu 1).
+
+2. **Che chắn và ngăn ngừa rơi vãi**: Phương tiện vận chuyển nguyên liệu, vật liệu, chất thải phải được che chắn kỹ lưỡng, không để rơi vãi gây ô nhiễm môi trường khi tham gia giao thông (Tài liệu 2).
+
+3. **Quy chuẩn kỹ thuật môi trường**: Các thông số về chất lượng môi trường, hàm lượng của chất ô nhiễm có trong nguyên liệu, nhiên liệu, vật liệu, thiết bị, sản phẩm, hàng hóa, chất thải phải tuân theo quy chuẩn kỹ thuật môi trường do cơ quan nhà nước có thẩm quyền ban hành (Tài liệu 3).
+
+4. **Kiểm soát nguồn phát sinh và công bố thông tin**: Cần kiểm soát nguồn phát sinh chất ô nhiễm, công bố thông tin, dán nhãn, đánh giá sự phù hợp, kiểm tra đối với chất ô nhiễm khó phân hủy (Tài liệu 4).
+
+5. **Danh mục chất thải nguy hại**: Bộ trưởng Bộ Tài nguyên và Môi trường ban hành danh mục chất thải nguy hại, chất thải công nghiệp phải kiểm soát và chất thải rắn công nghiệp thông thường, yêu cầu kỹ thuật về bảo vệ môi trường đối với phương tiện vận chuyển (Tài liệu 5).
+
+6. **Áp dụng kỹ thuật hiện có tốt nhất**: Chủ dự án đầu tư, cơ sở sản xuất, kinh doanh, dịch vụ có nguy cơ gây ô nhiễm môi trường cần nghiên cứu, áp dụng kỹ thuật hiện có tốt nhất theo lộ trình do Chính phủ quy định (Tài liệu 6).
+
+7. **Bộ phận lọc và giảm thiểu khí thải**: Phương tiện giao thông, máy móc, thiết bị, công trình xây dựng phát tán bụi, khí thải phải có bộ phận lọc, giảm thiểu khí thải, thiết bị che chắn hoặc biện pháp khác để giảm thiểu bụi, bảo đảm quy chuẩn kỹ thuật môi trường (Tài liệu 7).
+
+8. **Hướng dẫn kỹ thuật về vận chuyển chất thải nguy hại**: Bộ trưởng Bộ Tài nguyên và Môi trường hướng dẫn kỹ thuật về phương tiện, thiết bị lưu chứa, vận chuyển, phòng ngừa, ứng phó sự cố trong quá trình vận chuyển, xử lý chất thải nguy hại (Tài liệu 8)."
+Mức xử phạt hành chính cụ thể là bao nhiêu đối với hành vi hộ gia đình tại nông thôn đổ chất thải xây dựng xuống sông ngòi làm ảnh hưởng cảnh quan?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức xử phạt hành chính cụ thể đối với hành vi đổ chất thải xây dựng xuống sông ngòi làm ảnh hưởng cảnh quan của hộ gia đình tại nông thôn."
+"Cá nhân khi đến các khu di tích, điểm du lịch, cơ sở lưu trú du lịch có những nghĩa vụ gì về bảo vệ môi trường?",factoid,10.0,10.0,10.0,10,10,,Success,"Cá nhân khi đến các khu di tích, điểm du lịch, cơ sở lưu trú du lịch có những nghĩa vụ về bảo vệ môi trường như sau:
+
+1. Tuân thủ quy định, quy chế giữ gìn vệ sinh, bảo vệ môi trường tại khu vực di tích, điểm du lịch.
+2. Thải bỏ chất thải đúng nơi quy định, hạn chế phát sinh chất thải không cần thiết.
+3. Giữ gìn vệ sinh công cộng, không để rác thải bừa bãi.
+4. Không xâm hại cảnh quan và các loại sinh vật trong khu vực.
+
+Những nghĩa vụ này được nêu rõ trong tài liệu cung cấp."
+"Theo quy định tại Điều 67, mức tiền ký quỹ bảo vệ môi trường cụ thể mà tổ chức khai thác khoáng sản phải nộp là bao nhiêu?",unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu chỉ đề cập đến yêu cầu tổ chức, cá nhân phải ký quỹ bảo vệ môi trường khi khai thác khoáng sản, nhưng không đưa ra mức cụ thể cần phải nộp."
+"Trong nội dung của phương án cải tạo, phục hồi môi trường, những thông tin nào liên quan đến kế hoạch thời gian và dự toán tài chính cần được quy định?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Trong nội dung của phương án cải tạo, phục hồi môi trường, theo tài liệu cung cấp, những thông tin liên quan đến kế hoạch thời gian và dự toán tài chính cần được quy định như sau:
+
+1. Kế hoạch thực hiện phân chia theo từng năm, từng giai đoạn cải tạo, phục hồi môi trường.
+2. Chương trình quan trắc môi trường trong thời gian cải tạo, phục hồi môi trường.
+3. Kế hoạch kiểm tra, xác nhận hoàn thành phương án.
+4. Bảng dự toán kinh phí để tiến hành cải tạo, phục hồi môi trường cho từng hạng mục cải tạo, phục hồi môi trường.
+5. Các khoản tiền ký quỹ theo lộ trình.
+
+Những thông tin này giúp đảm bảo việc cải tạo, phục hồi môi trường được thực hiện một cách có kế hoạch và có ngân sách phù hợp."
+Mức kinh phí cụ thể tối thiểu mà các đơn vị phải thực hiện ký quỹ cải tạo môi trường theo lộ trình là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về việc cần thực hiện ký quỹ bảo vệ môi trường nhưng không đề cập đến mức kinh phí cụ thể tối thiểu theo lộ trình cho việc cải tạo môi trường."
+"Cơ quan nào có trách nhiệm chủ trì, phối hợp với các Bộ, cơ quan ngang Bộ để hướng dẫn và tổ chức thực hiện các yêu cầu về bảo vệ môi trường trong quản lý chất ô nhiễm khó phân hủy?",factoid,10.0,10.0,10.0,9,10,,Success,"Theo thông tin trong <context>, Bộ Tài nguyên và Môi trường là cơ quan chủ trì, phối hợp với các Bộ, cơ quan ngang Bộ có liên quan để hướng dẫn và tổ chức thực hiện các yêu cầu về bảo vệ môi trường trong quản lý chất ô nhiễm khó phân hủy.pecifically, this can be found in Tài liệu 1, where it states that ""Bộ Tài nguyên và Môi trường chủ trì, phối hợp với Bộ, cơ quan ngang Bộ có liên quan hướng dẫn và tổ chức thực hiện quy định tại khoản 1 Điều này; tích hợp thông tin quan trắc các chất ô nhiễm khó phân hủy trong báo cáo hiện trạng môi trường quốc gia""."
+"Mức xử phạt hành chính cụ thể đối với hành vi không dán nhãn đối với hàng hóa, thiết bị có chứa chất ô nhiễm khó phân hủy được quy định như thế nào?",unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Phế liệu nhập khẩu từ nước ngoài vào Việt Nam cần đáp ứng những điều kiện chung nào theo quy định?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo quy định trong tài liệu, phế liệu nhập khẩu từ nước ngoài vào Việt Nam cần đáp ứng những điều kiện chung sau:
+
+1. Phải đáp ứng quy chuẩn kỹ thuật môi trường.
+2. Phải thuộc Danh mục phế liệu được phép nhập khẩu từ nước ngoài làm nguyên liệu sản xuất do Thủ tướng Chính phủ ban hành.
+
+Ngoài ra, việc áp dụng quy chuẩn kỹ thuật môi trường về quản lý phế liệu nhập khẩu từ nước ngoài làm nguyên liệu sản xuất cũng cần bảo đảm các nguyên tắc như:
+
+- Quy chuẩn kỹ thuật môi trường là một trong các căn cứ để thông quan lô hàng phế liệu nhập khẩu. Trường hợp không đáp ứng yêu cầu, phải tái xuất theo quy định của pháp luật.
+- Có kho, bãi lưu giữ phế liệu đáp ứng quy định; hệ thống thiết bị tái chế; phương án xử lý tạp chất; phương án tái xuất đối với dự án đầu tư, cơ sở có nhập khẩu phế liệu từ nước ngoài làm nguyên liệu sản xuất.
+
+Những điều kiện này đảm bảo việc quản lý và sử dụng phế liệu nhập khẩu một cách an toàn và hiệu quả, đồng thời bảo vệ môi trường."
+Thời hạn cụ thể để cơ quan có thẩm quyền tiến hành kiểm tra việc ký quỹ bảo vệ môi trường của doanh nghiệp nhập khẩu phế liệu là bao nhiêu ngày?,unanswerable,10.0,5.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về thời hạn cụ thể để cơ quan có thẩm quyền tiến hành kiểm tra việc ký quỹ bảo vệ môi trường của doanh nghiệp nhập khẩu phế liệu."
+Việc quản lý chất thải phóng xạ được thực hiện theo quy định của pháp luật nào?,factoid,10.0,10.0,10.0,10,10,,Success,"Việc quản lý chất thải phóng xạ được thực hiện theo quy định của pháp luật về năng lượng nguyên tử, theo thông tin được cung cấp trong tài liệu 1."
+"Trong quản lý nước thải, trường hợp nào nước thải được quản lý như chất thải nguy hại và điều kiện để xả nước thải ra nguồn tiếp nhận là gì?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Trong quản lý nước thải, theo tài liệu cung cấp, nước thải có chứa thông số môi trường nguy hại vượt ngưỡng quy định sẽ được quản lý như chất thải nguy hại. Điều này được quy định trong Tài liệu 2.
+
+Đối với điều kiện xả nước thải ra nguồn tiếp nhận, theo tài liệu cung cấp, nước thải phải được thu gom và xử lý đạt quy chuẩn kỹ thuật môi trường trước khi xả ra nguồn tiếp nhận. Điều này được quy định trong Tài liệu 1.
+
+Tóm lại, nước thải được quản lý như chất thải nguy hại khi chứa thông số môi trường nguy hại vượt ngưỡng quy định, và điều kiện để xả nước thải ra nguồn tiếp nhận là nước thải phải được thu gom và xử lý đạt quy chuẩn kỹ thuật môi trường."
+Cơ quan nào có thẩm quyền ban hành danh mục chất thải nguy hại và quy định yêu cầu kỹ thuật đối với phương tiện vận chuyển chất thải rắn sinh hoạt?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu được cung cấp, Bộ trưởng Bộ Tài nguyên và Môi trường có thẩm quyền ban hành danh mục chất thải nguy hại, chất thải công nghiệp phải kiểm soát và chất thải rắn công nghiệp thông thường; đồng thời cũng yêu cầu kỹ thuật về bảo vệ môi trường đối với phương tiện vận chuyển chất thải rắn sinh hoạt, chất thải rắn công nghiệp thông thường và chất thải nguy hại."
+Mức xử phạt cụ thể đối với hành vi thải bỏ chất thải nhựa trực tiếp vào hệ thống thoát nước hoặc đại dương là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức xử phạt cụ thể đối với hành vi thải bỏ chất thải nhựa trực tiếp vào hệ thống thoát nước hoặc đại dương."
+"Nội dung chính của kiểm toán môi trường đối với cơ sở sản xuất, kinh doanh, dịch vụ bao gồm những gì?",factoid,10.0,10.0,10.0,10,10,,Success,"Nội dung chính của kiểm toán môi trường đối với cơ sở sản xuất, kinh doanh, dịch vụ bao gồm:
+
+a) Việc sử dụng năng lượng, hóa chất, nguyên liệu, phế liệu nhập khẩu từ nước ngoài làm nguyên liệu sản xuất;
+
+b) Kiểm soát ô nhiễm và quản lý chất thải.
+
+Những nội dung này được đề cập trong Tài liệu 1."
+Mức xử phạt hành chính đối với hộ gia đình không thực hiện phân loại chất thải thực phẩm tại nguồn là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+"Trong trường hợp không thể lựa chọn cơ sở thu gom, vận chuyển chất thải rắn sinh hoạt thông qua đấu thầu, Ủy ban nhân dân các cấp phải thực hiện theo hình thức nào?",factoid,10.0,10.0,10.0,10,10,,Success,"Trong trường hợp không thể lựa chọn cơ sở thu gom, vận chuyển chất thải rắn sinh hoạt thông qua đấu thầu, Ủy ban nhân dân các cấp phải thực hiện theo hình thức đặt hàng hoặc giao nhiệm vụ theo quy định của pháp luật, như được nêu trong <context>."
+Ủy ban nhân dân cấp xã có trách nhiệm gì trong việc phối hợp xác định các thông tin thu gom chất thải và hướng dẫn cộng đồng dân cư?,multi-hop,10.0,10.0,10.0,10,10,,Success,"Ủy ban nhân dân cấp xã có trách nhiệm phối hợp xác định các thông tin thu gom chất thải rắn sinh hoạt, cụ thể như sau:
+
+- Chủ trì, phối hợp với cơ sở thu gom, vận chuyển chất thải rắn sinh hoạt, cộng đồng dân cư, tổ chức chính trị - xã hội ở cơ sở để xác định thời gian, địa điểm, tần suất và tuyến thu gom chất thải rắn sinh hoạt (Theo Tài liệu 3).
+
+- Hướng dẫn hộ gia đình, cá nhân chuyển giao chất thải rắn sinh hoạt cho cơ sở thu gom, vận chuyển hoặc đến điểm tập kết đúng quy định (Theo Tài liệu 3).
+
+- Hướng dẫn cộng đồng dân cư giám sát và công khai trường hợp không tuân thủ quy định về phân loại, thu gom chất thải rắn sinh hoạt (Theo Tài liệu 3)."
+Việc lựa chọn cơ sở xử lý chất thải rắn sinh hoạt của Ủy ban nhân dân các cấp được thực hiện như thế nào và loại hình đầu tư nào không được khuyến khích?,multi-hop,10.0,10.0,10.0,10,10,,Success,"Việc lựa chọn cơ sở xử lý chất thải rắn sinh hoạt của Ủy ban nhân dân các cấp được thực hiện thông qua các hình thức sau:
+
+1. Hình thức đấu thầu theo quy định của pháp luật về đấu thầu.
+2. Trường hợp không thể lựa chọn thông qua hình thức đấu thầu, thì thực hiện theo hình thức đặt hàng hoặc giao nhiệm vụ theo quy định của pháp luật.
+
+Loại hình đầu tư không được khuyến khích là đầu tư cơ sở thực hiện dịch vụ xử lý chất thải rắn sinh hoạt chỉ có phạm vi phục vụ trên địa bàn một đơn vị hành chính cấp xã."
+Mức phạt tiền cụ thể đối với hộ gia đình không thực hiện phân loại chất thải rắn sinh hoạt theo đúng quy định là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức phạt tiền cụ thể đối với hộ gia đình không thực hiện phân loại chất thải rắn sinh hoạt theo đúng quy định."
+Chất thải rắn công nghiệp thông thường được phân loại thành các nhóm cụ thể nào?,factoid,10.0,10.0,10.0,10,10,,Success,"Chất thải rắn công nghiệp thông thường được phân loại thành ba nhóm cụ thể như sau:
+
+a) Nhóm chất thải rắn công nghiệp thông thường được tái sử dụng, tái chế làm nguyên liệu sản xuất;
+
+b) Nhóm chất thải rắn công nghiệp thông thường đáp ứng tiêu chuẩn, quy chuẩn kỹ thuật, hướng dẫn kỹ thuật được sử dụng trong sản xuất vật liệu xây dựng và san lấp mặt bằng;
+
+c) Nhóm chất thải rắn công nghiệp thông thường phải xử lý."
+Mức xử phạt hành chính cụ thể đối với hộ gia đình không thực hiện phân loại chất thải rắn sinh hoạt trước ngày 31 tháng 12 năm 2024 là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Phương tiện vận chuyển chất thải rắn công nghiệp thông thường phải xử lý cần đáp ứng những yêu cầu gì về thiết bị và vận hành?,factoid,10.0,10.0,10.0,9,8,,Success,"Phương tiện vận chuyển chất thải rắn công nghiệp thông thường phải xử lý cần đáp ứng những yêu cầu sau:
+
+1. Phải có thiết bị định vị đáp ứng yêu cầu kỹ thuật, hoạt động theo tuyến đường và thời gian quy định của Ủy ban nhân dân cấp tỉnh.
+
+2. Trong quá trình vận hành, cần lập nhật ký vận hành các hệ thống, phương tiện, thiết bị xử lý bao gồm sơ chế, tái sử dụng, tái chế, đồng xử lý, thu hồi năng lượng chất thải rắn công nghiệp thông thường; sổ theo dõi số lượng các sản phẩm tái chế hoặc thu hồi từ chất thải rắn công nghiệp thông thường (nếu có).
+
+Những yêu cầu này được nêu rõ trong Tài liệu 1 và Tài liệu 2."
+Mức xử phạt hành chính cụ thể đối với hành vi không phân loại chất thải rắn công nghiệp thông thường tại nguồn được quy định như thế nào?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về trách nhiệm phân loại và quản lý chất thải rắn công nghiệp thông thường, nhưng không đề cập đến mức xử phạt hành chính cụ thể cho hành vi không phân loại tại nguồn."
+Chủ nguồn thải chất thải nguy hại phải thực hiện việc khai báo khối lượng và loại chất thải này ở đâu?,factoid,10.0,10.0,10.0,10,10,,Success,"Chủ nguồn thải chất thải nguy hại phải thực hiện việc khai báo khối lượng và loại chất thải nguy hại trong hồ sơ đề nghị cấp giấy phép môi trường hoặc nội dung đăng ký môi trường, theo thông tin được cung cấp trong tài liệu."
+Mức xử phạt hành chính cụ thể đối với chủ cơ sở xử lý chất thải rắn công nghiệp thông thường khi không lập nhật ký vận hành các hệ thống thiết bị là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+"Ai là người có thẩm quyền hướng dẫn kỹ thuật về phương tiện, thiết bị lưu chứa và vận chuyển chất thải nguy hại?",factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, Bộ trưởng Bộ Tài nguyên và Môi trường là người có thẩm quyền hướng dẫn kỹ thuật về phương tiện, thiết bị lưu chứa, vận chuyển, phòng ngừa, ứng phó sự cố trong quá trình vận chuyển, xử lý chất thải nguy hại."
+Mức tiền ký quỹ bảo vệ môi trường cụ thể cho hoạt động chôn lấp chất thải nguy hại được quy định là bao nhiêu triệu đồng?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu chỉ đề cập đến việc Bộ trưởng Bộ Tài nguyên và Môi trường ban hành tiêu chí về công nghệ xử lý chất thải nguy hại và hướng dẫn thực hiện, nhưng không nêu rõ mức ký quỹ cụ thể."
+"Hệ thống thu gom, xử lý nước thải tại các khu dân cư tập trung mới phải được thiết kế như thế nào so với hệ thống thoát nước mưa?",factoid,10.0,10.0,10.0,10,10,,Success,"Hệ thống thu gom, xử lý nước thải tại các khu dân cư tập trung mới phải được thiết kế riêng biệt với hệ thống thoát nước mưa, ngoại trừ trường hợp đặc thù được Chính phủ quy định. Điều này đảm bảo việc xử lý nước thải được thực hiện một cách hiệu quả, tránh tình trạng nước thải chưa qua xử lý bị lẫn vào hệ thống thoát nước mưa, gây ảnh hưởng đến môi trường và sức khỏe cộng đồng."
+Ủy ban nhân dân cấp tỉnh có những trách nhiệm cụ thể nào trong việc quản lý nước thải theo nội dung Điều 86?,unanswerable,10.0,10.0,10.0,7,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này.
+
+Tuy nhiên, thông qua các tài liệu cung cấp, chúng ta có thể thấy một số trách nhiệm của Ủy ban nhân dân cấp tỉnh liên quan đến quản lý nước thải, nhưng chúng không được nêu rõ trong Điều 86:
+
+- Tài liệu 1 đề cập đến việc công khai thông tin về các nguồn thải vào môi trường nước mặt và thu thập thông tin về hiện trạng môi trường nước mặt, nguồn thải và tổng lượng thải vào môi trường nước mặt.
+
+- Tài liệu 6 đề cập đến việc chỉ đạo, hướng dẫn, kiểm tra và tổ chức thực hiện kiểm soát nguồn ô nhiễm, trong đó có thể bao gồm quản lý nước thải.
+
+- Tài liệu 8 đề cập đến việc quản lý số liệu quan trắc môi trường, xây dựng cơ sở dữ liệu quan trắc môi trường, nhưng không đề cập cụ thể đến quản lý nước thải.
+
+Nếu bạn có thêm thông tin từ Điều 86, tôi sẽ có thể cung cấp câu trả lời chính xác hơn."
+Hệ thống xử lý nước thải phải bảo đảm yêu cầu gì về công suất và điểm xả thải?,multi-hop,10.0,10.0,10.0,10,10,,Success,"Hệ thống xử lý nước thải phải bảo đảm yêu cầu về công suất phù hợp với lượng nước thải phát sinh tối đa. Về điểm xả thải, nó phải có tọa độ, biển báo, ký hiệu rõ ràng, thuận lợi cho việc kiểm tra, giám sát xả thải."
+Quy định về mức xử phạt hành chính đối với phương tiện giao thông không có bộ phận lọc khí thải là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Kế hoạch quốc gia thích ứng với biến đổi khí hậu được định kỳ rà soát và cập nhật bao lâu một lần?,factoid,10.0,10.0,10.0,10,10,,Success,"Kế hoạch quốc gia thích ứng với biến đổi khí hậu được định kỳ rà soát và cập nhật 05 năm một lần, theo thông tin được đề cập trong tài liệu."
+Cơ quan nào có thẩm quyền trực tiếp cấp phép cho các tổ chức kinh doanh pháo hoa?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+"Theo quy định tại Điều 91, các loại khí nhà kính chính bao gồm những loại nào?",factoid,10.0,10.0,10.0,10,10,,Success,"Theo quy định tại Điều 91, các loại khí nhà kính chính bao gồm carbon dioxide (CO2), methane (CH4) và nitrous oxide (N2O)."
+Trách nhiệm xây dựng và tần suất cập nhật danh mục các cơ sở phải thực hiện kiểm kê khí nhà kính được quy định như thế nào?,multi-hop,10.0,10.0,10.0,10,9,,Success,"Trách nhiệm xây dựng và tần suất cập nhật danh mục các cơ sở phải thực hiện kiểm kê khí nhà kính được quy định như sau:
+
+- Bộ Tài nguyên và Môi trường có trách nhiệm xây dựng danh mục lĩnh vực, cơ sở phát thải khí nhà kính phải thực hiện kiểm kê khí nhà kính (Tài liệu 2).
+
+- Thủ tướng Chính phủ ban hành danh mục này, cập nhật 02 năm một lần (Tài liệu 1).
+
+Tần suất cập nhật là 02 năm một lần, dựa trên các yếu tố như tỷ trọng phát thải khí nhà kính, tình hình phát triển kinh tế - xã hội, tiêu thụ nhiên liệu, năng lượng trên đơn vị sản phẩm, dịch vụ (Tài liệu 1)."
+Định kỳ bao lâu Bộ quản lý lĩnh vực phải thực hiện kiểm kê khí nhà kính và thời hạn gửi kết quả cho Bộ Tài nguyên và Môi trường là khi nào?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, tổ chức thực hiện kiểm kê khí nhà kính và gửi kết quả kiểm kê khí nhà kính định kỳ 02 năm một lần đến Bộ Tài nguyên và Môi trường trước ngày 31 tháng 01 của kỳ báo cáo tiếp theo."
+Mức phạt hành chính cụ thể đối với Ủy ban nhân dân cấp tỉnh nếu không cung cấp thông tin phục vụ kiểm kê khí nhà kính cấp quốc gia là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Hạn cuối để cơ sở gửi báo cáo mức giảm phát thải khí nhà kính hằng năm cho Bộ Tài nguyên và Môi trường là khi nào?,factoid,10.0,10.0,10.0,10,10,,Success,"Hạn cuối để cơ sở gửi báo cáo mức giảm phát thải khí nhà kính hằng năm cho Bộ Tài nguyên và Môi trường là trước ngày 31 tháng 12 của kỳ báo cáo, theo thông tin được cung cấp trong <context>."
+Các nội dung chính của hoạt động bảo vệ tầng ô-dôn là gì và cơ quan nào chịu trách nhiệm chủ trì trình Thủ tướng Chính phủ ban hành Kế hoạch quốc gia quản lý các chất làm suy giảm tầng ô-dôn?,multi-hop,10.0,10.0,10.0,10,10,,Success,"Các nội dung chính của hoạt động bảo vệ tầng ô-dôn bao gồm:
+
+1. Quản lý hoạt động sản xuất, xuất khẩu, nhập khẩu, tiêu thụ và loại trừ các chất làm suy giảm tầng ô-dôn, chất gây hiệu ứng nhà kính được kiểm soát trong khuôn khổ điều ước quốc tế về bảo vệ tầng ô-dôn mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên.
+2. Thực hiện việc thu gom, tái chế, tái sử dụng hoặc tiêu hủy các chất làm suy giảm tầng ô-dôn, chất gây hiệu ứng nhà kính được kiểm soát thuộc điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên về bảo vệ tầng ô-dôn trong thiết bị có các chất này khi không còn sử dụng.
+3. Phát triển và ứng dụng công nghệ, thiết bị sử dụng các chất không làm suy giảm tầng ô-dôn, chất thân thiện khí hậu.
+
+Cơ quan chịu trách nhiệm chủ trì trình Thủ tướng Chính phủ ban hành Kế hoạch quốc gia quản lý các chất làm suy giảm tầng ô-dôn là Bộ Tài nguyên và Môi trường."
+"Cơ quan nào có trách nhiệm tổ chức xây dựng, cập nhật và hướng dẫn khai thác cơ sở dữ liệu quốc gia về biến đổi khí hậu?",factoid,10.0,10.0,10.0,10,10,,Success,"Theo thông tin trong <context>, Bộ Tài nguyên và Môi trường có trách nhiệm tổ chức xây dựng, cập nhật và hướng dẫn khai thác, sử dụng cơ sở dữ liệu quốc gia về biến đổi khí hậu."
+Mức hỗ trợ tài chính cụ thể bằng tiền mặt cho các cơ sở sản xuất thực hiện chuyển đổi công nghệ bảo vệ tầng ô-dôn là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu chỉ đề cập đến việc cơ sở sản xuất, kinh doanh, dịch vụ có sử dụng chất thuộc danh mục quy định có thể được hưởng ưu đãi, hỗ trợ theo quy định của Luật này và pháp luật về chuyển giao công nghệ, nhưng không cung cấp chi tiết về mức hỗ trợ tài chính cụ thể bằng tiền mặt."
+"Trách nhiệm và tần suất thực hiện báo cáo về ứng phó với biến đổi khí hậu của Bộ Tài nguyên và Môi trường so với các Bộ, cơ quan ngang Bộ và Ủy ban nhân dân cấp tỉnh khác nhau như thế nào?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, trách nhiệm và tần suất thực hiện báo cáo về ứng phó với biến đổi khí hậu giữa Bộ Tài nguyên và Môi trường với các Bộ, cơ quan ngang Bộ và Ủy ban nhân dân cấp tỉnh có sự khác biệt như sau:
+
+1. Các Bộ, cơ quan ngang Bộ, Ủy ban nhân dân cấp tỉnh:
+- Trách nhiệm: Hằng năm lập báo cáo về ứng phó với biến đổi khí hậu thuộc phạm vi, lĩnh vực quản lý và gửi Bộ Tài nguyên và Môi trường.
+- Tần suất: Hằng năm.
+
+2. Bộ Tài nguyên và Môi trường:
+- Trách nhiệm: Định kỳ 5 năm một lần xây dựng báo cáo quốc gia ứng phó với biến đổi khí hậu trình Chính phủ để báo cáo Quốc hội; hướng dẫn các Bộ, cơ quan ngang Bộ và Ủy ban nhân dân cấp tỉnh lập báo cáo về ứng phó với biến đổi khí hậu.
+- Tần suất: Định kỳ 5 năm một lần.
+
+Tóm lại, các Bộ, cơ quan ngang Bộ và Ủy ban nhân dân cấp tỉnh có trách nhiệm lập báo cáo hằng năm, trong khi Bộ Tài nguyên và Môi trường chỉ cần thực hiện công việc này định kỳ 5 năm một lần."
+Mức xử phạt hành chính cụ thể đối với hành vi không gửi báo cáo kết quả thực hiện cam kết quốc tế về bảo vệ tầng ô-dôn cho Bộ Tài nguyên và Môi trường là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Quy chuẩn kỹ thuật môi trường về chất thải bao gồm những nhóm quy chuẩn cụ thể nào?,factoid,10.0,10.0,10.0,2,4,,Generation Failure (Failed to extract or reasoned poorly),"Quy chuẩn kỹ thuật môi trường về chất thải bao gồm các nhóm sau:
+
+- Nhóm quy chuẩn kỹ thuật môi trường về nước thải (được đề cập trong Tài liệu 1).
+
+- Nhóm quy chuẩn kỹ thuật môi trường về khí thải của hoạt động sản xuất, kinh doanh, dịch vụ và khí thải của phương tiện giao thông vận tải (được đề cập trong Tài liệu 1).
+
+- Nhóm quy chuẩn kỹ thuật môi trường về lò đốt chất thải (được đề cập trong Tài liệu 3).
+
+- Nhóm quy chuẩn kỹ thuật môi trường về chất thải (được đề cập trong Tài liệu 4).
+
+- Nhóm quy chuẩn kỹ thuật môi trường về quản lý chất thải (được đề cập trong Tài liệu 4).
+
+- Nhóm quy chuẩn kỹ thuật môi trường về quản lý phế liệu nhập khẩu từ nước ngoài làm nguyên liệu sản xuất (được đề cập trong Tài liệu 4).
+
+- Nhóm quy chuẩn kỹ thuật môi trường về chất thải rắn công nghiệp thông thường (được đề cập trong Tài liệu 6).
+
+Trong đó, Tài liệu 6 cung cấp chi tiết hơn về nhóm chất thải rắn công nghiệp thông thường, được phân thành 3 nhóm: a) Nhóm chất thải rắn công nghiệp thông thường được tái sử dụng, tái chế làm nguyên liệu sản xuất; b) Nhóm chất thải rắn công nghiệp thông thường đáp ứng tiêu chuẩn, quy chuẩn kỹ thuật, hướng dẫn kỹ thuật được sử dụng trong sản xuất vật liệu xây dựng và san lấp mặt bằng; c) Nhóm chất thải rắn công nghiệp thông thường phải xử lý."
+Quy chuẩn kỹ thuật môi trường về lò đốt chất thải quy định cụ thể mức nhiệt độ tối thiểu trong buồng đốt là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về nhóm quy chuẩn kỹ thuật môi trường về lò đốt chất thải nhưng không đề cập đến mức nhiệt độ tối thiểu trong buồng đốt."
+"Định kỳ bao lâu thì các quy chuẩn kỹ thuật môi trường về chất thải và quản lý chất thải phải được rà soát, cập nhật và điều chỉnh?",factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, các quy chuẩn kỹ thuật môi trường về chất thải và quản lý chất thải phải được rà soát, cập nhật và điều chỉnh định kỳ 05 năm một lần hoặc khi cần thiết, theo hướng nghiêm ngặt hơn trong trường hợp chất lượng môi trường không bảo đảm duy trì mục đích quản lý chất lượng môi trường."
+Những quốc gia cụ thể nào thuộc Nhóm các nước công nghiệp phát triển được Việt Nam ưu tiên áp dụng tiêu chuẩn quốc gia về bảo vệ môi trường khi chưa có quy chuẩn quốc gia tương ứng?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về những quốc gia cụ thể nào thuộc Nhóm các nước công nghiệp phát triển được Việt Nam ưu tiên áp dụng tiêu chuẩn quốc gia về bảo vệ môi trường khi chưa có quy chuẩn quốc gia tương ứng. Tài liệu chỉ đề cập đến việc áp dụng tiêu chuẩn quốc gia của một trong các nước thuộc Nhóm các nước công nghiệp phát triển nhưng không nêu tên cụ thể."
+"Trong trường hợp chưa có quy chuẩn kỹ thuật môi trường quốc gia liên quan đến công nghệ, thiết bị có phát sinh chất thải thì doanh nghiệp phải áp dụng tiêu chuẩn nào?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Trong trường hợp chưa có quy chuẩn kỹ thuật môi trường quốc gia liên quan đến công nghệ, thiết bị có phát sinh chất thải, doanh nghiệp phải áp dụng tiêu chuẩn quốc gia về bảo vệ môi trường của một trong các nước thuộc Nhóm các nước công nghiệp phát triển."
+Mức xử phạt hành chính cụ thể đối với trường hợp lô hàng phế liệu nhập khẩu không đáp ứng quy chuẩn kỹ thuật mà không thực hiện tái xuất là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Bộ Khoa học và Công nghệ có trách nhiệm gì đối với các quy chuẩn kỹ thuật môi trường và tiêu chuẩn quốc gia về môi trường?,multi-hop,10.0,10.0,10.0,10,10,,Success,"Bộ Khoa học và Công nghệ có trách nhiệm tổ chức thẩm định các quy chuẩn kỹ thuật môi trường theo quy định của pháp luật về tiêu chuẩn và quy chuẩn kỹ thuật, cũng như công bố tiêu chuẩn quốc gia về môi trường."
+Mức xử phạt hành chính cụ thể đối với cơ sở không áp dụng kỹ thuật hiện có tốt nhất theo lộ trình của Chính phủ là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Hệ thống quan trắc môi trường bao gồm những thành phần cụ thể nào theo quy định tại Điều 107?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo quy định tại Điều 107, hệ thống quan trắc môi trường bao gồm các thành phần cụ thể sau:
+
+1. Quan trắc môi trường quốc gia: Đây là mạng lưới các trạm, vị trí quan trắc môi trường nền và môi trường tác động phục vụ việc quan trắc, cung cấp thông tin về chất lượng môi trường nền và môi trường tác động tại các khu vực có tính chất liên vùng, liên tỉnh, xuyên biên giới.
+
+2. Quan trắc môi trường cấp tỉnh: Mạng lưới các trạm, vị trí quan trắc môi trường nền và môi trường tác động phục vụ việc quan trắc, cung cấp thông tin về chất lượng môi trường nền và môi trường tác động tại các khu vực trên địa bàn tỉnh.
+
+3. Quan trắc môi trường phục vụ quản lý ngành, lĩnh vực: Theo quy định tại Điều 109 của Luật này.
+
+4. Quan trắc môi trường tại dự án đầu tư: Bao gồm các cơ sở, khu sản xuất, kinh doanh, dịch vụ tập trung, cụm công nghiệp.
+
+5. Quan trắc đa dạng sinh học: Thực hiện tại khu bảo tồn thiên nhiên."
+"Mức xử phạt cụ thể đối với hành vi cung cấp kết quả quan trắc không chính xác, không tin cậy là bao nhiêu?",unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Hệ thống quan trắc môi trường bao gồm những thành phần cụ thể nào theo quy định?,factoid,10.0,10.0,10.0,10,10,,Success,"Hệ thống quan trắc môi trường bao gồm các thành phần cụ thể sau theo quy định:
+
+1. Quan trắc môi trường quốc gia: Đây là mạng lưới các trạm, vị trí quan trắc môi trường nền và môi trường tác động phục vụ việc quan trắc, cung cấp thông tin về chất lượng môi trường nền và môi trường tác động tại các khu vực có tính chất liên vùng, liên tỉnh, xuyên biên giới.
+
+2. Quan trắc môi trường cấp tỉnh: Mạng lưới các trạm, vị trí quan trắc môi trường nền và môi trường tác động phục vụ việc quan trắc, cung cấp thông tin về chất lượng môi trường nền và môi trường tác động tại các khu vực trên địa bàn.
+
+3. Quan trắc môi trường phục vụ quản lý ngành, lĩnh vực theo quy định tại Điều 109 của Luật này.
+
+4. Quan trắc môi trường tại dự án đầu tư, cơ sở, khu sản xuất, kinh doanh, dịch vụ tập trung, cụm công nghiệp.
+
+5. Quan trắc đa dạng sinh học tại khu bảo tồn thiên nhiên."
+Quy hoạch tổng thể quan trắc môi trường quốc gia quy định cụ thể mức kinh phí dự kiến cho từng giai đoạn lộ trình thực hiện là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về việc có kế hoạch thực hiện phân chia theo từng năm, từng giai đoạn cải tạo, phục hồi môi trường và có bảng dự toán kinh phí, nhưng không đề cập cụ thể đến mức kinh phí dự kiến cho từng giai đoạn lộ trình thực hiện quy hoạch tổng thể quan trắc môi trường quốc gia."
+Bộ Y tế có trách nhiệm như thế nào trong hoạt động quan trắc môi trường theo quy định?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, Bộ Y tế có trách nhiệm tổ chức thực hiện chương trình quan trắc môi trường lao động trong khu vực làm việc."
+Quy hoạch tổng thể quan trắc môi trường quốc gia quy định cụ thể mức xử phạt vi phạm hành chính đối với hành vi không thực hiện quan trắc là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+"Dữ liệu từ hệ thống quan trắc nước thải tự động, liên tục phải được truyền trực tiếp đến cơ quan nào?",factoid,10.0,10.0,10.0,10,1,,Context Failure (Matched but useless/truncated),"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+"Những nhóm đối tượng nào vừa thuộc diện phải quan trắc nước thải tự động, liên tục, vừa phải thực hiện quan trắc nước thải định kỳ?",multi-hop,10.0,10.0,10.0,10,2,,Context Failure (Matched but useless/truncated),"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về đối tượng phải quan trắc nước thải tự động, liên tục và định kỳ, nhưng không có thông tin về việc một đối tượng nào đó vừa phải quan trắc tự động, liên tục vừa phải thực hiện quan trắc định kỳ."
+Bộ Tài nguyên và Môi trường có trách nhiệm gì trong việc quản lý số liệu quan trắc môi trường theo quy định?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo quy định trong tài liệu, Bộ Tài nguyên và Môi trường có một số trách nhiệm chính trong việc quản lý số liệu quan trắc môi trường, bao gồm:
+
+1. Quản lý số liệu quan trắc môi trường quốc gia.
+2. Xây dựng cơ sở dữ liệu về quan trắc môi trường trong hệ thống thông tin, cơ sở dữ liệu môi trường quốc gia.
+3. Tích hợp các dữ liệu quan trắc môi trường của các Bộ, cơ quan ngang Bộ và địa phương.
+4. Công bố thông tin về chất lượng môi trường quốc gia.
+5. Hướng dẫn chuyên môn, nghiệp vụ và hỗ trợ kỹ thuật quản lý số liệu quan trắc môi trường của địa phương.
+
+Những trách nhiệm này được nêu rõ trong Điều 113 của tài liệu."
+Mức xử phạt hành chính cụ thể là bao nhiêu tiền đối với các dự án đầu tư không thực hiện quan trắc bụi và khí thải công nghiệp định kỳ?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Ai là người chịu trách nhiệm thu nhận và tổng hợp thông tin về môi trường quốc gia?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo thông tin trong <context>, Bộ Tài nguyên và Môi trường là đơn vị chịu trách nhiệm thu nhận và tổng hợp thông tin về môi trường quốc gia."
+Thời hạn cụ thể để Ủy ban nhân dân cấp tỉnh hoàn thành việc xây dựng cơ sở dữ liệu quan trắc môi trường là bao nhiêu ngày?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Cơ quan nào có trách nhiệm xây dựng và quản lý hệ thống thông tin môi trường quốc gia?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo thông tin trong <context>, Bộ Tài nguyên và Môi trường có trách nhiệm xây dựng, quản lý, khai thác hệ thống thông tin môi trường quốc gia."
+Mức phạt tiền cụ thể đối với hành vi không công khai thông tin môi trường trên cổng thông tin của tổ chức là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Bộ Tài nguyên và Môi trường có trách nhiệm cụ thể như thế nào đối với hệ thống thông tin môi trường quốc gia?,factoid,10.0,10.0,10.0,10,10,,Success,"Bộ Tài nguyên và Môi trường có trách nhiệm xây dựng, quản lý và khai thác hệ thống thông tin môi trường quốc gia. Cụ thể, Bộ này hướng dẫn triển khai hệ thống thông tin môi trường cho các Bộ, ngành và cấp tỉnh. Đồng thời, Bộ cũng quản lý số liệu quan trắc môi trường quốc gia, xây dựng cơ sở dữ liệu về quan trắc môi trường, tích hợp dữ liệu từ các Bộ, cơ quan ngang Bộ và địa phương, công bố thông tin về chất lượng môi trường quốc gia và hỗ trợ kỹ thuật quản lý số liệu quan trắc môi trường của địa phương."
+"Để Bộ Tài nguyên và Môi trường có đủ dữ liệu xây dựng báo cáo công tác bảo vệ môi trường toàn quốc trình Chính phủ, các cơ quan cấp tỉnh và các Bộ khác phải hoàn tất việc gửi báo cáo vào thời điểm nào?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu c) trong <context>, các cơ quan cấp tỉnh và các Bộ khác phải hoàn tất việc gửi báo cáo đến Bộ Tài nguyên và Môi trường trước ngày 15 tháng 02. Cụ thể:
+
+- Ủy ban nhân dân cấp tỉnh báo cáo Hội đồng nhân dân cấp tỉnh và Bộ Tài nguyên và Môi trường trước ngày 15 tháng 02.
+- Bộ, cơ quan ngang Bộ gửi báo cáo về tình hình thực hiện nhiệm vụ bảo vệ môi trường của Bộ, cơ quan ngang Bộ đến Bộ Tài nguyên và Môi trường trước ngày 15 tháng 02.
+- Bộ Tài nguyên và Môi trường sẽ xây dựng báo cáo về công tác bảo vệ môi trường trên phạm vi cả nước trình Chính phủ để báo cáo Quốc hội tại kỳ họp đầu tiên trong năm của Quốc hội.
+
+Vì vậy, thời điểm các cơ quan cấp tỉnh và các Bộ khác phải hoàn tất việc gửi báo cáo là trước ngày 15 tháng 02."
+Báo cáo công tác bảo vệ môi trường có thể được gửi tới cơ quan có thẩm quyền dưới những hình thức nào?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo thông tin trong <context>, báo cáo công tác bảo vệ môi trường có thể được gửi bằng bản giấy hoặc bản điện tử theo quy định của pháp luật."
+Hồ sơ chi tiết để Bộ trưởng Bộ Tài nguyên và Môi trường phê duyệt báo cáo hiện trạng môi trường chuyên đề gồm những loại giấy tờ gì?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về báo cáo hiện trạng môi trường và các quy định liên quan, nhưng không đề cập cụ thể đến hồ sơ chi tiết để Bộ trưởng Bộ Tài nguyên và Môi trường phê duyệt báo cáo hiện trạng môi trường chuyên đề."
+Nội dung chính của báo cáo hiện trạng môi trường bao gồm những thành phần nào?,factoid,10.0,10.0,10.0,10,10,,Success,"Nội dung chính của báo cáo hiện trạng môi trường bao gồm các thành phần sau:
+
+a) Tổng quan về tự nhiên, kinh tế, xã hội;
+b) Các tác động môi trường;
+c) Hiện trạng và diễn biến chất lượng môi trường;
+d) Các vấn đề bức xúc về môi trường và nguyên nhân;
+e) Tác động của môi trường đối với kinh tế, xã hội;
+f) Kết quả thực hiện chính sách, pháp luật và các hoạt động bảo vệ môi trường; hợp tác quốc tế về bảo vệ môi trường;
+g) Dự báo thách thức về môi trường;
+h) Phương hướng và giải pháp bảo vệ môi trường.
+
+Thông tin này được đề cập trong Tài liệu 1."
+Thời hạn cụ thể bằng số ngày để Ủy ban nhân dân cấp tỉnh phải gửi báo cáo chuyên đề về hiện trạng môi trường cho Bộ Tài nguyên và Môi trường được quy định như thế nào?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về thời hạn cụ thể bằng số ngày để Ủy ban nhân dân cấp tỉnh phải gửi báo cáo chuyên đề về hiện trạng môi trường cho Bộ Tài nguyên và Môi trường."
+Việc phân cấp sự cố môi trường bao gồm các cấp nào và dựa trên căn cứ gì?,factoid,10.0,10.0,10.0,10,10,,Success,"Việc phân cấp sự cố môi trường được căn cứ vào phạm vi ô nhiễm, suy thoái môi trường tại thời điểm phát hiện sự cố. Cụ thể, sự cố môi trường được phân cấp thành các cấp sau:
+
+a) Sự cố môi trường cấp cơ sở: Là sự cố môi trường có phạm vi ô nhiễm, suy thoái môi trường trong cơ sở sản xuất, kinh doanh, dịch vụ.
+
+b) Sự cố môi trường cấp huyện: Là sự cố môi trường vượt quá phạm vi sự cố cấp cơ sở và có phạm vi ô nhiễm, suy thoái môi trường trong địa bàn của một đơn vị hành chính cấp huyện.
+
+c) Sự cố môi trường cấp tỉnh: Là sự cố môi trường vượt quá phạm vi sự cố môi trường cấp huyện và có phạm vi ô nhiễm, suy thoái môi trường trong địa bàn của một đơn vị hành chính cấp tỉnh.
+
+d) Sự cố môi trường cấp quốc gia: Là sự cố môi trường có phạm vi ô nhiễm, suy thoái môi trường trên địa bàn từ 02 đơn vị hành chính cấp tỉnh trở lên hoặc có phạm vi ô nhiễm, suy thoái môi trường xuyên quốc gia."
+Mức xử phạt hành chính cụ thể đối với chủ dự án đầu tư không thực hiện chế độ kiểm tra thường xuyên để giảm thiểu nguy cơ sự cố môi trường là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Nếu một sự cố môi trường xảy ra trên phạm vi của 03 đơn vị hành chính cấp tỉnh thì được phân loại là cấp gì và cơ quan nào có thẩm quyền ban hành kế hoạch ứng phó?,multi-hop,10.0,10.0,10.0,2,4,,Generation Failure (Failed to extract or reasoned poorly),"Theo thông tin trong <context>, sự cố môi trường có phạm vi ô nhiễm, suy thoái môi trường trên địa bàn từ 02 đơn vị hành chính cấp tỉnh trở lên sẽ được phân loại là sự cố môi trường cấp quốc gia.
+
+Theo Tài liệu 1, sự cố môi trường cấp quốc gia được định nghĩa là sự cố môi trường có phạm vi ô nhiễm, suy thoái môi trường trên địa bàn từ 02 đơn vị hành chính cấp tỉnh trở lên hoặc có phạm vi ô nhiễm, suy thoái môi trường xuyên quốc gia.
+
+Theo Tài liệu 5, trách nhiệm ứng phó sự cố môi trường cấp quốc gia thuộc về Chủ tịch Ủy ban quốc gia Ứng phó sự cố, thiên tai và Tìm kiếm Cứu nạn. Đồng thời, Tài liệu 6 cũng nêu rõ Bộ Tài nguyên và Môi trường tổ chức xây dựng và phê duyệt kế hoạch phục hồi môi trường đối với sự cố môi trường cấp quốc gia.
+
+Tuy nhiên, về việc ban hành kế hoạch ứng phó, theo Tài liệu 5, Chủ tịch Ủy ban quốc gia Ứng phó sự cố, thiên tai và Tìm kiếm Cứu nạn có trách nhiệm chỉ đạo ứng phó sự cố, huy động lực lượng, thiết bị, phương tiện ứng phó sự cố, chỉ định người chỉ huy và người phát ngôn về sự cố môi trường cấp quốc gia.
+
+Vì vậy, cơ quan có thẩm quyền ban hành kế hoạch ứng phó sự cố môi trường cấp quốc gia là Chủ tịch Ủy ban quốc gia Ứng phó sự cố, thiên tai và Tìm kiếm Cứu nạn."
+Mức xử phạt cụ thể bằng tiền đối với chủ cơ sở sản xuất không xây dựng năng lực ứng phó sự cố môi trường tại chỗ là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+"Khi xảy ra sự cố môi trường, thông tin phải được thông báo đến những cơ quan nào và các cơ quan đó có trách nhiệm gì trong việc xác minh?",multi-hop,10.0,10.0,10.0,7,4,,Generation Failure (Failed to extract or reasoned poorly),"Khi xảy ra sự cố môi trường, thông tin phải được thông báo kịp thời đến Ban chỉ huy phòng, chống thiên tai và tìm kiếm cứu nạn cấp huyện và Ủy ban nhân dân cấp xã nơi xảy ra sự cố, theo tài liệu 1.
+
+Về trách nhiệm xác minh, các cơ quan này không được đề cập trực tiếp trong tài liệu cung cấp. Tuy nhiên, theo tài liệu 3, Chủ tịch Ủy ban nhân dân, Trưởng Ban chỉ huy phòng, chống thiên tai và tìm kiếm cứu nạn cấp huyện có trách nhiệm chỉ đạo ứng phó sự cố, huy động lực lượng, thiết bị, phương tiện ứng phó sự cố, chỉ định người chỉ huy và người phát ngôn về sự cố môi trường cấp huyện xảy ra trên địa bàn. Điều này có thể được hiểu là họ có trách nhiệm trong việc xác minh và quản lý sự cố môi trường cấp huyện.
+
+Tuy nhiên, để có thông tin chính xác về trách nhiệm xác minh, cần tham khảo thêm các tài liệu khác. Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin cụ thể về các cơ quan xác minh sự cố môi trường."
+Mức phạt tiền cụ thể đối với cơ sở không thực hiện diễn tập ứng phó sự cố môi trường ít nhất 02 năm một lần là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức phạt cụ thể đối với cơ sở không thực hiện diễn tập ứng phó sự cố môi trường ít nhất 02 năm một lần."
+Ai có thẩm quyền chỉ định người chỉ huy và người phát ngôn về sự cố môi trường cấp quốc gia?,factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, Chủ tịch Ủy ban quốc gia Ứng phó sự cố, thiên tai và Tìm kiếm Cứu nạn có thẩm quyền chỉ định người chỉ huy và người phát ngôn về sự cố môi trường cấp quốc gia."
+Trong thời hạn bao nhiêu ngày kể từ khi xảy ra sự cố môi trường thì Bộ Y tế phải hoàn thành việc đánh giá tác động đến sức khỏe con người?,unanswerable,10.0,5.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+Thời hạn phê duyệt kế hoạch phục hồi môi trường đối với sự cố môi trường cấp huyện và cấp quốc gia được quy định khác nhau như thế nào?,multi-hop,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu cung cấp, thời hạn phê duyệt kế hoạch phục hồi môi trường đối với sự cố môi trường cấp huyện và cấp quốc gia được quy định khác nhau như sau:
+
+- Đối với sự cố môi trường cấp huyện, Ủy ban nhân dân cấp huyện phải phê duyệt kế hoạch phục hồi môi trường trong thời hạn 30 ngày kể từ ngày công bố kết thúc giai đoạn tổ chức ứng phó sự cố môi trường.
+
+- Đối với sự cố môi trường cấp quốc gia, Bộ Tài nguyên và Môi trường phải phê duyệt kế hoạch phục hồi môi trường trong thời hạn 90 ngày kể từ ngày công bố kết thúc giai đoạn tổ chức ứng phó sự cố môi trường.
+
+Như vậy, thời hạn phê duyệt kế hoạch phục hồi môi trường đối với sự cố môi trường cấp huyện ngắn hơn so với cấp quốc gia."
+Mức xử phạt cụ thể bằng tiền đối với chủ dự án đầu tư không thực hiện phục hồi môi trường trong phạm vi cơ sở là bao nhiêu?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về mức xử phạt cụ thể bằng tiền đối với chủ dự án đầu tư không thực hiện phục hồi môi trường trong phạm vi cơ sở."
+"Trong trường hợp không xác định được nguyên nhân hoặc không xác định được tổ chức, cá nhân gây ra sự cố môi trường thì ai sẽ chi trả chi phí ứng phó và phục hồi?",factoid,10.0,10.0,10.0,10,10,,Success,"Trong trường hợp không xác định được nguyên nhân hoặc không xác định được tổ chức, cá nhân gây ra sự cố môi trường, chi phí tổ chức ứng phó sự cố môi trường và phục hồi môi trường sẽ do Nhà nước chi trả, theo thông tin được đề cập trong Tài liệu 1."
+"Theo quy định, cơ quan nào có trách nhiệm tham mưu cho Ủy ban nhân dân cấp tỉnh thực hiện phục hồi môi trường và đối tượng gây ra sự cố phải thực hiện nghĩa vụ tài chính gì?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Theo quy định trong tài liệu, cơ quan chuyên môn về bảo vệ môi trường cấp tỉnh có trách nhiệm tham mưu Ủy ban nhân dân cấp tỉnh thực hiện phục hồi môi trường sau sự cố môi trường trên địa bàn.
+
+Đối với đối tượng gây ra sự cố môi trường, họ có nghĩa vụ chi trả kịp thời, toàn bộ các chi phí tổ chức ứng phó sự cố môi trường, phục hồi môi trường. Trường hợp Nhà nước tổ chức ứng phó sự cố môi trường và phục hồi môi trường, thì tổ chức, cá nhân gây ra sự cố môi trường có trách nhiệm thanh toán chi phí cho Nhà nước theo quy định của pháp luật."
+"Khi có từ 02 tổ chức, cá nhân trở lên gây thiệt hại về môi trường, trách nhiệm bồi thường và chi trả chi phí được xác định dựa trên những yếu tố nào, và ai sẽ quyết định nếu không xác định được tỷ lệ trách nhiệm?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Khi có từ 02 tổ chức, cá nhân trở lên gây thiệt hại về môi trường, trách nhiệm bồi thường và chi trả chi phí được xác định dựa trên những yếu tố sau:
+
+a) Trách nhiệm bồi thường thiệt hại về môi trường của từng đối tượng được xác định theo loại chất ô nhiễm, lượng phát thải và các yếu tố khác.
+
+b) Trách nhiệm bồi thường thiệt hại về môi trường, chi trả chi phí xác định thiệt hại và thực hiện thủ tục yêu cầu bồi thường thiệt hại đối với từng đối tượng được xác định tương ứng với tỷ lệ gây thiệt hại trong tổng thiệt hại về môi trường.
+
+Nếu các bên liên quan hoặc cơ quan quản lý nhà nước về môi trường không xác định được tỷ lệ chịu trách nhiệm, cơ quan trọng tài hoặc Tòa án sẽ quyết định theo thẩm quyền."
+Quy trình và hồ sơ cụ thể để cá nhân thực hiện thủ tục thanh toán bồi hoàn nhân công khi được huy động ứng phó sự cố môi trường gồm những giấy tờ gì?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu cung cấp thông tin về trách nhiệm ứng phó sự cố môi trường và bồi hoàn, nhưng không chi tiết về quy trình và hồ sơ cụ thể để cá nhân thực hiện thủ tục thanh toán bồi hoàn nhân công khi được huy động ứng phó sự cố môi trường."
+"Trong trường hợp có nhiều bên gây thiệt hại về môi trường nhưng không thể xác định được tỷ lệ trách nhiệm giữa các bên, cơ quan nào có thẩm quyền quyết định việc bồi thường?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Trong trường hợp có nhiều bên gây thiệt hại về môi trường nhưng không thể xác định được tỷ lệ trách nhiệm giữa các bên, theo tài liệu cung cấp, cơ quan có thẩm quyền quyết định việc bồi thường là cơ quan trọng tài hoặc Tòa án."
+Thời hạn cụ thể để Ủy ban nhân dân cấp huyện phải hoàn thành việc thu thập dữ liệu xác định thiệt hại theo đề nghị của cấp xã là bao nhiêu ngày?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+"Khi giải quyết bồi thường thiệt hại về môi trường tại Tòa án, bên nào có trách nhiệm chứng minh mối quan hệ nhân quả giữa hành vi vi phạm và thiệt hại xảy ra?",factoid,10.0,10.0,10.0,10,10,,Success,"Theo tài liệu được cung cấp, bên vi phạm pháp luật về môi trường, gây ô nhiễm về môi trường có trách nhiệm chứng minh mối quan hệ nhân quả giữa hành vi vi phạm pháp luật và thiệt hại xảy ra."
+Thời hạn cụ thể để Bộ Tài nguyên và Môi trường hoàn thành việc thẩm định dữ liệu xác định thiệt hại môi trường đối với địa bàn từ 02 đơn vị hành chính cấp tỉnh trở lên là bao nhiêu ngày?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin về thời hạn cụ thể để Bộ Tài nguyên và Môi trường hoàn thành việc thẩm định dữ liệu xác định thiệt hại môi trường đối với địa bàn từ 02 đơn vị hành chính cấp tỉnh trở lên."
+Chi phí bồi thường thiệt hại về môi trường bao gồm những nội dung cụ thể nào?,factoid,10.0,10.0,10.0,10,10,,Success,"Chi phí bồi thường thiệt hại về môi trường bao gồm các nội dung cụ thể sau:
+
+a) Chi phí thiệt hại trước mắt và lâu dài do sự suy giảm chức năng, tính hữu ích của môi trường;
+b) Chi phí xử lý, cải tạo môi trường;
+c) Chi phí giảm thiểu, triệt tiêu nguồn gây thiệt hại hoặc tổ chức ứng phó sự cố môi trường;
+d) Chi phí xác định thiệt hại và thực hiện thủ tục bồi thường thiệt hại về môi trường."
+Trong bao nhiêu ngày kể từ khi có kết quả giám định thì Bộ Tài chính phải ban hành biểu khung thuế bảo vệ môi trường?,unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này."
+"Một doanh nghiệp có hoạt động nhập khẩu phế liệu từ nước ngoài làm nguyên liệu sản xuất thì có thể thực hiện ký quỹ bảo vệ môi trường tại những cơ quan, tổ chức nào?",multi-hop,10.0,10.0,10.0,10,10,,Success,"Dựa trên tài liệu được cung cấp, một doanh nghiệp có hoạt động nhập khẩu phế liệu từ nước ngoài làm nguyên liệu sản xuất có thể thực hiện ký quỹ bảo vệ môi trường tại:
+
+1. Quỹ bảo vệ môi trường Việt Nam
+2. Quỹ bảo vệ môi trường cấp tỉnh
+3. Tổ chức tài chính, tín dụng theo quy định của pháp luật
+
+Cụ thể, theo Tài liệu 3 và Tài liệu 5, tổ chức, cá nhân có hoạt động nhập khẩu phế liệu từ nước ngoài làm nguyên liệu sản xuất cần thực hiện ký quỹ bảo vệ môi trường tại một trong ba cơ quan, tổ chức trên theo quy định của pháp luật."
+"Theo quy định, mức lãi suất cụ thể áp dụng cho việc ký quỹ bảo vệ môi trường là bao nhiêu phần trăm?",unanswerable,10.0,10.0,10.0,10,10,10.0,Success,"Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này. Tài liệu chỉ đề cập đến việc Chính phủ quy định chi tiết về mức ký quỹ, hình thức ký quỹ, nguyên tắc áp dụng lãi suất ký quỹ, hoàn trả ký quỹ bảo vệ môi trường, nhưng không cung cấp cụ thể về mức lãi suất."
+Căn cứ để xác định hạn ngạch phát thải khí nhà kính bao gồm những yếu tố nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Thời điểm cụ thể bắt đầu triển khai vận hành thị trường các-bon trong nước được quy định là ngày nào?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+"Theo Điều 142, kinh tế tuần hoàn được định nghĩa là gì?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Theo quy định tại Điều 142, mức phạt cụ thể đối với cơ sở kinh doanh không thiết lập hệ thống quản lý để giảm chất thải là bao nhiêu?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Công nghiệp môi trường được định nghĩa như thế nào trong hệ thống ngành kinh tế Việt Nam?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức xử phạt hành chính cụ thể đối với việc giả mạo Nhãn sinh thái Việt Nam cho sản phẩm không thân thiện môi trường là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Vốn tự nhiên bao gồm những loại tài nguyên và dịch vụ nào theo quy định?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức xử phạt cụ thể đối với các cơ quan không thực hiện ưu tiên mua sắm xanh khi sử dụng ngân sách nhà nước là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Chủ dự án đầu tư có trách nhiệm bảo đảm kinh phí cho các hoạt động bảo vệ môi trường nào và việc quản lý kinh phí đó được quy định ra sao?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Hạn mức huy động vốn tối đa từ việc phát hành trái phiếu xanh của một doanh nghiệp được quy định cụ thể là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Thẩm quyền quyết định thành lập Quỹ Bảo vệ môi trường Việt Nam thuộc về ai?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức vốn hoạt động cụ thể bằng tiền mặt của Quỹ Bảo vệ môi trường cấp tỉnh là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Cơ quan nào chịu trách nhiệm làm đầu mối tổng hợp các hoạt động hội nhập và hợp tác quốc tế về bảo vệ môi trường?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Văn bản quy định mức phạt tiền cụ thể là bao nhiêu đối với hành vi vi phạm các điều ước quốc tế về môi trường?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Trách nhiệm của tổ chức chính trị - xã hội trong việc bảo vệ môi trường được quy định như thế nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Đại diện cộng đồng dân cư có quyền yêu cầu thông tin từ những bên nào và chủ dự án có nghĩa vụ gì đối với các yêu cầu này?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Bộ trưởng Bộ Công an có trách nhiệm gì trong việc tổ chức kiểm tra, thanh tra về bảo vệ môi trường?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Quy định về mức tiền xử phạt cụ thể đối với hộ gia đình vi phạm quy định bảo vệ môi trường được nêu như thế nào?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Nội dung tranh chấp về môi trường bao gồm những trường hợp cụ thể nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trong trường hợp cán bộ phụ trách bảo vệ môi trường lợi dụng chức vụ để bao che cho một tổ chức vi phạm pháp luật dẫn đến sự cố môi trường, người này sẽ phải chịu những hình thức xử lý nào?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Theo quy định tại Điều 165, cơ quan nào có trách nhiệm báo cáo Quốc hội hằng năm về công tác bảo vệ môi trường?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Thời hạn cụ thể để Bộ Tài nguyên và Môi trường thực hiện việc cấp đổi hoặc cấp lại giấy phép môi trường là bao nhiêu ngày?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Trách nhiệm của cơ quan trong việc quản lý ngân sách và hợp tác quốc tế về bảo vệ môi trường được quy định như thế nào?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức phạt tiền cụ thể đối với hành vi làm mất giấy chứng nhận về môi trường là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Bộ Quốc phòng có trách nhiệm gì trong việc ứng phó sự cố môi trường?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Quy trình thẩm định báo cáo đánh giá tác động môi trường của Ủy ban nhân dân cấp tỉnh gồm bao nhiêu bước và thời gian thực hiện cụ thể là bao lâu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Cơ quan nào có trách nhiệm thực hiện các nhiệm vụ bảo vệ môi trường khác do Ủy ban nhân dân cấp huyện giao?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức tiền phạt cụ thể mà Ủy ban nhân dân cấp xã được phép áp dụng khi xử lý vi phạm pháp luật về bảo vệ môi trường là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Cơ quan nào có thẩm quyền quy định trách nhiệm bảo vệ môi trường của chính quyền địa phương tại đơn vị hành chính - kinh tế đặc biệt?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trong công tác quản lý nguồn thải và chất thải, chính quyền địa phương có những trách nhiệm cụ thể nào và phải chịu trách nhiệm trước cơ quan nào nếu để xảy ra ô nhiễm?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Cơ quan nào có thẩm quyền quy định phí thẩm định báo cáo đánh giá tác động môi trường đối với hoạt động thẩm định do cơ quan trung ương thực hiện?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Thời hạn tối đa để cơ quan nhà nước có thẩm quyền hoàn thành việc giải quyết hồ sơ môi trường được tiếp nhận trước ngày 01/01/2022 là bao nhiêu ngày?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Theo Luật Doanh nghiệp, cổ đông sáng lập được định nghĩa như thế nào?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức phí cụ thể để thực hiện việc truy cập thông tin về đăng ký doanh nghiệp trên Cổng thông tin quốc gia là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Hệ thống thông tin quốc gia về đăng ký doanh nghiệp bao gồm những thành phần cụ thể nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức phí cụ thể khi thực hiện thẩm định giá bởi một tổ chức chuyên nghiệp để xác định giá trị cổ phần là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Theo văn bản, những đối tượng nào được xác định là người quản lý doanh nghiệp?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Vốn điều lệ của công ty cổ phần phải được góp đủ trong thời hạn bao nhiêu ngày kể từ ngày cấp Giấy chứng nhận đăng ký doanh nghiệp?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+"Trong trường hợp Nhà nước trưng mua hoặc trưng dụng tài sản của doanh nghiệp, việc thanh toán và bồi thường được quy định như thế nào?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức phạt tiền cụ thể là bao nhiêu đối với doanh nghiệp có hành vi cản trở người lao động tham gia hoạt động trong tổ chức chính trị - xã hội?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Doanh nghiệp xã hội cần đáp ứng tiêu chí gì về việc sử dụng lợi nhuận sau thuế hằng năm để tái đầu tư?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức xử phạt hành chính cụ thể là bao nhiêu nếu doanh nghiệp xã hội không thông báo với cơ quan có thẩm quyền khi chấm dứt thực hiện mục tiêu xã hội?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Doanh nghiệp phải làm gì khi chỉ còn lại một người đại diện theo pháp luật cư trú tại Việt Nam và người này muốn xuất cảnh khỏi Việt Nam?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức phạt tiền cụ thể đối với doanh nghiệp xã hội không thông báo việc chấm dứt thực hiện mục tiêu xã hội cho cơ quan có thẩm quyền là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Trong trường hợp công ty trách nhiệm hữu hạn có hai thành viên mà thành viên là cá nhân làm người đại diện theo pháp luật bị chết, ai sẽ thay thế và thời hạn là bao lâu?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức xử phạt hành chính cụ thể đối với người đại diện theo pháp luật khi không thực hiện trách nhiệm trung thành với lợi ích của doanh nghiệp là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Nội dung văn bản cử người đại diện theo ủy quyền phải bao gồm những thông tin cá nhân nào của người đại diện?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Theo quy định tại văn bản, những đối tượng cụ thể nào được liệt kê tại khoản 2 Điều 17 của Luật này mà người đại diện theo ủy quyền không được phép thuộc về?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Theo quy định tại Điều 16, các hành vi nào liên quan đến vốn điều lệ và tài sản góp vốn bị nghiêm cấm?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trong trường hợp người đại diện theo ủy quyền vi phạm trách nhiệm, ai là người phải chịu trách nhiệm trước bên thứ ba và các hạn chế của chủ sở hữu đối với người đại diện có hiệu lực với bên thứ ba không?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trong trường hợp Cơ quan đăng ký kinh doanh có yêu cầu, đối tượng nào phải nộp Phiếu lý lịch tư pháp?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức tiền phạt cụ thể là bao nhiêu đối với trường hợp cơ quan nhà nước sử dụng tài sản nhà nước góp vốn vào doanh nghiệp để thu lợi riêng?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Nếu doanh nghiệp không được cấp Giấy chứng nhận đăng ký doanh nghiệp thì trách nhiệm đối với các hợp đồng đã ký trước khi đăng ký thuộc về ai?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức phạt cụ thể đối với hành vi bổ sung vào ngân sách hoạt động của cơ quan trái quy định pháp luật là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Theo quy định tại Điều 24, trong trường hợp nào Điều lệ công ty bị thu hồi hiệu lực pháp luật?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Đối với loại hình công ty trách nhiệm hữu hạn một thành viên, những ai có thẩm quyền ký tên vào Điều lệ khi đăng ký doanh nghiệp và khi thực hiện sửa đổi, bổ sung Điều lệ?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Người thành lập doanh nghiệp có thể thực hiện đăng ký doanh nghiệp thông qua những phương thức nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức phí cụ thể để được cấp tài khoản đăng ký kinh doanh trên Hệ thống thông tin quốc gia là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+"Khi thực hiện đăng ký thay đổi nội dung Giấy chứng nhận đăng ký doanh nghiệp theo quyết định của Tòa án, người đề nghị phải gửi đề nghị trong bao lâu và cơ quan chức năng xử lý trong thời gian nào?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức lệ phí cụ thể bằng tiền mà doanh nghiệp phải nộp khi thực hiện thủ tục cấp lại Giấy chứng nhận đăng ký doanh nghiệp do bị mất là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Cơ quan đăng ký kinh doanh phải cấp Giấy chứng nhận đăng ký doanh nghiệp mới trong thời hạn bao lâu kể từ ngày nhận được đề nghị đăng ký thay đổi theo bản án của Tòa án?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Mức lệ phí cụ thể mà doanh nghiệp phải nộp khi thực hiện thông báo thay đổi ngành, nghề kinh doanh là bao nhiêu?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Trong thời hạn bao nhiêu ngày kể từ ngày bản án của Tòa án có hiệu lực pháp luật, tổ chức đề nghị thay đổi nội dung đăng ký doanh nghiệp phải gửi thông báo đến Cơ quan đăng ký kinh doanh?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức xử phạt vi phạm hành chính cụ thể là bao nhiêu nếu công ty cổ phần không thông báo thay đổi cổ đông là nhà đầu tư nước ngoài trong thời hạn 10 ngày?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Trong trường hợp thay đổi nội dung đăng ký doanh nghiệp theo bản án của Tòa án, thời hạn để cá nhân gửi thông báo đến Cơ quan đăng ký kinh doanh là bao lâu?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức phí cụ thể mà doanh nghiệp phải nộp khi thực hiện công bố nội dung đăng ký doanh nghiệp trên Cổng thông tin quốc gia được quy định là bao nhiêu tiền?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Trong quá trình hoạt động, nếu tài sản góp vốn được định giá cao hơn giá trị thực tế, những đối tượng nào phải liên đới chịu trách nhiệm về số chênh lệch và thiệt hại do cố ý định giá cao?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức phí cụ thể để thực hiện thủ tục định giá tài sản góp vốn thông qua tổ chức thẩm định giá là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Tên bằng tiếng nước ngoài của doanh nghiệp phải tuân thủ quy định gì về hệ chữ cái và cách trình bày so với tên tiếng Việt tại trụ sở chính?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức phí lệ phí cụ thể mà doanh nghiệp phải nộp khi đăng ký tên doanh nghiệp tại Cơ quan đăng ký kinh doanh là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+"Chi nhánh của doanh nghiệp được định nghĩa như thế nào và yêu cầu về ngành, nghề kinh doanh của chi nhánh ra sao?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trong trường hợp tên riêng doanh nghiệp chỉ khác biệt bởi từ 'tân' hoặc các cụm từ như 'miền Bắc', 'miền Nam' so với doanh nghiệp đã đăng ký, quy định về tên gây nhầm lẫn có áp dụng cho công ty con không?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Để thay đổi loại tài sản góp vốn so với cam kết ban đầu, thành viên công ty trách nhiệm hữu hạn hai thành viên trở lên cần điều kiện gì và phải hoàn thành việc góp vốn trong thời gian bao lâu?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức xử phạt tiền cụ thể là bao nhiêu đối với doanh nghiệp không thực hiện đăng ký thay đổi nội dung Giấy chứng nhận đăng ký hoạt động chi nhánh trong thời hạn 10 ngày?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Thành viên chưa góp đủ số vốn đã cam kết có những quyền gì và trách nhiệm tài chính như thế nào đối với các nghĩa vụ của công ty?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức lệ phí cụ thể mà thành viên phải nộp cho công ty để được cấp lại giấy chứng nhận phần vốn góp khi bị mất là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Sổ đăng ký thành viên của công ty được lưu giữ tại địa điểm nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Theo Điều 50, thành viên Hội đồng thành viên phải hoàn thành việc góp vốn đã cam kết trong thời hạn cụ thể là bao nhiêu ngày kể từ ngày cấp Giấy chứng nhận đăng ký doanh nghiệp?",unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+"Để một thành viên có thể chuyển nhượng phần vốn góp cho người không phải là thành viên công ty, họ cần thực hiện các bước chào bán cho các thành viên còn lại như thế nào và sau thời gian bao lâu mới được bán cho người ngoài?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Khi thành viên yêu cầu công ty mua lại phần vốn góp, công ty phải thực hiện việc mua lại theo mức giá nào?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Trường hợp thành viên công ty là cá nhân bị Tòa án tuyên bố mất tích thì quyền và nghĩa vụ của họ được thực hiện như thế nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức phí cụ thể mà người thừa kế phải nộp để chính thức trở thành thành viên công ty sau khi thành viên cũ qua đời là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Ai là người có thẩm quyền ký nghị quyết của Hội đồng thành viên và người này có thể đồng thời giữ chức vụ Giám đốc công ty hay không?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Điều kiện cụ thể về trình độ chuyên môn để một cá nhân được bầu làm Kiểm soát viên trong công ty trách nhiệm hữu hạn hai thành viên trở lên là gì?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+"Trong trường hợp Chủ tịch Hội đồng thành viên không triệu tập họp theo yêu cầu, thành viên hoặc nhóm thành viên có quyền tự triệu tập họp sau thời hạn bao nhiêu ngày?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức thù lao cụ thể mà Chủ tịch Hội đồng thành viên tạm thời được hưởng khi được bầu thay thế Chủ tịch đang bị tạm giam là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Trong trường hợp Điều lệ công ty không quy định, một yêu cầu triệu tập họp Hội đồng thành viên của thành viên là cá nhân phải bao gồm những thông tin định danh nào?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Nếu cuộc họp Hội đồng thành viên lần thứ nhất không đủ 65% vốn điều lệ tham dự, các bước tiếp theo để tổ chức cuộc họp lần thứ hai và điều kiện để cuộc họp đó hợp lệ là gì?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trong trường hợp cuộc họp Hội đồng thành viên không hoàn thành chương trình họp đúng hạn, thời gian kéo dài tối đa là bao lâu và nghị quyết về việc bổ nhiệm Giám đốc phải được thông qua bằng hình thức nào nếu Điều lệ không có quy định khác?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Ai là người có thẩm quyền ký tên xác nhận vào biên bản họp Hội đồng thành viên sau khi kết thúc cuộc họp?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Trong trường hợp chủ tọa và người ghi biên bản từ chối ký vào biên bản họp, biên bản đó cần đáp ứng những điều kiện cụ thể nào để có hiệu lực pháp lý?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Nếu thành viên Hội đồng thành viên phát hiện sai sót trong báo cáo kết quả kiểm phiếu thì quy trình khiếu nại và thời hạn giải quyết là bao lâu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Chủ tịch Hội đồng thành viên phải thông báo kết quả kiểm phiếu cho các thành viên trong thời hạn bao lâu?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Khi nào một nghị quyết của Hội đồng thành viên được coi là hợp pháp ngay cả khi trình tự thông qua không đúng quy định?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Số lượng thành viên của Ban kiểm soát được quy định tối đa là bao nhiêu người?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Theo Điều 66, mức tiền lương cụ thể của Chủ tịch Hội đồng thành viên được quy định là bao nhiêu triệu đồng mỗi tháng?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Để thực hiện việc giảm vốn điều lệ theo hình thức hoàn trả một phần vốn góp cho thành viên, công ty cần đáp ứng những điều kiện gì về thời gian hoạt động và khả năng tài chính?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức xử phạt hành chính cụ thể là bao nhiêu nếu công ty không thông báo việc tăng vốn điều lệ cho Cơ quan đăng ký kinh doanh trong thời hạn 10 ngày?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Thông báo về doanh nghiệp mà người quản lý làm chủ hoặc có cổ phần phải được thực hiện trong thời hạn bao lâu kể từ ngày phát sinh?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức phạt tiền cụ thể đối với Giám đốc là bao nhiêu nếu vi phạm quy định về việc tăng tiền lương khi công ty không có khả năng thanh toán nợ?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Tư cách pháp nhân của công ty trách nhiệm hữu hạn một thành viên được xác lập từ thời điểm nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trong trường hợp chủ sở hữu không góp đủ vốn điều lệ theo cam kết, thời hạn để đăng ký thay đổi vốn là bao lâu và họ phải chịu trách nhiệm gì đối với các nghĩa vụ tài chính trước đó?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Trong thời hạn bao nhiêu ngày công ty phải đăng ký thay đổi nội dung đăng ký doanh nghiệp kể từ khi chủ sở hữu chuyển nhượng một phần vốn điều lệ cho người khác?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Chủ sở hữu công ty có các nghĩa vụ gì liên quan đến việc quản lý tài sản cá nhân và điều kiện để được rút lợi nhuận từ công ty?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Hội đồng thành viên của công ty trách nhiệm hữu hạn một thành viên do tổ chức làm chủ sở hữu có tối đa bao nhiêu thành viên?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Quy trình bầu Chủ tịch Hội đồng thành viên theo nguyên tắc đa số được thực hiện cụ thể qua bao nhiêu vòng bỏ phiếu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+"Để một nghị quyết về việc tổ chức lại công ty được thông qua, cần đáp ứng những điều kiện gì về tỷ lệ tán thành và thành phần tham dự họp Hội đồng thành viên?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức lương tối đa của Giám đốc hoặc Tổng giám đốc công ty được quy định là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+"Trong công ty trách nhiệm hữu hạn một thành viên do tổ chức làm chủ sở hữu, hợp đồng với người có liên quan của Chủ tịch công ty phải được ai chấp thuận và thời hạn ra quyết định là bao lâu?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức phạt tiền cụ thể là bao nhiêu đối với Giám đốc không thông báo kịp thời cho chủ sở hữu công ty về doanh nghiệp mà mình làm chủ?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Nếu một công ty trách nhiệm hữu hạn một thành viên thực hiện tăng vốn điều lệ bằng cách huy động vốn từ người khác và muốn chuyển đổi sang loại hình công ty cổ phần thì việc tổ chức quản lý được quy định như thế nào?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Hồ sơ riêng dùng để lưu giữ các giao dịch giữa công ty trách nhiệm hữu hạn một thành viên với chủ sở hữu là cá nhân phải bao gồm những loại chứng từ và danh mục giấy tờ cụ thể nào?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Doanh nghiệp nhà nước được tổ chức quản lý dưới những hình thức nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Theo Điều 88, mức vốn pháp định tối thiểu để thành lập doanh nghiệp do Nhà nước nắm giữ trên 50% vốn điều lệ là bao nhiêu?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Thành viên Hội đồng thành viên (không phải Chủ tịch) có được phép đồng thời giữ chức danh Tổng giám đốc tại một doanh nghiệp thành viên của công ty đó không?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trong trường hợp thành viên Hội đồng thành viên có đơn xin từ chức, cơ quan đại diện chủ sở hữu phải ra văn bản chấp thuận trong thời hạn bao nhiêu ngày kể từ ngày nhận đơn?",unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+"Trong thời hạn bao nhiêu ngày kể từ ngày có quyết định miễn nhiệm Chủ tịch Hội đồng thành viên, cơ quan đại diện chủ sở hữu phải quyết định bổ nhiệm người thay thế?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức lương và chế độ phụ cấp cụ thể của Chủ tịch Hội đồng thành viên khi thực hiện nhiệm vụ giám sát kết quả hoạt động của công ty được quy định như thế nào?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Hội đồng thành viên có thể tổ chức họp bất thường trong tình huống nào và theo yêu cầu của những đối tượng nào?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Quy trình cụ thể để bầu Chủ tịch Hội đồng thành viên được thực hiện theo các bước nào?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Điều kiện về số lượng thành viên tham dự để một cuộc họp Hội đồng thành viên được coi là hợp lệ là gì?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trong trường hợp biên bản họp Hội đồng thành viên bị sai lệch thông tin, mức phạt tiền cụ thể đối với thư ký cuộc họp là bao nhiêu?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Để được bổ nhiệm làm Chủ tịch công ty quá 02 nhiệm kỳ, một cá nhân cần thỏa mãn điều kiện gì về thâm niên công tác?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Biên bản họp Hội đồng thành viên phải được gửi cho các thành viên trong thời hạn bao nhiêu ngày kể từ ngày kết thúc cuộc họp?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Ai có thẩm quyền bổ nhiệm Giám đốc hoặc Tổng giám đốc và người này không được có quan hệ gia đình với những đối tượng nào trong công ty?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Trong trường hợp Chủ tịch công ty vắng mặt tại Việt Nam 45 ngày thì mức xử phạt vi phạm hành chính là bao nhiêu nếu không thực hiện ủy quyền?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Một cá nhân có thể đồng thời được bổ nhiệm làm Kiểm soát viên của tối đa bao nhiêu doanh nghiệp nhà nước?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Quy trình và thủ tục chi tiết để nộp đơn xin nghỉ việc của Tổng giám đốc được thực hiện như thế nào theo quy định tại Điều 101?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Cơ quan nào có thẩm quyền quyết định và chi trả tiền lương, thù lao cũng như các lợi ích khác cho Kiểm soát viên?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Theo Điều 104, Ban kiểm soát có quyền trực tiếp đình chỉ các dự án đầu tư lớn nếu phát hiện sai phạm trong quá trình giám sát không?",unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Ban kiểm soát họp với tần suất như thế nào để rà soát và đánh giá kết quả kiểm soát?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Thời hạn tối đa mà cơ quan đại diện chủ sở hữu phải thực hiện việc chi trả lương cho Kiểm soát viên là bao nhiêu ngày?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Trưởng Ban kiểm soát bị cách chức trong những trường hợp cụ thể nào liên quan đến việc thực hiện nghĩa vụ và thời gian?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Theo quy định tại Điều 109, công ty phải thực hiện công bố thông tin định kỳ về báo cáo tài chính hằng quý vào thời điểm cụ thể nào?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Trong thời hạn bao nhiêu ngày kể từ ngày kết thúc năm tài chính thì báo cáo tài chính hằng năm đã được kiểm toán phải được báo cáo?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức xử phạt hành chính cụ thể đối với người đại diện theo pháp luật khi công bố thông tin không chính xác là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Cổ phần đã bán của công ty cổ phần được định nghĩa như thế nào theo quy định tại văn bản?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Trình tự các bước cụ thể để Đại hội đồng cổ đông tiến hành bỏ phiếu thông qua việc giảm vốn điều lệ được quy định như thế nào?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Mức phạt cụ thể bằng tiền đối với cổ đông không thanh toán đủ số cổ phần đã đăng ký mua là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+"Theo quy định, cổ phần phổ thông có thể chuyển đổi thành cổ phần ưu đãi hay không?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Cổ đông phổ thông có quyền gì đối với việc mua cổ phần mới của công ty?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Cổ đông sở hữu bao nhiêu phần trăm cổ phần ưu đãi thì có quyền yêu cầu triệu tập họp Đại hội đồng cổ đông?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+"Để yêu cầu triệu tập họp Đại hội đồng cổ đông, nhóm cổ đông sở hữu 5% cổ phần phổ thông cần thực hiện yêu cầu bằng hình thức nào và phải đính kèm thêm những tài liệu gì?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Cổ đông sở hữu bao nhiêu phần trăm cổ phần phổ thông thì có quyền trực tiếp bãi nhiệm thành viên Hội đồng quản trị mà không cần thông qua Đại hội đồng cổ đông?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Theo quy định, những đối tượng nào được phép nắm giữ cổ phần ưu đãi biểu quyết?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Trường hợp cổ đông không thanh toán đủ và đúng hạn số cổ phần đã cam kết mua thì mức phạt tiền cụ thể là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Trong vòng 03 năm kể từ ngày cấp Giấy chứng nhận đăng ký doanh nghiệp, cổ đông sáng lập chỉ được chuyển nhượng cổ phần phổ thông cho người không phải là cổ đông sáng lập khi nào?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức xử phạt hành chính cụ thể đối với người đại diện theo pháp luật khi có sai sót trong nội dung cổ phiếu là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Công ty cổ phần phải thực hiện đăng ký thay đổi vốn điều lệ trong thời hạn bao lâu kể từ ngày hoàn thành đợt bán cổ phần?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Sổ đăng ký cổ đông của công ty cổ phần phải được cơ quan công chứng nào xác nhận trước khi lưu giữ tại trụ sở chính?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Trong công ty cổ phần không phải là công ty đại chúng, thông báo chào bán cổ phần cho cổ đông hiện hữu phải được gửi chậm nhất là bao lâu trước ngày kết thúc thời hạn đăng ký mua?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Trình tự và thủ tục để Đại hội đồng cổ đông chấp thuận điều kiện bán cổ phần thuận lợi hơn cho người ngoài khi cổ đông hiện hữu không mua hết được quy định như thế nào?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Theo quy định, một cá nhân nhận cổ phần thông qua việc tặng cho thì cần điều kiện gì để chính thức trở thành cổ đông của công ty?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức phí môi giới tối đa khi bán cổ phần cho người môi giới được quy định là bao nhiêu phần trăm?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Ai có thẩm quyền quyết định việc chào bán trái phiếu chuyển đổi riêng lẻ và công ty cần đáp ứng điều kiện gì về thanh toán nợ trước khi chào bán?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức xử phạt hành chính cụ thể là bao nhiêu nếu công ty cổ phần không công bố thông tin kết quả đợt chào bán trái phiếu trong thời hạn 10 ngày?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Cổ phần và trái phiếu của công ty cổ phần có thể được thanh toán bằng những loại tài sản nào theo quy định tại Điều 131?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trong trường hợp cổ đông yêu cầu công ty mua lại cổ phần do không thông qua nghị quyết tổ chức lại công ty, thời hạn để cổ đông gửi yêu cầu và thời hạn để công ty thực hiện mua lại là bao lâu?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trong thời hạn bao nhiêu ngày kể từ ngày quyết định mua lại cổ phần được thông qua, công ty phải thông báo quyết định đó đến tất cả cổ đông?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Trường hợp công ty không thông báo cho chủ nợ khi tổng giá trị tài sản giảm hơn 10% sau khi mua lại cổ phần thì sẽ bị xử phạt hành chính như thế nào?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Cổ tức phải được thanh toán đầy đủ trong thời hạn bao lâu kể từ ngày kết thúc họp Đại hội đồng cổ đông thường niên?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức phạt tiền cụ thể đối với thành viên Hội đồng quản trị khi không hoàn trả được số tiền cổ tức chi trả trái quy định là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Nếu một công ty cổ phần có 15 cổ đông và muốn tổ chức quản lý theo mô hình không có Ban kiểm soát thì Hội đồng quản trị cần đáp ứng những điều kiện gì?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trong cuộc họp Đại hội đồng cổ đông, cổ đông sở hữu bao nhiêu cổ phần ưu đãi cổ tức thì được quyền biểu quyết theo quy định tại văn bản?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Đại hội đồng cổ đông thường niên phải được tổ chức trong thời hạn bao lâu kể từ ngày kết thúc năm tài chính?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Theo quy định, ai có quyền triệu tập họp Đại hội đồng cổ đông nếu cả Hội đồng quản trị và Ban kiểm soát đều không thực hiện triệu tập theo đúng thời hạn?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trong trường hợp cổ đông gửi kiến nghị bổ sung nội dung họp Đại hội đồng cổ đông, các mốc thời hạn mà cổ đông và người triệu tập cần tuân thủ là gì?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức tiền phạt cụ thể là bao nhiêu đối với người quản lý công ty khi không cung cấp thông tin trong sổ đăng ký cổ đông theo yêu cầu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Thông báo mời họp Đại hội đồng cổ đông phải được gửi kèm theo những tài liệu gì?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trường hợp cuộc họp lần thứ nhất và lần thứ hai đều không đủ điều kiện tiến hành, thời hạn gửi thông báo và điều kiện về tỷ lệ phiếu biểu quyết cho cuộc họp lần thứ ba được quy định như thế nào?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trong trường hợp Chủ tịch Hội đồng quản trị vắng mặt và các thành viên Hội đồng quản trị còn lại không thể bầu được người làm chủ tọa, quy trình xác định chủ tọa cuộc họp tiếp theo được thực hiện như thế nào?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Cổ đông hoặc người được ủy quyền đến muộn sau khi cuộc họp đã khai mạc phải nộp mức phí quản lý là bao nhiêu để được tham gia biểu quyết?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Khi chủ tọa tạm dừng họp trái quy định và Đại hội đồng cổ đông bầu người thay thế để thông qua nghị quyết về việc tổ chức lại công ty, thì nghị quyết này cần đạt tỷ lệ phiếu tán thành tối thiểu là bao nhiêu để được thông qua?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức xử phạt hành chính cụ thể đối với hành vi chủ tọa hoãn họp Đại hội đồng cổ đông trái quy định pháp luật là bao nhiêu tiền?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Nghị quyết Đại hội đồng cổ đông phải được thông báo đến cổ đông trong thời hạn bao lâu kể từ ngày được thông qua?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức phạt tiền cụ thể đối với Chủ tịch Hội đồng quản trị nếu không ký tên vào phiếu lấy ý kiến cổ đông là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Trong trường hợp cổ đông gửi phiếu lấy ý kiến qua thư điện tử, những điều kiện nào khiến phiếu đó bị coi là không hợp lệ?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức xử phạt tiền cụ thể đối với thành viên Hội đồng quản trị khi thực hiện kiểm phiếu không trung thực gây thiệt hại cho công ty là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Biên bản họp Đại hội đồng cổ đông bắt buộc phải được lập bằng ngôn ngữ nào và có thể lập thêm bằng ngôn ngữ nào khác không?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức xử phạt cụ thể đối với người kiểm phiếu nếu có hành vi làm sai lệch kết quả kiểm phiếu dẫn đến thiệt hại cho công ty là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Thời hạn để cổ đông yêu cầu Tòa án hoặc Trọng tài xem xét hủy bỏ nghị quyết Đại hội đồng cổ đông là bao lâu?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Nếu biên bản họp Đại hội đồng cổ đông có sự khác biệt giữa bản tiếng Việt và tiếng nước ngoài, đồng thời thư ký từ chối ký thì xử lý như thế nào để biên bản có hiệu lực và áp dụng theo bản nào?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Hội đồng quản trị có thể thông qua các quyết định bằng những hình thức nào và quyền biểu quyết của các thành viên được quy định như thế nào?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Hội đồng quản trị có quyền quyết định mức thù lao cho Giám đốc dựa trên tiêu chí hiệu quả kinh doanh cụ thể nào?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Trong trường hợp Hội đồng quản trị thông qua nghị quyết trái pháp luật gây thiệt hại, trách nhiệm của các thành viên được phân định như thế nào và cổ đông có quyền gì?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức thù lao cụ thể hàng tháng mà một thành viên độc lập Hội đồng quản trị được nhận là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Chủ tịch Hội đồng quản trị của công ty đại chúng có được đồng thời giữ chức vụ Giám đốc hay không?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trong trường hợp thành viên độc lập Hội đồng quản trị không còn đáp ứng đủ tiêu chuẩn và đã thông báo, Hội đồng quản trị phải tổ chức bầu bổ sung thành viên thay thế trong thời gian bao lâu?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trong trường hợp Chủ tịch Hội đồng quản trị bị Tòa án cấm đảm nhiệm chức vụ và không có người được ủy quyền, việc chọn người thay thế được thực hiện theo quy trình nào?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Quy định về mức lương và các khoản phụ cấp cụ thể của thư ký công ty được nêu như thế nào trong văn bản?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Trong trường hợp cuộc họp Hội đồng quản trị lần thứ nhất không đủ số lượng thành viên tham gia theo quy định, việc triệu tập lần thứ hai được thực hiện như thế nào và cần bao nhiêu thành viên để tiến hành?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Kiểm soát viên có quyền gì khi tham dự các cuộc họp của Hội đồng quản trị theo quy định?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Trong trường hợp biên bản họp Hội đồng quản trị có sự khác nhau về nội dung giữa bản tiếng Việt và bản tiếng nước ngoài thì nội dung nào được ưu tiên áp dụng?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức thù lao cụ thể hàng tháng dành cho Chủ tịch Ủy ban kiểm toán được quy định là bao nhiêu trong văn bản?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Ai có thẩm quyền bổ nhiệm Giám đốc hoặc Tổng giám đốc công ty?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Văn bản quy định cụ thể mức thù lao tối đa mà Hội đồng quản trị được phép chi trả cho công ty kiểm toán độc lập là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+"Trong trường hợp một thành viên Hội đồng quản trị trở thành chủ sở hữu của một doanh nghiệp mới, người này phải thực hiện nghĩa vụ gì đối với công ty và trong thời gian bao lâu?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Tổng mức thù lao và tiền thưởng của Hội đồng quản trị do cơ quan nào quyết định và tại thời điểm nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Danh sách người có liên quan và lợi ích có liên quan của công ty phải được lưu giữ tại địa điểm nào theo quy định?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Để có quyền tự mình khởi kiện thành viên Hội đồng quản trị do vi phạm trách nhiệm người quản lý, cổ đông hoặc nhóm cổ đông cần đáp ứng điều kiện gì về tỷ lệ sở hữu cổ phần?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Hội đồng quản trị có thẩm quyền chấp thuận các hợp đồng, giao dịch với người có liên quan trong trường hợp nào về giới hạn giá trị tài sản?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Khi cổ đông thực hiện khởi kiện nhân danh công ty đối với hành vi lạm dụng chức vụ để tư lợi của người quản lý, chi phí khởi kiện được quy định chi trả như thế nào?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Trưởng Ban kiểm soát do ai bầu và việc bầu được thực hiện theo nguyên tắc nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Danh sách chi tiết các đối tượng cụ thể được quy định tại khoản 2 Điều 17 của Luật này bao gồm những ai?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+"Sau khi kết thúc việc kiểm tra theo yêu cầu của cổ đông, Ban kiểm soát phải báo cáo kết quả trong thời hạn bao lâu và báo cáo cho những đối tượng nào?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Theo quy định tại Điều 172, các tiêu chuẩn chuyên môn cụ thể để lựa chọn đơn vị tư vấn độc lập cho Ban kiểm soát là gì?",unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Đại hội đồng cổ đông bãi nhiệm Kiểm soát viên trong những trường hợp nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức thù lao cố định hàng tháng của một Kiểm soát viên được quy định cụ thể là bao nhiêu tiền?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Cổ đông cần sở hữu cổ phần trong bao lâu để có quyền trực tiếp xem xét các báo cáo của công ty tại trụ sở chính?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Theo quy định tại văn bản, mức phạt tiền cụ thể là bao nhiêu đối với thành viên hợp danh không góp đủ vốn đúng hạn?",unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Giấy chứng nhận phần vốn góp của thành viên công ty hợp danh phải bao gồm những nội dung chủ yếu nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Thành viên hợp danh có được quyền tự ý làm chủ doanh nghiệp tư nhân và chuyển nhượng phần vốn góp của mình không?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Khi thành viên hợp danh ứng trước tiền của mình để kinh doanh cho công ty thì có quyền yêu cầu gì?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Thành viên hợp danh phải nộp báo cáo tình hình kinh doanh định kỳ vào ngày cụ thể nào hằng tháng?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Biên bản họp Hội đồng thành viên trong công ty hợp danh phải bao gồm những nội dung chủ yếu nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Hội đồng thành viên có quyền hạn gì đối với các tài khoản ngân hàng của công ty hợp danh?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Một thành viên hợp danh muốn tự nguyện rút vốn khỏi công ty cần thực hiện những thủ tục gì về mặt thời gian và họ phải chịu trách nhiệm về các khoản nợ cũ của công ty trong bao lâu?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Theo quy định tại Điều 185, những hành vi cụ thể nào được coi là vi phạm Điều 180 dẫn đến việc thành viên hợp danh bị khai trừ?",unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+Doanh nghiệp tư nhân có được phép phát hành các loại chứng khoán để huy động vốn không?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức phạt cụ thể đối với chủ doanh nghiệp tư nhân khi không ghi chép việc tăng vốn vào sổ kế toán là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Trong trường hợp chủ doanh nghiệp tư nhân chết, doanh nghiệp sẽ được xử lý như thế nào nếu các người thừa kế không thể đi đến thỏa thuận chung?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức phạt tiền cụ thể là bao nhiêu nếu chủ doanh nghiệp tư nhân không thông báo việc cho thuê doanh nghiệp cho cơ quan thuế trong vòng 03 ngày?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Vào cuối năm tài chính, công ty mẹ phải lập những loại báo cáo tổng hợp nào và trong trường hợp công ty mẹ gây thiệt hại cho công ty con mà không đền bù, cổ đông cần sở hữu tối thiểu bao nhiêu vốn điều lệ để có quyền yêu cầu bồi thường?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức xử phạt hành chính cụ thể đối với hành vi các công ty con của cùng một công ty mẹ sở hữu chéo lẫn nhau là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Bản sao của báo cáo tài chính hợp nhất và báo cáo tổng hợp của công ty mẹ phải được lưu giữ ở đâu tại Việt Nam?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Công ty mẹ phải nộp báo cáo tổng hợp kết quả kinh doanh hằng năm cho cơ quan thuế trong thời hạn bao nhiêu ngày kể từ ngày kết thúc năm tài chính?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Sau khi thực hiện chia công ty và tách công ty, sự tồn tại của công ty bị chia và công ty bị tách khác nhau như thế nào?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trong trường hợp tách công ty, mức xử phạt hành chính đối với hành vi không thông báo cho người lao động trong thời hạn 15 ngày là bao nhiêu?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Thời hạn gửi hợp đồng hợp nhất đến các chủ nợ và thông báo cho người lao động là bao lâu kể từ ngày thông qua?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức xử phạt hành chính cụ thể đối với công ty bị sáp nhập nếu không chuyển giao toàn bộ tài sản cho công ty nhận sáp nhập là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Hợp đồng sáp nhập phải được gửi đến các chủ nợ của công ty trong thời hạn bao nhiêu ngày kể từ ngày thông qua?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Hồ sơ đăng ký chuyển đổi công ty trách nhiệm hữu hạn thành công ty cổ phần bao gồm những loại giấy tờ cụ thể nào theo quy định tại văn bản?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Khi chuyển đổi công ty cổ phần thành công ty trách nhiệm hữu hạn một thành viên, việc chuyển nhượng cổ phần được thực hiện theo các phương pháp giá nào và trách nhiệm đối với các khoản nợ của công ty mới được quy định ra sao?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Danh mục các loại giấy tờ cụ thể cần nộp trong hồ sơ chuyển đổi doanh nghiệp tư nhân thành công ty cổ phần bao gồm những gì?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Hồ sơ đăng ký chuyển đổi doanh nghiệp tư nhân thành công ty trách nhiệm hữu hạn bao gồm những loại giấy tờ cụ thể nào để Cơ quan đăng ký kinh doanh xem xét?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Sau khi doanh nghiệp tư nhân chuyển đổi loại hình, trách nhiệm đối với các khoản nợ cũ và việc kế thừa quyền, nghĩa vụ của công ty mới được quy định như thế nào?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Một công ty cổ phần muốn giải thể do hết thời hạn hoạt động thì cần phải thông qua văn bản nào và gửi cho những cơ quan nào trong thời hạn bao lâu?,multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức xử phạt hành chính đối với doanh nghiệp không niêm yết công khai quyết định giải thể tại trụ sở chính là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Thứ tự ưu tiên thanh toán các khoản nợ của doanh nghiệp khi giải thể được quy định như thế nào?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trong trường hợp giải thể do bị thu hồi Giấy chứng nhận đăng ký doanh nghiệp, mức xử phạt hành chính đối với doanh nghiệp không triệu tập họp đúng thời hạn 10 ngày là bao nhiêu?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+Người đại diện theo pháp luật của doanh nghiệp phải gửi hồ sơ giải thể cho Cơ quan đăng ký kinh doanh trong thời hạn bao lâu?,factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+"Trong trường hợp doanh nghiệp bị thu hồi Giấy chứng nhận đăng ký doanh nghiệp, trình tự các bước để thanh lý tài sản và trả nợ được quy định cụ thể như thế nào?",unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
+"Khi chi nhánh của doanh nghiệp chấm dứt hoạt động, doanh nghiệp đó có những trách nhiệm gì liên quan đến nợ và người lao động của chi nhánh?",multi-hop,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức xử phạt hành chính cụ thể bằng tiền đối với doanh nghiệp không gửi báo cáo sau 06 tháng kể từ ngày hết hạn là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,0,0.0,Generation Failure (Hallucination on Unanswerable),
+"Cụm từ ""doanh nghiệp nhà nước"" trong Luật Ngân sách nhà nước số 83/2015/QH13 được thay thế bằng cụm từ nào theo quy định tại văn bản này?",factoid,0.0,0.0,0.0,10,0,,Retrieval Failure (Context not found in Top-K),
+Mức xử phạt hành chính cụ thể đối với hành vi không báo cáo về việc tuân thủ quy định của Luật Doanh nghiệp theo yêu cầu của Cơ quan đăng ký kinh doanh là bao nhiêu?,unanswerable,0.0,0.0,0.0,10,10,10.0,Success,
