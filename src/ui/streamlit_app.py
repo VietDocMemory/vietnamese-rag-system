@@ -47,6 +47,15 @@ def render_chat_message(message: dict):
         st.markdown(content)
     if sources_html:
         st.markdown(sources_html, unsafe_allow_html=True)
+    if message.get("routing"):
+        render_routing(message["routing"])
+
+
+def render_routing(routing):
+    st.caption(f"Câu trả lời từ: {routing['selected'].upper()}")
+    if routing.get("reason") == "trustmargin":
+        with st.expander("Chi tiết lựa chọn TrustMargin"):
+            st.json(routing)
 
 
 # setup page config
@@ -74,19 +83,17 @@ if "is_ready" not in st.session_state:
 # sidebar ui
 with st.sidebar:
     st.title("🗂️ Quản lý Tài liệu")
-    
+
     # ---------------------------------------------------------
     # Ô nhập Session ID thủ công (Sửa lại cơ chế Key & Callback)
     # ---------------------------------------------------------
     st.subheader("🔑 Phiên làm việc")
-    
+
     # Dùng session_id trực tiếp làm value
     session_input = st.text_input(
-        "Nhập Session ID có sẵn:", 
-        value=st.session_state.session_id,
-        key="session_input_field"
+        "Nhập Session ID có sẵn:", value=st.session_state.session_id, key="session_input_field"
     )
-    
+
     col_btn1, col_btn2 = st.columns(2)
     with col_btn1:
         if st.button("📌 Dùng Session này", use_container_width=True):
@@ -96,7 +103,7 @@ with st.sidebar:
                 st.session_state.is_ready = True
                 st.session_state.messages = []
                 st.rerun()
-    
+
     with col_btn2:
         if st.button("🎲 Tạo session mới", use_container_width=True):
             new_id = str(uuid.uuid4())[:8]
@@ -104,7 +111,7 @@ with st.sidebar:
             st.session_state.is_ready = False
             st.session_state.messages = []
             st.rerun()
-            
+
     st.caption(f"ID hiện tại: `{st.session_state.session_id}`")
     st.markdown("---")
     # ---------------------------------------------------------
@@ -185,6 +192,15 @@ st.title("🤖 Trợ lý AI Phân tích Văn bản")
 if not st.session_state.is_ready:
     st.info("👈 Vui lòng tải lên một tài liệu PDF ở cột bên trái để bắt đầu trò chuyện.")
 else:
+    inference_mode = st.selectbox(
+        "Cách trả lời",
+        ["auto", "rag", "d2l"],
+        format_func=lambda value: {
+            "auto": "Tự động (TrustMargin)",
+            "rag": "RAG",
+            "d2l": "Doc-to-LoRA",
+        }[value],
+    )
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             render_chat_message(message)
@@ -202,11 +218,16 @@ else:
             full_response = ""
             sources_html = ""
             has_error = False
+            routing = None
 
             try:
                 response_placeholder.markdown("*(Đang tìm kiếm...)*")
 
-                params = {"query": prompt, "session_id": st.session_state.session_id}
+                params = {
+                    "query": prompt,
+                    "session_id": st.session_state.session_id,
+                    "mode": inference_mode,
+                }
                 with requests.get(
                     api_url("/ask"),
                     params=params,
@@ -245,6 +266,8 @@ else:
                                         if full_response == "":
                                             message = chunk.get("message", "Đang xử lý...")
                                             response_placeholder.markdown(f"*({message})*")
+                                    elif chunk_type == "routing":
+                                        routing = chunk.get("data")
                                     elif chunk_type == "content":
                                         if full_response == "":
                                             response_placeholder.empty()
@@ -259,6 +282,9 @@ else:
                     if sources_html:
                         sources_placeholder.markdown(sources_html, unsafe_allow_html=True)
                     assistant_message = {"role": "assistant", "content": final_output}
+                    if routing:
+                        render_routing(routing)
+                        assistant_message["routing"] = routing
                     if sources_html:
                         assistant_message["sources_html"] = sources_html
                     st.session_state.messages.append(assistant_message)

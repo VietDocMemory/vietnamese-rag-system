@@ -6,6 +6,7 @@
 # data/*.jsonl
 !data/rag_evaluation_dataset.jsonl
 qdrant_storage/
+trained_d2l/
 dump.rdb   
 
 # Evaluation & Generation Scripts (Keep Private)
@@ -30,6 +31,7 @@ eval_pipeline.log
 .env
 .env.local
 .venv
+.uv-cache/
 venv/
 env/
 ENV/

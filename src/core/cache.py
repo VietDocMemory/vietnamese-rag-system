@@ -128,9 +128,16 @@ async def get_cached_response(session_id: str, query: str):
 
 # save response to cache
 async def set_cached_response(
-    session_id: str, query: str, response: str, sources: list, expire_seconds: int = 86400
+    session_id: str,
+    query: str,
+    response: str,
+    sources: list,
+    expire_seconds: int = 86400,
+    routing: dict | None = None,
 ):
     """save answer to cache (24h default)"""
     key = _hash_query(session_id, query)
     data = {"response": response, "sources": sources}
+    if routing is not None:
+        data["routing"] = routing
     await _set_value(key, json.dumps(data), expire_seconds)

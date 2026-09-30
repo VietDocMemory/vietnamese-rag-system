@@ -1,38 +1,127 @@
+import asyncio
+import threading
+
+import pytest
+
+from src.core.config import settings
+from src.generation.d2l_backend import D2LBackend
 from src.generation.generator import RAGGenerator
 
 
-def test_build_messages_formatting():
-    generator = RAGGenerator(max_context_length=1000)
-    query = "Luật bảo hiểm là gì?"
-    contexts = [{"content": "Bảo hiểm là biện pháp chia sẻ rủi ro."}]
+class Backend:
+    model_name = "checkpoint/model"
 
-    messages = generator._build_messages(query, contexts)
-
-    assert len(messages) == 2
-    assert messages[0]["role"] == "system"
-    assert (
-        "Tuân thủ các quy tắc" in messages[0]["content"].lower()
-        or "quy tắc" in messages[0]["content"].lower()
-    )
-
-    assert messages[1]["role"] == "user"
-    assert "Luật bảo hiểm là gì?" in messages[1]["content"]
-    assert "Bảo hiểm là biện pháp chia sẻ rủi ro." in messages[1]["content"]
+    def infer(self, **kwargs):
+        self.payload = kwargs
+        self.thread_id = threading.get_ident()
+        return {
+            "answer": "selected answer",
+            "sources": kwargs["contexts"],
+            "routing": {"selected": "d2l"},
+        }
 
 
-def test_build_messages_truncation_limit():
-    generator = RAGGenerator(max_context_length=150)  # tight limit
-    query = "Hỏi điều khoản?"
+async def test_direct_inference_runs_in_same_process_off_event_loop():
+    backend = Backend()
+    generator = RAGGenerator(backend)
+    try:
+        answer = await generator.generate("question", [{"content": "evidence"}])
+        assert answer["answer"] == "selected answer"
+        assert backend.thread_id != threading.get_ident()
+        assert backend.payload["mode"] == "auto"
+        assert backend.payload["contexts"][0]["content"] == "evidence"
+        assert "model" not in backend.payload
+        assert [part async for part in generator.generate_stream("q", [{"content": "p"}])] == [
+            "selected answer"
+        ]
+    finally:
+        await generator.aclose()
 
-    contexts = [
-        {"content": "a" * 100},  # Length ~ 100 inside template
-        {"content": "b" * 100},  # Should be truncated explicitly because length exceeds 150
-    ]
 
-    messages = generator._build_messages(query, contexts)
-    user_content = messages[1]["content"]
+async def test_concurrent_initialization_loads_once(monkeypatch):
+    loads = []
+    backend = Backend()
 
-    # First context block 'a' should be there
-    assert "a" * 100 in user_content
-    # Second context block 'b' should be dropped to respect context limit
-    assert "b" * 100 not in user_content
+    def load(*args, **kwargs):
+        loads.append((args, kwargs))
+        return backend
+
+    monkeypatch.setattr(D2LBackend, "load", load)
+    generator = RAGGenerator()
+    try:
+        await asyncio.gather(
+            generator.initialize(),
+            generator.initialize(),
+            generator.generate("q", [{"content": "p"}]),
+        )
+        assert len(loads) == 1
+        assert loads[0][0][0].is_absolute()
+    finally:
+        await generator.aclose()
+    with pytest.raises(RuntimeError, match="đóng"):
+        await generator.initialize()
+
+
+async def test_cache_identity_includes_model_instance_evidence_mode_parameters(monkeypatch):
+    generator = RAGGenerator(Backend())
+    other = RAGGenerator(Backend())
+    docs = [{"content": "original"}]
+    try:
+        key = await generator.cache_key("Q", docs)
+        assert key == await generator.cache_key("Q", docs)
+        assert key != await other.cache_key("Q", docs)
+        assert key != await generator.cache_key("q", docs)
+        assert key != await generator.cache_key("Q", [{"content": "changed"}])
+        assert key != await generator.cache_key("Q", docs, "d2l")
+        monkeypatch.setattr(settings, "TRUSTMARGIN_TAU", -0.1)
+        assert key != await generator.cache_key("Q", docs)
+    finally:
+        await generator.aclose()
+        await other.aclose()
+
+
+async def test_cancellation_keeps_running_model_owned_until_shutdown():
+    started = threading.Event()
+    finish = threading.Event()
+    released = threading.Event()
+
+    class BlockingBackend(Backend):
+        def infer(self, **kwargs):
+            started.set()
+            try:
+                assert finish.wait(timeout=5)
+                return super().infer(**kwargs)
+            finally:
+                released.set()
+
+    generator = RAGGenerator(BlockingBackend())
+    task = asyncio.create_task(generator.generate("q", [{"content": "p"}]))
+    try:
+        assert await asyncio.to_thread(started.wait, 2)
+        task.cancel()
+        with pytest.raises(asyncio.CancelledError):
+            await task
+        closing = asyncio.create_task(generator.aclose())
+        await asyncio.sleep(0.01)
+        assert not closing.done()
+        assert not released.is_set()
+        finish.set()
+        await closing
+        assert released.is_set()
+        assert generator._backend is None
+    finally:
+        finish.set()
+        await generator.aclose()
+
+
+async def test_load_failure_is_reported_without_inference_fallback(monkeypatch):
+    def fail(*args, **kwargs):
+        raise RuntimeError("missing checkpoint")
+
+    monkeypatch.setattr(D2LBackend, "load", fail)
+    generator = RAGGenerator()
+    try:
+        with pytest.raises(RuntimeError, match="missing checkpoint"):
+            await generator.initialize()
+    finally:
+        await generator.aclose()

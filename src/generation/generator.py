@@ -1,126 +1,85 @@
-import httpx
+"""In-process Doc-to-LoRA generation and TrustMargin arbitration."""
+
+import asyncio
+from concurrent.futures import ThreadPoolExecutor
+import hashlib
 import json
-import logging
-from src.core.config import settings
+import uuid
 
-logger = logging.getLogger(__name__)
-
-
-def _extract_ollama_error(response: httpx.Response) -> str:
-    try:
-        data = response.json()
-        error = data.get("error")
-        if error:
-            return str(error)
-    except ValueError:
-        pass
-
-    return response.text.strip()
+from src.core.config import PROJECT_ROOT, settings
+from src.generation.d2l_backend import D2LBackend
 
 
-# rag generation pipeline
 class RAGGenerator:
-    def __init__(self, max_context_length: int = 25000):
-        self.url = settings.OLLAMA_BASE_URL
-        self.model_name = settings.LLM_MODEL_NAME
-        self.bot_name = settings.BOT_NAME
-        self.creator_name = settings.CREATOR_NAME
-        self.temperature = settings.LLM_TEMPERATURE
-        self.max_context_length = max_context_length
+    def __init__(self, backend=None):
+        self._backend = backend
+        self._executor = ThreadPoolExecutor(max_workers=1, thread_name_prefix="d2l")
+        self._closed = False
+        self._revision = uuid.uuid4().hex
+        checkpoint = settings.D2L_CHECKPOINT_PATH
+        self._checkpoint = checkpoint if checkpoint.is_absolute() else PROJECT_ROOT / checkpoint
 
-    def _build_messages(self, query: str, contexts: list) -> list:
-        # set persona and strict rules
-        system_instruction = (
-            f"Bạn tên là {self.bot_name}, một trợ lý AI thông minh chuyên giải đáp tài liệu, "
-            f"được phát triển bởi {self.creator_name}.\n\n"
-            "Nhiệm vụ của bạn là trả lời câu hỏi dựa HOÀN TOÀN vào phần <context> được cung cấp.\n"
-            "HÃY TUÂN THỦ CÁC QUY TẮC SAU:\n"
-            "1. Chỉ sử dụng thông tin trong <context>. Tuyệt đối không dùng kiến thức bên ngoài.\n"
-            "2. Trả lời chi tiết, chính xác, lịch sự và dễ hiểu bằng tiếng Việt.\n"
-            "3. Nếu <context> KHÔNG chứa thông tin liên quan, hãy trả lời chính xác câu sau: "
-            "'Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này.'\n"
-            "4. Không tự bịa đặt thông tin (No hallucination)."
-        )
+    def _load(self):
+        # Executed only on our single inference thread; concurrent first calls load once.
+        if self._backend is None:
+            self._backend = D2LBackend.load(
+                self._checkpoint,
+                max_input_tokens=settings.D2L_MAX_INPUT_TOKENS,
+                max_context_tokens=settings.D2L_MAX_CONTEXT_TOKENS,
+            )
+        return self._backend
 
-        # overflow protection
-        context_parts = []
-        current_length = 0
+    async def _run(self, function, *args):
+        if self._closed:
+            raise RuntimeError("Doc-to-LoRA đã đóng.")
+        return await asyncio.get_running_loop().run_in_executor(self._executor, function, *args)
 
-        for i, c in enumerate(contexts):
-            chunk_text = f"Tài liệu {i + 1}:\n{c['content']}"
-            if current_length + len(chunk_text) > self.max_context_length:
-                logger.warning("context is too long, truncating to fit the limit.")
-                break
-            context_parts.append(chunk_text)
-            current_length += len(chunk_text)
+    async def initialize(self):
+        await self._run(self._load)
 
-        context_text = "\n\n".join(context_parts)
+    async def aclose(self):
+        if self._closed:
+            return
+        self._closed = True
+        # A cancelled HTTP request does not stop running CUDA work. Drain it before
+        # releasing the model; queued jobs are cancelled without touching adapters.
+        await asyncio.to_thread(self._executor.shutdown, wait=True, cancel_futures=True)
+        self._backend = None
 
-        # user content format
-        user_content = f"<context>\n{context_text}\n</context>\n\nCâu hỏi: {query}"
-
-        return [
-            {"role": "system", "content": system_instruction},
-            {"role": "user", "content": user_content},
-        ]
-
-    # async stream answer
-    async def generate_stream(self, query: str, contexts: list):
-        messages = self._build_messages(query, contexts)
-
-        payload = {
-            "model": self.model_name,
-            "messages": messages,
-            "stream": True,
-            "options": {
-                "temperature": self.temperature,
-                "top_p": 0.95,
-                "num_predict": -1,
-                "num_ctx": 8192,
-            },
+    def _payload(self, query, contexts, mode):
+        return {
+            "query": query,
+            "contexts": [
+                {key: doc.get(key) for key in ("content", "page", "chunk_index")}
+                for doc in contexts
+            ],
+            "mode": mode,
+            "lambda_bind": settings.TRUSTMARGIN_LAMBDA_BIND,
+            "tau": settings.TRUSTMARGIN_TAU,
+            "max_new_tokens": settings.LLM_MAX_NEW_TOKENS,
         }
 
-        try:
-            # timeout 60-120s
-            async with httpx.AsyncClient(timeout=httpx.Timeout(60.0, read=120.0)) as client:
-                async with client.stream("POST", self.url, json=payload) as response:
-                    response.raise_for_status()
+    async def cache_key(self, query, contexts, mode="auto"):
+        await self.initialize()
+        fingerprint = {
+            "runtime": self._revision,
+            "model": self._backend.model_name,
+            "payload": self._payload(query, contexts, mode),
+            "protocol": "inprocess-d2l-trustmargin-v2",
+        }
+        return hashlib.sha256(
+            json.dumps(fingerprint, sort_keys=True, ensure_ascii=False).encode()
+        ).hexdigest()
 
-                    async for line in response.aiter_lines():
-                        if line:
-                            try:
-                                chunk = json.loads(line)
-                                if "message" in chunk and "content" in chunk["message"]:
-                                    content = chunk["message"]["content"]
-                                    # yield only if real content
-                                    if content:
-                                        yield content
+    def _infer(self, payload):
+        return self._load().infer(**payload)
 
-                                if chunk.get("done"):
-                                    break
+    async def generate(self, query, contexts, mode="auto"):
+        # No HTTP, subprocess or separate model service. The thread keeps FastAPI
+        # responsive while the shared model performs blocking PyTorch computation.
+        return await self._run(self._infer, self._payload(query, contexts, mode))
 
-                            except json.JSONDecodeError:
-                                logger.warning(f"Error parsing JSON from LLM chunk: {line}")
-                                continue
-
-        except httpx.HTTPStatusError as e:
-            detail = _extract_ollama_error(e.response)
-            logger.error("HTTP Error %s from Ollama: %s", e.response.status_code, detail)
-
-            memory_error_markers = (
-                "failed to allocate",
-                "unable to allocate",
-                "requires more system memory",
-                "out of memory",
-            )
-            if any(marker in detail.lower() for marker in memory_error_markers):
-                raise RuntimeError(
-                    f"Ollama không đủ bộ nhớ để chạy model '{self.model_name}'. "
-                    "Hãy dùng model nhỏ hơn trong LLM_MODEL_NAME hoặc đóng bớt ứng dụng nặng."
-                ) from e
-
-            raise RuntimeError(f"Ollama trả về lỗi {e.response.status_code}: {detail}") from e
-
-        except httpx.RequestError as e:
-            logger.error(f"Request Error from Ollama: {e}")
-            raise ConnectionError("Không thể kết nối tới LLM (Ollama).")
+    async def generate_stream(self, query, contexts):
+        # Compatibility for the offline evaluator. Arbitration must finish first.
+        result = await self.generate(query, contexts)
+        yield result["answer"]

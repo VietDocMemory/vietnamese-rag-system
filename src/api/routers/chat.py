@@ -1,13 +1,15 @@
-import json
 import asyncio
+import json
 import logging
-from fastapi import APIRouter, Query, Depends
+from typing import Literal
+
+from fastapi import APIRouter, Depends, Query
 from fastapi.responses import StreamingResponse
 
-from src.retrieval.search_engine import RAGRetriever
+from src.api.dependencies import get_generator, get_retriever
+from src.core.cache import get_cached_response, set_cached_response
 from src.generation.generator import RAGGenerator
-from src.api.dependencies import get_retriever, get_generator
-from src.core.cache import get_cached_response, set_cached_response  # add cache
+from src.retrieval.search_engine import RAGRetriever
 
 router = APIRouter(tags=["Chat"])
 logger = logging.getLogger(__name__)
@@ -18,132 +20,80 @@ def stream_event(event_type: str, **payload) -> str:
     return json.dumps({"type": event_type, **payload}, ensure_ascii=False) + "\n"
 
 
-# query rag system
+async def with_heartbeat(task, message):
+    try:
+        while not task.done():
+            done, _ = await asyncio.wait({task}, timeout=STREAM_HEARTBEAT_SECONDS)
+            if task in done:
+                break
+            yield stream_event("status", message=message)
+    finally:
+        if not task.done():
+            task.cancel()
+            await asyncio.gather(task, return_exceptions=True)
+
+
 @router.get("/ask")
 async def ask_rag(
-    query: str = Query(...),
+    query: str = Query(..., min_length=1, max_length=20000),
     session_id: str = Query(...),
     retriever: RAGRetriever = Depends(get_retriever),
     generator: RAGGenerator = Depends(get_generator),
+    mode: Literal["auto", "rag", "d2l"] = "auto",
 ):
-    # stream response generator
     async def stream_result():
+        task = None
         try:
-            # cache check
-            cached = await get_cached_response(session_id, query)
-            if cached:
-                # return sources
-                yield json.dumps({"type": "sources", "data": cached["sources"]}) + "\n"
-                # fake streaming for smooth ux
-                words = cached["response"].split(" ")
-                for word in words:
-                    yield json.dumps({"type": "content", "data": word + " "}) + "\n"
-                    await asyncio.sleep(0.02)
-                return
-
-            # run pipeline if no cache
             yield stream_event("status", message="Đang tìm kiếm tài liệu liên quan...")
-            try:
-                search_task = asyncio.create_task(
-                    retriever.search(query, collection_name=session_id, top_k=8)
-                )
-                while not search_task.done():
-                    done, _ = await asyncio.wait({search_task}, timeout=STREAM_HEARTBEAT_SECONDS)
-                    if search_task in done:
-                        break
-                    yield stream_event("status", message="Đang tìm kiếm tài liệu liên quan...")
-
-                relevant_docs = search_task.result()
-            except asyncio.CancelledError:
-                search_task.cancel()
-                raise
-            except RuntimeError as e:
-                yield stream_event("error", message=str(e))
-                return
-            except Exception:
-                logger.error(
-                    "Error while retrieving documents for session %s.", session_id, exc_info=True
-                )
-                yield (
-                    json.dumps(
-                        {
-                            "type": "error",
-                            "message": "Phiên làm việc không tồn tại hoặc dữ liệu chưa sẵn sàng. Vui lòng tải file lại.",
-                        }
-                    )
-                    + "\n"
-                )
+            task = asyncio.create_task(retriever.search(query, collection_name=session_id, top_k=8))
+            async for heartbeat in with_heartbeat(task, "Đang tìm kiếm tài liệu liên quan..."):
+                yield heartbeat
+            docs = task.result()
+            if not docs:
+                yield stream_event("error", message="Không tìm thấy nội dung tài liệu phù hợp.")
                 return
 
-            # handle empty results
-            if not relevant_docs:
-                yield (
-                    json.dumps(
-                        {
-                            "type": "error",
-                            "message": "Dựa trên tài liệu bạn tải lên, tôi không tìm thấy thông tin phù hợp.",
-                        }
-                    )
-                    + "\n"
-                )
-                return
-
-            sources = [
-                {
-                    "page": d.get("page"),
-                    "chunk_index": d.get("chunk_index"),
-                    "content": d.get("content"),
+            # Changed evidence, mode, parameters and model instance invalidate the cache.
+            task = asyncio.create_task(generator.cache_key(query, docs, mode))
+            async for heartbeat in with_heartbeat(task, "Đang chuẩn bị model D2L..."):
+                yield heartbeat
+            key = task.result()
+            cached = await get_cached_response(session_id, key)
+            if cached:
+                result = {
+                    "answer": cached["response"],
+                    "sources": cached["sources"],
+                    "routing": cached["routing"],
                 }
-                for d in relevant_docs
-            ]
-            yield json.dumps({"type": "sources", "data": sources}) + "\n"
-
-            # cache response while streaming
-            full_response_text = ""
-            try:
-                answer_stream = generator.generate_stream(query, relevant_docs)
-                answer_iter = answer_stream.__aiter__()
-
-                while True:
-                    chunk_task = asyncio.create_task(answer_iter.__anext__())
-                    try:
-                        while not chunk_task.done():
-                            done, _ = await asyncio.wait(
-                                {chunk_task}, timeout=STREAM_HEARTBEAT_SECONDS
-                            )
-                            if chunk_task in done:
-                                break
-                            yield stream_event("status", message="Đang sinh câu trả lời...")
-
-                        chunk = chunk_task.result()
-                    except StopAsyncIteration:
-                        break
-                    except asyncio.CancelledError:
-                        chunk_task.cancel()
-                        raise
-
-                    full_response_text += chunk
-                    yield stream_event("content", data=chunk)
-
-                # save to redis
-                await set_cached_response(session_id, query, full_response_text, sources)
-
-            except (RuntimeError, ConnectionError) as e:
-                yield json.dumps({"type": "error", "message": f"\n\n*({str(e)})*"}) + "\n"
-            except Exception:
-                logger.error("Error while streaming LLM response.", exc_info=True)
-                yield (
-                    json.dumps(
-                        {
-                            "type": "error",
-                            "message": "\n\n*(Lỗi: Mất kết nối tới mô hình ngôn ngữ AI)*",
-                        }
-                    )
-                    + "\n"
+            else:
+                message = (
+                    "Đang tạo hai câu trả lời và chọn bằng TrustMargin..."
+                    if mode == "auto"
+                    else f"Đang tạo câu trả lời bằng {mode.upper()}..."
+                )
+                yield stream_event("status", message=message)
+                task = asyncio.create_task(generator.generate(query, docs, mode))
+                async for heartbeat in with_heartbeat(task, message):
+                    yield heartbeat
+                result = task.result()
+                await set_cached_response(
+                    session_id, key, result["answer"], result["sources"], routing=result["routing"]
                 )
 
+            # Sources reflect the actual token budget; expose only the selected candidate.
+            yield stream_event("sources", data=result["sources"])
+            yield stream_event("routing", data=result["routing"], cached=bool(cached))
+            yield stream_event("content", data=result["answer"])
+        except (RuntimeError, ConnectionError) as exc:
+            yield stream_event("error", message=str(exc))
         except Exception:
-            logger.error("Unhandled chat stream error.", exc_info=True)
-            yield json.dumps({"type": "error", "message": "Lỗi luồng hệ thống."}) + "\n"
+            logger.exception("Chat inference failed for session %s", session_id)
+            yield stream_event(
+                "error", message="Không thể xử lý câu hỏi. Kiểm tra tài liệu và dịch vụ model."
+            )
+        finally:
+            if task is not None and not task.done():
+                task.cancel()
+                await asyncio.gather(task, return_exceptions=True)
 
     return StreamingResponse(stream_result(), media_type="application/x-ndjson")

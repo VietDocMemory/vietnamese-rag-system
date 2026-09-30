@@ -4,7 +4,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.25+-FF4B4B.svg)
 ![Qdrant](https://img.shields.io/badge/Qdrant-Hybrid_Search-red.svg)
-![Ollama](https://img.shields.io/badge/Ollama-Qwen2.5-black.svg)
+![Doc-to-LoRA](https://img.shields.io/badge/Generation-Doc--to--LoRA%20%2B%20TrustMargin-black.svg)
 ![Redis](https://img.shields.io/badge/Redis-Caching-dc382d.svg)
 
 > A production-oriented Retrieval-Augmented Generation (RAG) system designed with explicit trade-offs in retrieval quality, latency, and evaluation.
@@ -25,6 +25,7 @@
 - Semantic diversity filtering to remove redundant context
 - Async FastAPI pipeline with streaming responses
 - Redis-based exact-match caching for latency reduction
+- RAG/D2L answer selection with TrustMargin using the base model from a D2L checkpoint
 - LLM-as-a-judge evaluation with automated root cause analysis
 
 ## System Architecture & Workflow
@@ -37,7 +38,7 @@ The system is built with **FastAPI** (backend) and **Streamlit** (frontend), int
    - **Query Expansion:** Normalizes and expands the user query.
    - **Hybrid Search:** Executes concurrent searches on Qdrant using Reciprocal Rank Fusion (RRF) to combine dense and sparse results.
    - **Reranking & Filtering:** Uses `bge-reranker-v2-m3` to score top candidates, followed by a custom Cosine-Similarity Diversity Filter to remove semantically redundant chunks.
-4. **Generation (`src/generation`)**: Constructs context-aware prompts with length protection. Streams responses via **Ollama** running `Qwen2.5:7b-instruct`.
+4. **Generation (`src/generation`)**: The bundled Doc-to-LoRA runtime generates RAG and D2L candidates directly inside the FastAPI process using the checkpoint's base model. TrustMargin selects the final answer from six teacher-forced likelihoods. NDJSON heartbeats are sent while arbitration runs; only the selected answer is returned.
 5. **Caching (`src/core/cache.py`)**: Uses **Redis** to cache LLM responses and manage async background task statuses (e.g., file upload progress).
 
 <p align="center">
@@ -69,7 +70,7 @@ This system is not just a RAG implementation — it is built around several crit
 - **Frontend:** Streamlit
 - **Vector Database:** Qdrant (Async Client)
 - **Caching:** Redis
-- **Models:** BAAI/bge-m3 (Embedding), BAAI/bge-reranker-v2-m3 (Reranking), Qwen2.5:7b-instruct (Generation via Ollama)
+- **Models:** BAAI/bge-m3 (Embedding), BAAI/bge-reranker-v2-m3 (Reranking), base model specified by the Doc-to-LoRA checkpoint (Generation)
 - **NLP:** Underthesea (Vietnamese word segmentation)
 
 ## What This System Gets Right
@@ -85,7 +86,7 @@ This system is not just a RAG implementation — it is built around several crit
 ### Prerequisites
 - [uv](https://docs.astral.sh/uv/) (Highly Recommend)
 - Docker (for Qdrant and Redis)
-- [Ollama](https://ollama.com) installed locally.
+- CUDA-enabled PyTorch and a pretrained Doc-to-LoRA checkpoint in the same environment as this repo. The inference source is bundled in `vendor/doc-to-lora`. See [D2L + TrustMargin setup](docs/d2l-trustmargin.md) for commands, model requirements, and the adaptation from Direct/RAG to D2L/RAG.
 - Python 3.12+ (managed by `uv`)
 
 ### Setup Steps
@@ -103,14 +104,12 @@ This system is not just a RAG implementation — it is built around several crit
    ```
 
 3. **Start required services:**
-   Ensure Docker and Ollama are running, then pull the necessary models:
+   Start Qdrant and Redis; download the D2L checkpoint using the linked setup guide. The API loads the model directly:
    ```bash
    # Run Qdrant and Redis via Docker
    docker run -d -p 6333:6333 qdrant/qdrant
    docker run -d -p 6379:6379 redis
    
-   # Pull the local LLM
-   ollama pull qwen2.5:7b-instruct
    ```
 
 4. **Environment Configuration:**
@@ -119,8 +118,12 @@ This system is not just a RAG implementation — it is built around several crit
    QDRANT_HOST="localhost"
    QDRANT_PORT=6333
    REDIS_URL="redis://localhost:6379"
-   OLLAMA_BASE_URL="http://localhost:11434/api/chat"
-   LLM_MODEL_NAME="qwen2.5:7b-instruct"
+   D2L_CHECKPOINT_PATH="trained_d2l/gemma_demo/checkpoint-80000/pytorch_model.bin"
+   D2L_MAX_INPUT_TOKENS=4096
+   D2L_MAX_CONTEXT_TOKENS=2048
+   LLM_MAX_NEW_TOKENS=256
+   TRUSTMARGIN_LAMBDA_BIND=0.5
+   TRUSTMARGIN_TAU=-1.5
    RAG_API_BASE_URL="http://127.0.0.1:8000"
    GEMINI_API_KEY="your_api_key_for_evaluation"
    ```
@@ -131,7 +134,7 @@ The system consists of a backend API and a frontend UI.
 
 1. **Start the FastAPI server:**
    ```bash
-   uv run uvicorn src.api.main:app --host 0.0.0.0 --port 8000
+   uv run uvicorn src.api.main:app --host 0.0.0.0 --port 8000 --workers 1
    ```
 
 2. **Start the Streamlit UI:**
@@ -141,9 +144,17 @@ The system consists of a backend API and a frontend UI.
 
 Open http://localhost:8501 to upload a PDF and start querying.
 
+Select **Tự động (TrustMargin)**, **RAG**, or **Doc-to-LoRA** in the UI. The API
+accepts `mode=auto|rag|d2l`. D2L internalizes the retrieved passages per question,
+not the entire PDF at upload. The defaults from the TrustMargin paper have not
+been calibrated for Vietnamese D2L; see [method and limitations](docs/d2l-trustmargin.md).
+
 
 
 ## Evaluation & Benchmarks
+
+The benchmark plots below describe the previous generation pipeline. They are
+not measurements of the new D2L/TrustMargin integration.
 
 To ensure the system's reliability in practical applications, we implemented a comprehensive **LLM-as-a-Judge** evaluation pipeline (`src/evaluation/evaluator.py`). 
 

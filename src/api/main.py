@@ -21,10 +21,11 @@ logger = logging.getLogger(__name__)
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     logger.info("Đang khởi tạo toàn bộ AI Models (Singleton)...")
+    app.state.generator = RAGGenerator()
     try:
         # objects and states
+        await app.state.generator.initialize()
         app.state.retriever = RAGRetriever()
-        app.state.generator = RAGGenerator()
         app.state.vector_store = VectorStoreManager()
         app.state.pipeline = PDFIngestionPipeline()
         logger.info("Hệ thống khởi tạo thành công!")
@@ -34,6 +35,7 @@ async def lifespan(app: FastAPI):
         raise e
     finally:
         logger.info("Đang giải phóng bộ nhớ...")
+        await app.state.generator.aclose()
         app.state.retriever = None
         app.state.generator = None
         app.state.vector_store = None
