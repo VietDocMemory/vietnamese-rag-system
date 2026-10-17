@@ -8,16 +8,15 @@ def test_build_messages_formatting():
 
     messages = generator._build_messages(query, contexts)
 
-    assert len(messages) == 2
-    assert messages[0]["role"] == "system"
+    assert len(messages) == 1
+    assert messages[0]["role"] == "user"
     assert (
         "Tuân thủ các quy tắc" in messages[0]["content"].lower()
         or "quy tắc" in messages[0]["content"].lower()
     )
 
-    assert messages[1]["role"] == "user"
-    assert "Luật bảo hiểm là gì?" in messages[1]["content"]
-    assert "Bảo hiểm là biện pháp chia sẻ rủi ro." in messages[1]["content"]
+    assert "Luật bảo hiểm là gì?" in messages[0]["content"]
+    assert "Bảo hiểm là biện pháp chia sẻ rủi ro." in messages[0]["content"]
 
 
 def test_build_messages_truncation_limit():
@@ -30,7 +29,7 @@ def test_build_messages_truncation_limit():
     ]
 
     messages = generator._build_messages(query, contexts)
-    user_content = messages[1]["content"]
+    user_content = messages[0]["content"]
 
     # First context block 'a' should be there
     assert "a" * 100 in user_content

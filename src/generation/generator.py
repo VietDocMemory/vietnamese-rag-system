@@ -47,16 +47,17 @@ Tuân thủ các quy tắc sau: chỉ sử dụng thông tin trong phần NGỮ 
 câu hỏi; không suy đoán và không bổ sung kiến thức bên ngoài. Nếu ngữ cảnh không
 đủ để trả lời, hãy trả lời đúng một câu: "Tài liệu không đề cập." Trả lời ngắn
 gọn, trực tiếp và có thể trích dẫn [Nguồn n] khi cần thiết."""
-        user_prompt = f"""NGỮ CẢNH:
+        user_prompt = f"""{system_prompt}
+
+NGỮ CẢNH:
 {context_text}
 
 CÂU HỎI: {query}
 
 TRẢ LỜI:"""
-        return [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ]
+        # Gemma's chat template supports user/model turns but not a separate
+        # system turn. Put the grounding policy in the user message instead.
+        return [{"role": "user", "content": user_prompt}]
 
     def _device_and_dtype(self) -> tuple[str, torch.dtype]:
         requested_device = settings.GEMMA_DEVICE.lower()
