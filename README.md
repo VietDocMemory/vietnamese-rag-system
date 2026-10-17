@@ -4,7 +4,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.25+-FF4B4B.svg)
 ![Qdrant](https://img.shields.io/badge/Qdrant-Hybrid_Search-red.svg)
-![Ollama](https://img.shields.io/badge/Ollama-Qwen2.5-black.svg)
+![Hugging%20Face](https://img.shields.io/badge/Hugging%20Face-Gemma%202--2B--IT-yellow.svg)
 ![Redis](https://img.shields.io/badge/Redis-Caching-dc382d.svg)
 
 > A production-oriented Retrieval-Augmented Generation (RAG) system designed with explicit trade-offs in retrieval quality, latency, and evaluation.
@@ -37,7 +37,7 @@ The system is built with **FastAPI** (backend) and **Streamlit** (frontend), int
    - **Query Expansion:** Normalizes and expands the user query.
    - **Hybrid Search:** Executes concurrent searches on Qdrant using Reciprocal Rank Fusion (RRF) to combine dense and sparse results.
    - **Reranking & Filtering:** Uses `bge-reranker-v2-m3` to score top candidates, followed by a custom Cosine-Similarity Diversity Filter to remove semantically redundant chunks.
-4. **Generation (`src/generation`)**: Constructs context-aware prompts with length protection. Streams responses via **Ollama** running `Qwen2.5:7b-instruct`.
+4. **Generation (`src/generation`)**: Constructs context-aware prompts with token-aware length protection, then generates with Hugging Face `google/gemma-2-2b-it` — the same base generator used for TrustMargin's external RAG candidate.
 5. **Caching (`src/core/cache.py`)**: Uses **Redis** to cache LLM responses and manage async background task statuses (e.g., file upload progress).
 
 <p align="center">
@@ -69,7 +69,7 @@ This system is not just a RAG implementation — it is built around several crit
 - **Frontend:** Streamlit
 - **Vector Database:** Qdrant (Async Client)
 - **Caching:** Redis
-- **Models:** BAAI/bge-m3 (Embedding), BAAI/bge-reranker-v2-m3 (Reranking), Qwen2.5:7b-instruct (Generation via Ollama)
+- **Models:** BAAI/bge-m3 (Embedding), BAAI/bge-reranker-v2-m3 (Reranking), google/gemma-2-2b-it (Generation via Hugging Face)
 - **NLP:** Underthesea (Vietnamese word segmentation)
 
 ## What This System Gets Right
@@ -85,7 +85,7 @@ This system is not just a RAG implementation — it is built around several crit
 ### Prerequisites
 - [uv](https://docs.astral.sh/uv/) (Highly Recommend)
 - Docker (for Qdrant and Redis)
-- [Ollama](https://ollama.com) installed locally.
+- A Hugging Face account that has accepted the Gemma license for [google/gemma-2-2b-it](https://huggingface.co/google/gemma-2-2b-it).
 - Python 3.12+ (managed by `uv`)
 
 ### Setup Steps
@@ -103,14 +103,12 @@ This system is not just a RAG implementation — it is built around several crit
    ```
 
 3. **Start required services:**
-   Ensure Docker and Ollama are running, then pull the necessary models:
+   Ensure Docker is running:
    ```bash
    # Run Qdrant and Redis via Docker
    docker run -d -p 6333:6333 qdrant/qdrant
    docker run -d -p 6379:6379 redis
    
-   # Pull the local LLM
-   ollama pull qwen2.5:7b-instruct
    ```
 
 4. **Environment Configuration:**
@@ -119,8 +117,16 @@ This system is not just a RAG implementation — it is built around several crit
    QDRANT_HOST="localhost"
    QDRANT_PORT=6333
    REDIS_URL="redis://localhost:6379"
-   OLLAMA_BASE_URL="http://localhost:11434/api/chat"
-   LLM_MODEL_NAME="qwen2.5:7b-instruct"
+   # Create a read token at https://huggingface.co/settings/tokens
+   HF_TOKEN="your_huggingface_read_token"
+   HF_MODEL_NAME="google/gemma-2-2b-it"
+   GEMMA_DEVICE="cuda"
+   # Optional: log every RAG inference to Weights & Biases
+   WANDB_ENABLED="true"
+   WANDB_API_KEY="your_wandb_api_key"
+   WANDB_PROJECT="vietnamese-rag-gemma"
+   WANDB_RUN_NAME="gemma-smoke"
+   WANDB_MODE="online"
    RAG_API_BASE_URL="http://127.0.0.1:8000"
    GEMINI_API_KEY="your_api_key_for_evaluation"
    ```
@@ -140,6 +146,10 @@ The system consists of a backend API and a frontend UI.
    ```
 
 Open http://localhost:8501 to upload a PDF and start querying.
+
+### W&B inference tracking
+
+When `WANDB_ENABLED=true`, the API creates one W&B run per server session and logs one step per question. The run includes retrieval, generation and end-to-end latency, cache hits, context/answer sizes, GPU memory, and a table containing the question, answer and retrieved sources. Set `WANDB_LOG_TEXT=false` if questions and document excerpts must not leave the machine. W&B failures never interrupt RAG responses.
 
 
 

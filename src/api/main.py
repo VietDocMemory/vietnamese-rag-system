@@ -10,6 +10,7 @@ from src.generation.generator import RAGGenerator
 from src.ingestion.vector_store import VectorStoreManager
 from src.ingestion.pdf_loader import PDFIngestionPipeline
 from src.api.routers import document, chat
+from src.core.inference_tracking import inference_tracker
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
@@ -34,6 +35,10 @@ async def lifespan(app: FastAPI):
         raise e
     finally:
         logger.info("Đang giải phóng bộ nhớ...")
+        generator = getattr(app.state, "generator", None)
+        if generator is not None:
+            await generator.aclose()
+        await inference_tracker.finish()
         app.state.retriever = None
         app.state.generator = None
         app.state.vector_store = None

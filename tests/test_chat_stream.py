@@ -17,15 +17,21 @@ class SlowGenerator:
 
 
 async def test_ask_stream_sends_heartbeat_while_waiting(monkeypatch):
+    tracked = []
+
     async def fake_get_cached_response(session_id, query):
         return None
 
     async def fake_set_cached_response(session_id, query, response, sources):
         return None
 
+    async def fake_track(record):
+        tracked.append(record)
+
     monkeypatch.setattr(chat, "STREAM_HEARTBEAT_SECONDS", 0.01)
     monkeypatch.setattr(chat, "get_cached_response", fake_get_cached_response)
     monkeypatch.setattr(chat, "set_cached_response", fake_set_cached_response)
+    monkeypatch.setattr(chat.inference_tracker, "log", fake_track)
 
     response = await chat.ask_rag("question", "session", SlowRetriever(), SlowGenerator())
 
@@ -39,3 +45,7 @@ async def test_ask_stream_sends_heartbeat_while_waiting(monkeypatch):
     assert "sources" in event_types
     assert "content" in event_types
     assert event_types.count("status") >= 2
+    assert len(tracked) == 1
+    assert tracked[0]["question"] == "question"
+    assert tracked[0]["answer"] == "demo answer"
+    assert tracked[0]["success"] is True

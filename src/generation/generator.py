@@ -1,126 +1,190 @@
-import httpx
-import json
+"""Grounded RAG generation with the Gemma base model used by TrustMargin.
+
+The model is intentionally loaded lazily: starting the API only creates the
+generator object, while the first question loads the weights onto the selected
+device.  This keeps the existing FastAPI lifecycle lightweight and avoids an
+Ollama service dependency.
+"""
+
+from __future__ import annotations
+
+import asyncio
 import logging
+from concurrent.futures import ThreadPoolExecutor
+from typing import Any, AsyncGenerator
+
+import torch
+
 from src.core.config import settings
 
 logger = logging.getLogger(__name__)
 
 
-def _extract_ollama_error(response: httpx.Response) -> str:
-    try:
-        data = response.json()
-        error = data.get("error")
-        if error:
-            return str(error)
-    except ValueError:
-        pass
-
-    return response.text.strip()
-
-
-# rag generation pipeline
 class RAGGenerator:
-    def __init__(self, max_context_length: int = 25000):
-        self.url = settings.OLLAMA_BASE_URL
-        self.model_name = settings.LLM_MODEL_NAME
-        self.bot_name = settings.BOT_NAME
-        self.creator_name = settings.CREATOR_NAME
-        self.temperature = settings.LLM_TEMPERATURE
-        self.max_context_length = max_context_length
+    """Generate an answer from retrieved evidence using Gemma-2-2B-IT."""
 
-    def _build_messages(self, query: str, contexts: list) -> list:
-        # set persona and strict rules
-        system_instruction = (
-            f"Bạn tên là {self.bot_name}, một trợ lý AI thông minh chuyên giải đáp tài liệu, "
-            f"được phát triển bởi {self.creator_name}.\n\n"
-            "Nhiệm vụ của bạn là trả lời câu hỏi dựa HOÀN TOÀN vào phần <context> được cung cấp.\n"
-            "HÃY TUÂN THỦ CÁC QUY TẮC SAU:\n"
-            "1. Chỉ sử dụng thông tin trong <context>. Tuyệt đối không dùng kiến thức bên ngoài.\n"
-            "2. Trả lời chi tiết, chính xác, lịch sự và dễ hiểu bằng tiếng Việt.\n"
-            "3. Nếu <context> KHÔNG chứa thông tin liên quan, hãy trả lời chính xác câu sau: "
-            "'Dựa trên tài liệu hiện tại, tôi không tìm thấy thông tin để trả lời câu hỏi này.'\n"
-            "4. Không tự bịa đặt thông tin (No hallucination)."
-        )
+    def __init__(self, max_context_length: int | None = None) -> None:
+        self.max_context_length = max_context_length or settings.RAG_MAX_CONTEXT_CHARS
+        self._tokenizer: Any | None = None
+        self._model: Any | None = None
+        self._load_lock = asyncio.Lock()
+        self._executor = ThreadPoolExecutor(max_workers=1, thread_name_prefix="gemma-rag")
 
-        # overflow protection
-        context_parts = []
-        current_length = 0
+    def _build_messages(self, query: str, contexts: list[dict[str, Any]]) -> list[dict[str, str]]:
+        """Build a Vietnamese, evidence-grounded chat prompt.
 
-        for i, c in enumerate(contexts):
-            chunk_text = f"Tài liệu {i + 1}:\n{c['content']}"
-            if current_length + len(chunk_text) > self.max_context_length:
-                logger.warning("context is too long, truncating to fit the limit.")
-                break
-            context_parts.append(chunk_text)
-            current_length += len(chunk_text)
+        The character cap preserves compatibility with the old generator and
+        provides a first safety bound.  A second token-aware bound is enforced
+        immediately before generation.
+        """
+        context_text = "\n\n".join(
+            f"[Nguồn {index + 1}]\n{document.get('content', '')}"
+            for index, document in enumerate(contexts)
+        )[: self.max_context_length]
 
-        context_text = "\n\n".join(context_parts)
+        system_prompt = f"""Bạn là {settings.BOT_NAME}, một trợ lý trả lời bằng tiếng Việt.
+Tuân thủ các quy tắc sau: chỉ sử dụng thông tin trong phần NGỮ CẢNH để trả lời
+câu hỏi; không suy đoán và không bổ sung kiến thức bên ngoài. Nếu ngữ cảnh không
+đủ để trả lời, hãy trả lời đúng một câu: "Tài liệu không đề cập." Trả lời ngắn
+gọn, trực tiếp và có thể trích dẫn [Nguồn n] khi cần thiết."""
+        user_prompt = f"""NGỮ CẢNH:
+{context_text}
 
-        # user content format
-        user_content = f"<context>\n{context_text}\n</context>\n\nCâu hỏi: {query}"
+CÂU HỎI: {query}
 
+TRẢ LỜI:"""
         return [
-            {"role": "system", "content": system_instruction},
-            {"role": "user", "content": user_content},
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt},
         ]
 
-    # async stream answer
-    async def generate_stream(self, query: str, contexts: list):
-        messages = self._build_messages(query, contexts)
+    def _device_and_dtype(self) -> tuple[str, torch.dtype]:
+        requested_device = settings.GEMMA_DEVICE.lower()
+        if requested_device.startswith("cuda"):
+            if not torch.cuda.is_available():
+                raise RuntimeError(
+                    "GEMMA_DEVICE=cuda nhưng PyTorch không thấy GPU CUDA. "
+                    "Hãy chọn máy có GPU hoặc đặt GEMMA_DEVICE=cpu."
+                )
+            dtype = torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16
+            return requested_device, dtype
+        if requested_device == "cpu":
+            return "cpu", torch.float32
+        raise ValueError("GEMMA_DEVICE chỉ hỗ trợ 'cuda' (hoặc cuda:N) và 'cpu'.")
 
-        payload = {
-            "model": self.model_name,
-            "messages": messages,
-            "stream": True,
-            "options": {
-                "temperature": self.temperature,
-                "top_p": 0.95,
-                "num_predict": -1,
-                "num_ctx": 8192,
-            },
+    def _load_model_sync(self) -> None:
+        if self._model is not None:
+            return
+
+        from transformers import AutoModelForCausalLM, AutoTokenizer
+
+        device, dtype = self._device_and_dtype()
+        token = settings.HF_TOKEN or None
+        logger.info("Loading RAG generator %s on %s", settings.HF_MODEL_NAME, device)
+        tokenizer = AutoTokenizer.from_pretrained(settings.HF_MODEL_NAME, token=token)
+        model = AutoModelForCausalLM.from_pretrained(
+            settings.HF_MODEL_NAME,
+            token=token,
+            torch_dtype=dtype,
+        ).to(device)
+        model.eval()
+        if tokenizer.pad_token_id is None:
+            tokenizer.pad_token = tokenizer.eos_token
+        self._tokenizer = tokenizer
+        self._model = model
+
+    async def _ensure_model_loaded(self) -> None:
+        if self._model is not None:
+            return
+        async with self._load_lock:
+            if self._model is None:
+                loop = asyncio.get_running_loop()
+                await loop.run_in_executor(self._executor, self._load_model_sync)
+
+    def _prepare_inputs(self, query: str, contexts: list[dict[str, Any]]) -> Any:
+        """Tokenize while shrinking only evidence, never the question or policy."""
+        assert self._tokenizer is not None
+        tokenizer = self._tokenizer
+        current_limit = self.max_context_length
+
+        while True:
+            original_limit = self.max_context_length
+            self.max_context_length = current_limit
+            try:
+                messages = self._build_messages(query, contexts)
+            finally:
+                self.max_context_length = original_limit
+
+            input_ids = tokenizer.apply_chat_template(
+                messages,
+                add_generation_prompt=True,
+                return_tensors="pt",
+            )
+            if input_ids.shape[-1] <= settings.GEMMA_MAX_INPUT_TOKENS:
+                return input_ids
+            if current_limit <= 256:
+                raise ValueError(
+                    "Câu hỏi và hướng dẫn vượt GEMMA_MAX_INPUT_TOKENS; "
+                    "hãy tăng giới hạn này hoặc rút ngắn câu hỏi."
+                )
+            current_limit = max(256, current_limit // 2)
+
+    def _generate_sync(
+        self, query: str, contexts: list[dict[str, Any]]
+    ) -> tuple[str, dict[str, int]]:
+        assert self._model is not None
+        input_ids = self._prepare_inputs(query, contexts).to(self._model.device)
+        attention_mask = torch.ones_like(input_ids, device=self._model.device)
+        prompt_tokens = input_ids.shape[-1]
+
+        with torch.inference_mode():
+            generated_ids = self._model.generate(
+                input_ids=input_ids,
+                attention_mask=attention_mask,
+                do_sample=False,
+                max_new_tokens=settings.LLM_MAX_NEW_TOKENS,
+                pad_token_id=self._tokenizer.pad_token_id,
+                eos_token_id=self._tokenizer.eos_token_id,
+            )
+        answer = self._tokenizer.decode(
+            generated_ids[0, prompt_tokens:], skip_special_tokens=True
+        ).strip()
+        if not answer:
+            raise RuntimeError("Gemma không sinh được câu trả lời.")
+        output_tokens = int(generated_ids.shape[-1] - prompt_tokens)
+        return answer, {
+            "prompt_tokens": int(prompt_tokens),
+            "output_tokens": output_tokens,
+            "total_tokens": int(prompt_tokens + output_tokens),
         }
 
-        try:
-            # timeout 60-120s
-            async with httpx.AsyncClient(timeout=httpx.Timeout(60.0, read=120.0)) as client:
-                async with client.stream("POST", self.url, json=payload) as response:
-                    response.raise_for_status()
+    async def generate_with_metrics(
+        self, query: str, contexts: list[dict[str, Any]]
+    ) -> tuple[str, dict[str, int]]:
+        """Generate one answer and return exact tokenizer-level token counts."""
+        if not contexts:
+            return "Tài liệu không đề cập.", {
+                "prompt_tokens": 0,
+                "output_tokens": 0,
+                "total_tokens": 0,
+            }
 
-                    async for line in response.aiter_lines():
-                        if line:
-                            try:
-                                chunk = json.loads(line)
-                                if "message" in chunk and "content" in chunk["message"]:
-                                    content = chunk["message"]["content"]
-                                    # yield only if real content
-                                    if content:
-                                        yield content
+        await self._ensure_model_loaded()
+        loop = asyncio.get_running_loop()
+        return await loop.run_in_executor(self._executor, self._generate_sync, query, contexts)
 
-                                if chunk.get("done"):
-                                    break
+    async def generate_stream(
+        self, query: str, contexts: list[dict[str, Any]]
+    ) -> AsyncGenerator[str, None]:
+        """Return a grounded answer through the existing streaming API.
 
-                            except json.JSONDecodeError:
-                                logger.warning(f"Error parsing JSON from LLM chunk: {line}")
-                                continue
+        Inference runs in a dedicated worker so it does not block FastAPI's
+        event loop.  The completed answer is emitted as one chunk; the API
+        contract remains an async stream for the UI and cache layers.
+        """
+        answer, _ = await self.generate_with_metrics(query, contexts)
+        yield answer
 
-        except httpx.HTTPStatusError as e:
-            detail = _extract_ollama_error(e.response)
-            logger.error("HTTP Error %s from Ollama: %s", e.response.status_code, detail)
-
-            memory_error_markers = (
-                "failed to allocate",
-                "unable to allocate",
-                "requires more system memory",
-                "out of memory",
-            )
-            if any(marker in detail.lower() for marker in memory_error_markers):
-                raise RuntimeError(
-                    f"Ollama không đủ bộ nhớ để chạy model '{self.model_name}'. "
-                    "Hãy dùng model nhỏ hơn trong LLM_MODEL_NAME hoặc đóng bớt ứng dụng nặng."
-                ) from e
-
-            raise RuntimeError(f"Ollama trả về lỗi {e.response.status_code}: {detail}") from e
-
-        except httpx.RequestError as e:
-            logger.error(f"Request Error from Ollama: {e}")
-            raise ConnectionError("Không thể kết nối tới LLM (Ollama).")
+    async def aclose(self) -> None:
+        """Release worker resources during application shutdown."""
+        self._executor.shutdown(wait=False, cancel_futures=True)

@@ -16,10 +16,26 @@ class Settings(BaseSettings):
     # redis cache status
     REDIS_URL: str = Field(default="redis://localhost:6379")
 
-    # --- LLM config ---
-    OLLAMA_BASE_URL: str = Field(default="http://localhost:11434/api/chat")
-    LLM_MODEL_NAME: str = Field(default="qwen2.5:7b-instruct")
-    LLM_TEMPERATURE: float = Field(default=0.1)
+    # --- Generator config ---
+    # Use the same Gemma base model as the external-RAG candidate in
+    # trustmargin-experiments.  The token is needed only when the model is
+    # gated or has not already been cached locally by Hugging Face.
+    HF_MODEL_NAME: str = Field(default="google/gemma-2-2b-it")
+    HF_TOKEN: str | None = Field(default=None)
+    GEMMA_DEVICE: str = Field(default="cuda")
+    GEMMA_MAX_INPUT_TOKENS: int = Field(default=4096, ge=128)
+    LLM_MAX_NEW_TOKENS: int = Field(default=256, ge=1, le=2048)
+    RAG_MAX_CONTEXT_CHARS: int = Field(default=12000, ge=256)
+    RAG_TOP_K: int = Field(default=8, ge=1, le=100)
+
+    # --- Weights & Biases inference tracking ---
+    WANDB_ENABLED: bool = Field(default=False)
+    WANDB_PROJECT: str = Field(default="vietnamese-rag-gemma")
+    WANDB_ENTITY: str | None = Field(default=None)
+    WANDB_RUN_NAME: str | None = Field(default=None)
+    WANDB_MODE: str = Field(default="online")
+    WANDB_LOG_TEXT: bool = Field(default=True)
+    WANDB_MAX_TEXT_CHARS: int = Field(default=4000, ge=0)
 
     # bot persona
     BOT_NAME: str = "VietRAG Bot"
