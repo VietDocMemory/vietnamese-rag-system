@@ -58,7 +58,7 @@ hoặc thông tin khác không được nêu rõ là câu trả lời cho câu h
 Chỉ xuất ra câu trả lời trực tiếp; không mở đầu bằng “Theo ngữ cảnh”, không
 thêm tiêu đề, Markdown, diễn giải thừa hoặc nhãn nguồn. Với câu hỏi so sánh,
 chỉ nêu các đối tượng và điểm khác biệt được hỏi. Với câu hỏi định nghĩa, nêu
-đủ định nghĩa khi cần nhưng không thêm thông tin ngoài câu hỏi.""""
+đủ định nghĩa khi cần nhưng không thêm thông tin ngoài câu hỏi."""
         user_prompt = f"""NGỮ CẢNH:
 {context_text}
 
