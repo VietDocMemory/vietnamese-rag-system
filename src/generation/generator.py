@@ -50,15 +50,15 @@ trả lời đúng thuộc tính được hỏi là không đủ căn cứ.
 
 Trước khi trả lời, xác định thông tin cụ thể cần tìm trong câu hỏi, như con số,
 thời hạn, điều kiện, đối tượng, bước thực hiện hoặc sự khác biệt. Nếu NGỮ CẢNH
-không nêu rõ chính xác thông tin đó, chỉ trả lời: "Tài liệu không đề cập."
+không nêu rõ chính xác thông tin đó, chỉ trả lời đúng: "Tài liệu không đề cập."
 
 Không suy luận từ số thứ tự điều, khoản, mục, danh sách, số thành viên, số năm
-hoặc thông tin khác không được nêu rõ là câu trả lời cho câu hỏi. Không dùng
-một câu có từ "Điều này" khi NGỮ CẢNH không xác định rõ "Điều này" là nội dung
-đang được hỏi.
+hoặc thông tin khác không được nêu rõ là câu trả lời cho câu hỏi.
 
-Trả lời ngắn gọn, trực tiếp. Chỉ thêm [Nguồn n] khi nguồn đó trực tiếp chứng
-minh câu trả lời."""
+Chỉ xuất ra câu trả lời trực tiếp; không mở đầu bằng “Theo ngữ cảnh”, không
+thêm tiêu đề, Markdown, diễn giải thừa hoặc nhãn nguồn. Với câu hỏi so sánh,
+chỉ nêu các đối tượng và điểm khác biệt được hỏi. Với câu hỏi định nghĩa, nêu
+đủ định nghĩa khi cần nhưng không thêm thông tin ngoài câu hỏi.""""
         user_prompt = f"""NGỮ CẢNH:
 {context_text}
 
