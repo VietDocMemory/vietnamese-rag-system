@@ -22,6 +22,7 @@ def test_cache_hashing():
     """Test Redis hashing logic doesn't throw errors"""
     h = _hash_query("session-123", "Câu hỏi test!")
     assert "cache:session-123" in h
+    assert ":qwen-rag-v1:" in h
 
 
 async def test_cache_falls_back_to_memory_when_redis_is_unavailable(monkeypatch):

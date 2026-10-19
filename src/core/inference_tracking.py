@@ -47,12 +47,12 @@ class WandbInferenceTracker:
             mode=mode,
             config={
                 "generator_model": settings.HF_MODEL_NAME,
-                "generator_device": settings.GEMMA_DEVICE,
-                "max_input_tokens": settings.GEMMA_MAX_INPUT_TOKENS,
+                "generator_device": settings.GENERATOR_DEVICE,
+                "max_input_tokens": settings.GENERATOR_MAX_INPUT_TOKENS,
                 "max_new_tokens": settings.LLM_MAX_NEW_TOKENS,
                 "max_context_chars": settings.RAG_MAX_CONTEXT_CHARS,
                 "retrieval_top_k": settings.RAG_TOP_K,
-                "prompt_version": "gemma-rag-v1",
+                "prompt_version": "qwen-rag-v1",
             },
         )
         return self._run

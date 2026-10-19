@@ -110,10 +110,11 @@ async def clear_session_data(session_id: str):
 
 
 def _hash_query(session_id: str, query: str) -> str:
-    # hash query key
+    # Keep Qwen answers separate from responses cached by older generators.
     clean_query = " ".join(query.lower().split())
     query_hash = hashlib.md5(clean_query.encode()).hexdigest()
-    return f"cache:{session_id}:{query_hash}"
+    model_hash = hashlib.md5(settings.HF_MODEL_NAME.encode()).hexdigest()[:12]
+    return f"cache:{session_id}:qwen-rag-v1:{model_hash}:{query_hash}"
 
 
 # get response from cache

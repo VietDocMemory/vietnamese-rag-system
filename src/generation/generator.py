@@ -1,4 +1,4 @@
-"""Grounded RAG generation with the Gemma base model used by TrustMargin.
+"""Grounded RAG generation with Qwen3-4B-Instruct-2507.
 
 The model is intentionally loaded lazily: starting the API only creates the
 generator object, while the first question loads the weights onto the selected
@@ -21,14 +21,14 @@ logger = logging.getLogger(__name__)
 
 
 class RAGGenerator:
-    """Generate an answer from retrieved evidence using Gemma-2-2B-IT."""
+    """Generate an answer from retrieved evidence using Qwen3-4B-Instruct."""
 
     def __init__(self, max_context_length: int | None = None) -> None:
         self.max_context_length = max_context_length or settings.RAG_MAX_CONTEXT_CHARS
         self._tokenizer: Any | None = None
         self._model: Any | None = None
         self._load_lock = asyncio.Lock()
-        self._executor = ThreadPoolExecutor(max_workers=1, thread_name_prefix="gemma-rag")
+        self._executor = ThreadPoolExecutor(max_workers=1, thread_name_prefix="qwen-rag")
 
     def _build_messages(self, query: str, contexts: list[dict[str, Any]]) -> list[dict[str, str]]:
         """Build a Vietnamese, evidence-grounded chat prompt.
@@ -59,31 +59,30 @@ một câu có từ "Điều này" khi NGỮ CẢNH không xác định rõ "Đi
 
 Trả lời ngắn gọn, trực tiếp. Chỉ thêm [Nguồn n] khi nguồn đó trực tiếp chứng
 minh câu trả lời."""
-        user_prompt = f"""{system_prompt}
-
-NGỮ CẢNH:
+        user_prompt = f"""NGỮ CẢNH:
 {context_text}
 
 CÂU HỎI: {query}
 
 TRẢ LỜI:"""
-        # Gemma's chat template supports user/model turns but not a separate
-        # system turn. Put the grounding policy in the user message instead.
-        return [{"role": "user", "content": user_prompt}]
+        return [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt},
+        ]
 
     def _device_and_dtype(self) -> tuple[str, torch.dtype]:
-        requested_device = settings.GEMMA_DEVICE.lower()
+        requested_device = settings.GENERATOR_DEVICE.lower()
         if requested_device.startswith("cuda"):
             if not torch.cuda.is_available():
                 raise RuntimeError(
-                    "GEMMA_DEVICE=cuda nhưng PyTorch không thấy GPU CUDA. "
-                    "Hãy chọn máy có GPU hoặc đặt GEMMA_DEVICE=cpu."
+                    "GENERATOR_DEVICE=cuda nhưng PyTorch không thấy GPU CUDA. "
+                    "Hãy chọn máy có GPU hoặc đặt GENERATOR_DEVICE=cpu."
                 )
             dtype = torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16
             return requested_device, dtype
         if requested_device == "cpu":
             return "cpu", torch.float32
-        raise ValueError("GEMMA_DEVICE chỉ hỗ trợ 'cuda' (hoặc cuda:N) và 'cpu'.")
+        raise ValueError("GENERATOR_DEVICE chỉ hỗ trợ 'cuda' (hoặc cuda:N) và 'cpu'.")
 
     def _load_model_sync(self) -> None:
         if self._model is not None:
@@ -133,11 +132,11 @@ TRẢ LỜI:"""
                 add_generation_prompt=True,
                 return_tensors="pt",
             )
-            if input_ids.shape[-1] <= settings.GEMMA_MAX_INPUT_TOKENS:
+            if input_ids.shape[-1] <= settings.GENERATOR_MAX_INPUT_TOKENS:
                 return input_ids
             if current_limit <= 256:
                 raise ValueError(
-                    "Câu hỏi và hướng dẫn vượt GEMMA_MAX_INPUT_TOKENS; "
+                    "Câu hỏi và hướng dẫn vượt GENERATOR_MAX_INPUT_TOKENS; "
                     "hãy tăng giới hạn này hoặc rút ngắn câu hỏi."
                 )
             current_limit = max(256, current_limit // 2)
@@ -163,7 +162,7 @@ TRẢ LỜI:"""
             generated_ids[0, prompt_tokens:], skip_special_tokens=True
         ).strip()
         if not answer:
-            raise RuntimeError("Gemma không sinh được câu trả lời.")
+            raise RuntimeError("Qwen không sinh được câu trả lời.")
         output_tokens = int(generated_ids.shape[-1] - prompt_tokens)
         return answer, {
             "prompt_tokens": int(prompt_tokens),
