@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import asyncio
 import logging
+import re
 from concurrent.futures import ThreadPoolExecutor
 from typing import Any, AsyncGenerator
 
@@ -18,6 +19,24 @@ import torch
 from src.core.config import settings
 
 logger = logging.getLogger(__name__)
+
+
+def normalize_answer(answer: str) -> str:
+    """Remove presentation-only text without changing the grounded answer."""
+    normalized = answer.strip()
+    normalized = re.sub(
+        r"^(?:Theo\s+ngữ\s+cảnh|Theo\s+tài\s+liệu(?:\s+được\s+cung\s+cấp)?)\s*[:,.\-]*\s*",
+        "",
+        normalized,
+        flags=re.IGNORECASE,
+    )
+    normalized = re.sub(
+        r"(?:\s*\[Nguồn\s+\d+\]\s*)+$",
+        "",
+        normalized,
+        flags=re.IGNORECASE,
+    )
+    return normalized.strip()
 
 
 class RAGGenerator:
@@ -158,9 +177,11 @@ TRẢ LỜI:"""
                 pad_token_id=self._tokenizer.pad_token_id,
                 eos_token_id=self._tokenizer.eos_token_id,
             )
-        answer = self._tokenizer.decode(
-            generated_ids[0, prompt_tokens:], skip_special_tokens=True
-        ).strip()
+        answer = normalize_answer(
+            self._tokenizer.decode(
+                generated_ids[0, prompt_tokens:], skip_special_tokens=True
+            )
+        )
         if not answer:
             raise RuntimeError("Qwen không sinh được câu trả lời.")
         output_tokens = int(generated_ids.shape[-1] - prompt_tokens)

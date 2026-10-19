@@ -1,4 +1,25 @@
-from src.generation.generator import RAGGenerator
+from src.generation.generator import RAGGenerator, normalize_answer
+
+
+def test_normalize_answer_removes_presentation_only_text():
+    answer = (
+        "Theo NGỮ CẢNH, Giấy phép môi trường là văn bản do cơ quan có thẩm quyền cấp. "
+        "[Nguồn 1]"
+    )
+
+    assert normalize_answer(answer) == (
+        "Giấy phép môi trường là văn bản do cơ quan có thẩm quyền cấp."
+    )
+
+
+def test_normalize_answer_preserves_substantive_internal_text():
+    answer = "Khái niệm được xác định theo tài liệu chuyên ngành và có hiệu lực."
+
+    assert normalize_answer(answer) == answer
+
+
+def test_normalize_answer_preserves_abstention():
+    assert normalize_answer("Tài liệu không đề cập.") == "Tài liệu không đề cập."
 
 
 def test_build_messages_formatting():
