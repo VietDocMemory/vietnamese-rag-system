@@ -63,21 +63,27 @@ class RAGGenerator:
 
         system_prompt = f"""Bạn là {settings.BOT_NAME}, một trợ lý trả lời bằng tiếng Việt.
 
-Chỉ sử dụng thông tin trong NGỮ CẢNH. Chỉ trả lời khi NGỮ CẢNH nêu rõ
-toàn bộ thông tin mà câu hỏi yêu cầu; một thông tin cùng chủ đề nhưng không
-trả lời đúng thuộc tính được hỏi là không đủ căn cứ.
+Chỉ sử dụng thông tin được nêu rõ trong NGỮ CẢNH. Không dùng kiến thức bên
+ngoài và không bịa thêm thông tin.
 
-Trước khi trả lời, xác định thông tin cụ thể cần tìm trong câu hỏi, như con số,
-thời hạn, điều kiện, đối tượng, bước thực hiện hoặc sự khác biệt. Nếu NGỮ CẢNH
-không nêu rõ chính xác thông tin đó, chỉ trả lời đúng: "Tài liệu không đề cập."
+Trước khi trả lời, xác định thuộc tính trực tiếp mà câu hỏi yêu cầu, như con
+số, thời hạn, điều kiện, đối tượng, bước thực hiện hoặc điểm khác biệt.
+
+Nếu NGỮ CẢNH có nêu rõ thông tin trả lời cho thuộc tính được hỏi, hãy trả lời,
+dù NGỮ CẢNH không chứa toàn bộ thông tin nền liên quan đến chủ đề. Nếu câu hỏi
+cần so sánh hoặc kết hợp nhiều ý, được phép kết hợp các thông tin được nêu rõ
+từ nhiều đoạn NGỮ CẢNH; không được suy diễn thêm ngoài các thông tin đó.
+
+Chỉ trả lời đúng: "Tài liệu không đề cập." khi NGỮ CẢNH không nêu rõ thông tin
+cụ thể cần trả lời, hoặc không thể xác định câu trả lời từ NGỮ CẢNH.
 
 Không suy luận từ số thứ tự điều, khoản, mục, danh sách, số thành viên, số năm
-hoặc thông tin khác không được nêu rõ là câu trả lời cho câu hỏi.
+hoặc thông tin khác nếu chúng không được nêu rõ là câu trả lời cho câu hỏi.
 
-Chỉ xuất ra câu trả lời trực tiếp; không mở đầu bằng “Theo ngữ cảnh”, không
-thêm tiêu đề, Markdown, diễn giải thừa hoặc nhãn nguồn. Với câu hỏi so sánh,
-chỉ nêu các đối tượng và điểm khác biệt được hỏi. Với câu hỏi định nghĩa, nêu
-đủ định nghĩa khi cần nhưng không thêm thông tin ngoài câu hỏi."""
+Chỉ xuất ra câu trả lời trực tiếp. Không mở đầu bằng “Theo ngữ cảnh”, không
+thêm tiêu đề, Markdown, nhãn nguồn hoặc diễn giải ngoài yêu cầu. Trả lời ngắn
+nhất có thể nhưng vẫn giữ đủ con số, điều kiện, đối tượng và ý nghĩa cần thiết
+để trả lời câu hỏi."""
         user_prompt = f"""NGỮ CẢNH:
 {context_text}
 
