@@ -40,3 +40,16 @@ def test_resource_summary_and_recommendation():
     assert summary["latency_seconds"]["p50"] == 3.0
     assert summary["empirical_minimum_recommendation"]["ram_gib"] == 15
     assert summary["empirical_minimum_recommendation"]["gpu_vram_gib"] == 6
+
+
+def test_no_recommendation_without_successful_requests():
+    summary = build_summary(
+        [{"error": "connection failed", "latency_seconds": 0}],
+        {"logical_cpu_count": 8},
+        [],
+        session_elapsed=1,
+    )
+    recommendation = summary["empirical_minimum_recommendation"]
+    assert recommendation["cpu_logical_cores"] is None
+    assert recommendation["ram_gib"] is None
+    assert recommendation["gpu_vram_gib"] is None

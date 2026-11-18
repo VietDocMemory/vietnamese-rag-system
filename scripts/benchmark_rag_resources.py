@@ -9,6 +9,7 @@ import statistics
 import sys
 import time
 from pathlib import Path
+from urllib.parse import urlsplit, urlunsplit
 
 import requests
 
@@ -85,6 +86,19 @@ def query_api(api_url: str, session_id: str, question: str, timeout: float) -> d
     }
 
 
+def check_api_ready(api_url: str, timeout: float = 10) -> None:
+    parsed = urlsplit(api_url)
+    docs_url = urlunsplit((parsed.scheme, parsed.netloc, "/docs", "", ""))
+    try:
+        response = requests.get(docs_url, timeout=timeout)
+        response.raise_for_status()
+    except requests.RequestException as exc:
+        raise RuntimeError(
+            f"RAG API chưa sẵn sàng tại {docs_url}. "
+            "Hãy khởi động uvicorn và kiểm tra api.log trước khi benchmark."
+        ) from exc
+
+
 def build_summary(
     rows: list[dict], inventory: dict, samples: list[dict], session_elapsed: float
 ) -> dict:
@@ -97,15 +111,26 @@ def build_summary(
     logical_cpus = inventory.get("logical_cpu_count") or 1
     measured_request_seconds = sum(latencies)
 
+    has_valid_measurement = bool(successful)
     empirical_recommendation = {
-        "cpu_logical_cores": min(
-            logical_cpus,
-            max(2, math.ceil((cpu_p95 or 100) / 100 * logical_cpus * 1.2)),
+        "cpu_logical_cores": (
+            min(
+                logical_cpus,
+                max(2, math.ceil((cpu_p95 or 100) / 100 * logical_cpus * 1.2)),
+            )
+            if has_valid_measurement
+            else None
         ),
-        "ram_gib": math.ceil((peak_ram or 0) * 1.2) if peak_ram is not None else None,
-        "gpu_vram_gib": math.ceil((peak_vram or 0) / 1024 * 1.2)
-        if peak_vram is not None
-        else None,
+        "ram_gib": (
+            math.ceil((peak_ram or 0) * 1.2)
+            if has_valid_measurement and peak_ram is not None
+            else None
+        ),
+        "gpu_vram_gib": (
+            math.ceil((peak_vram or 0) / 1024 * 1.2)
+            if has_valid_measurement and peak_vram is not None
+            else None
+        ),
         "headroom_factor": 1.2,
         "warning": (
             "Đây là cấu hình ước lượng từ tải tuần tự 1 request trên máy benchmark, "
@@ -151,6 +176,7 @@ def main() -> None:
     from src.evaluation.resource_monitor import ResourceMonitor, machine_inventory
 
     args = parse_args()
+    check_api_ready(args.api_url)
     dataset = [
         json.loads(line)
         for line in args.input.read_text(encoding="utf-8").splitlines()
