@@ -145,6 +145,32 @@ Open http://localhost:8501 to upload a PDF and start querying.
 
 ## Evaluation & Benchmarks
 
+### Benchmark compute resources on all 420 questions
+
+After Qdrant, Redis, Ollama and the RAG API are ready, run the benchmark from a separate
+Molab cell. It calls the real streaming API sequentially, records per-question latency and
+samples whole-machine CPU, RAM, NVIDIA VRAM, GPU utilization and power. Measuring the whole
+machine intentionally includes the API, Qdrant, embedding/reranking models and Ollama. The
+benchmark sets `bypass_cache=true`, so Redis responses cannot make repeated runs look faster.
+
+```bash
+uv run python scripts/benchmark_rag_resources.py \
+  --input data/rag_evaluation_dataset.jsonl \
+  --session-id full_legal_109_pages \
+  --output-dir outputs/resource_benchmark_420 \
+  --overwrite
+```
+
+Run a three-question smoke benchmark first with `--limit 3`. The output directory contains:
+
+- `per_question.jsonl`: answers, sources, latency and peak resources for each question.
+- `resource_samples.jsonl`: raw time-series resource samples.
+- `summary.json`: P50/P95/P99 latency, throughput, resource peaks, machine inventory and an
+  empirical configuration recommendation with 20% headroom.
+
+The recommendation is valid for sequential concurrency 1 on the measured model and machine.
+Changing the model, retrieval top-k, quantization or concurrency requires a new benchmark.
+
 To ensure the system's reliability in practical applications, we implemented a comprehensive **LLM-as-a-Judge** evaluation pipeline (`src/evaluation/evaluator.py`). 
 
 ### Dataset

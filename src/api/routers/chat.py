@@ -25,12 +25,16 @@ async def ask_rag(
     session_id: str = Query(...),
     retriever: RAGRetriever = Depends(get_retriever),
     generator: RAGGenerator = Depends(get_generator),
+    bypass_cache: bool = Query(False),
 ):
+    # Direct unit-test calls receive FastAPI's Query object as the default value.
+    cache_bypassed = bypass_cache is True
+
     # stream response generator
     async def stream_result():
         try:
             # cache check
-            cached = await get_cached_response(session_id, query)
+            cached = None if cache_bypassed else await get_cached_response(session_id, query)
             if cached:
                 # return sources
                 yield json.dumps({"type": "sources", "data": cached["sources"]}) + "\n"
@@ -126,7 +130,8 @@ async def ask_rag(
                     yield stream_event("content", data=chunk)
 
                 # save to redis
-                await set_cached_response(session_id, query, full_response_text, sources)
+                if not cache_bypassed:
+                    await set_cached_response(session_id, query, full_response_text, sources)
 
             except (RuntimeError, ConnectionError) as e:
                 yield json.dumps({"type": "error", "message": f"\n\n*({str(e)})*"}) + "\n"
