@@ -1,10 +1,15 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
-from pydantic import AliasChoices, Field, field_validator
+from pydantic import AliasChoices, Field, SecretStr, field_validator
 from functools import lru_cache
 
 
 # app settings class
 class Settings(BaseSettings):
+    JEV_ENABLED: bool = False
+    TYPESAFE_API_KEY: SecretStr | None = None
+    JEV_MODEL: str = "jev-latest"
+    JEV_ANSWERABILITY_THRESHOLD: float = Field(default=0.5, ge=0, le=1)
+
     # general api config
     PROJECT_NAME: str = "Vietnamese RAG System"
     API_V1_STR: str = "/api/v1"

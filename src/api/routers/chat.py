@@ -3,11 +3,13 @@ import asyncio
 import logging
 import time
 import uuid
+import httpx
 from fastapi import APIRouter, Query, Depends
 from fastapi.responses import StreamingResponse
 
 from src.retrieval.search_engine import RAGRetriever
 from src.generation.generator import RAGGenerator
+from src.generation.jev import score_answerability
 from src.api.dependencies import get_retriever, get_generator
 from src.core.cache import get_cached_response, set_cached_response  # add cache
 from src.core.config import settings
@@ -65,7 +67,7 @@ async def ask_rag(
 
         try:
             # cache check
-            cached = await get_cached_response(session_id, query)
+            cached = None if settings.JEV_ENABLED else await get_cached_response(session_id, query)
             if cached:
                 await track(
                     answer=cached["response"],
@@ -145,6 +147,22 @@ async def ask_rag(
             ]
             yield json.dumps({"type": "sources", "data": sources}) + "\n"
 
+            if settings.JEV_ENABLED:
+                try:
+                    probability = await score_answerability(query, relevant_docs)
+                except (httpx.HTTPError, ValueError, KeyError, TypeError) as exc:
+                    logger.warning("Jev answerability check failed: %s", type(exc).__name__)
+                    await track(success=False, error="jev_unavailable", contexts=sources)
+                    yield stream_event(
+                        "error", message="Không thể kiểm tra bằng chứng bằng Jev. Hãy thử lại."
+                    )
+                    return
+                if probability < settings.JEV_ANSWERABILITY_THRESHOLD:
+                    answer = "Tài liệu không đề cập."
+                    await track(answer=answer, contexts=sources)
+                    yield stream_event("content", data=answer)
+                    return
+
             # cache response while streaming
             full_response_text = ""
             model_metrics = {}
@@ -194,7 +212,8 @@ async def ask_rag(
 
                 # save to redis
                 generation_seconds = time.perf_counter() - generation_started
-                await set_cached_response(session_id, query, full_response_text, sources)
+                if not settings.JEV_ENABLED:
+                    await set_cached_response(session_id, query, full_response_text, sources)
                 await track(
                     answer=full_response_text,
                     contexts=sources,
